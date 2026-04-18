@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.open-next/
+.vercel/
+.wrangler/
+.env
+.env.local
+.env*.local
+.DS_Store
+*.log
+.turbo
+
+# Claude Code
+.claude/settings.local.json

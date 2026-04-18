@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palace Porta Potties — Brand Board</title>
+<style>
+  :root {
+    --royal-blue: #173B7A;
+    --midnight-navy: #0B1F3A;
+    --palace-gold: #C8A34D;
+    --gold-light: #D9B45E;
+    --gold-deep: #B8912F;
+    --stone-gray: #6B7280;
+    --soft-silver: #E5E7EB;
+    --clean-white: #FFFFFF;
+    --off-white: #F8F9FB;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1A2332; background: var(--off-white); line-height: 1.6; }
+  h1, h2, h3 { font-family: Georgia, serif; color: var(--midnight-navy); margin: 0 0 0.75rem; }
+  h1 { font-size: 3rem; }
+  h2 { font-size: 1.75rem; margin-top: 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+  .masthead { background: linear-gradient(135deg, #0B1F3A 0%, #173B7A 100%); color: white; padding: 4rem 1.5rem; text-align: center; }
+  .masthead h1 { color: white; font-size: 3.5rem; }
+  .masthead .tagline { color: var(--palace-gold); font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+  .masthead .sub { color: #D7DEE8; max-width: 600px; margin: 1rem auto 0; font-size: 1.15rem; }
+  section { background: white; border-radius: 10px; margin-bottom: 1.5rem; padding: 2.5rem; box-shadow: 0 2px 8px rgba(11,31,58,0.06); border: 1px solid var(--soft-silver); }
+  .eyebrow { color: var(--gold-deep); font-size: 0.8rem; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
+  .gold-rule { width: 56px; height: 2px; background: linear-gradient(90deg, var(--gold-light), var(--gold-deep)); border: 0; margin: 0 0 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .grid-6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem; }
+  @media (max-width: 760px) { .grid-2, .grid-3, .grid-6 { grid-template-columns: 1fr 1fr; } }
+  .swatch { aspect-ratio: 1; border-radius: 8px; display: flex; align-items: flex-end; padding: 0.75rem; color: white; font-size: 0.78rem; font-weight: 600; box-shadow: 0 2px 6px rgba(11,31,58,0.1); }
+  .swatch .hex { font-family: monospace; display: block; opacity: 0.9; margin-top: 0.25rem; font-size: 0.72rem; }
+  .swatch-light { color: #0B1F3A; }
+  .logo-box { background: white; border: 1px solid var(--soft-silver); padding: 2.5rem 1.5rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; min-height: 160px; }
+  .logo-box.dark { background: var(--midnight-navy); }
+  .logo-box.gold { background: var(--palace-gold); }
+  .logo-box img { max-width: 100%; height: auto; max-height: 100px; }
+  .type-sample { padding: 1rem 0; border-bottom: 1px solid var(--soft-silver); }
+  .type-sample:last-child { border-bottom: 0; }
+  .type-sample .label { font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--stone-gray); font-weight: 600; }
+  .serif { font-family: Georgia, serif; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+  .tagline-card { padding: 1.25rem; background: var(--off-white); border-radius: 8px; border-left: 4px solid var(--palace-gold); margin-bottom: 0.75rem; }
+  .tagline-card .main { font-family: Georgia, serif; font-size: 1.35rem; color: var(--midnight-navy); font-weight: 700; }
+  .tagline-card .label { font-size: 0.78rem; color: var(--stone-gray); margin-top: 0.25rem; }
+  .pillar { padding: 1.25rem; background: var(--off-white); border-radius: 8px; border-top: 3px solid var(--palace-gold); }
+  .pillar h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+  .pillar p { font-size: 0.92rem; color: #4B5563; margin: 0; }
+  .voice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .voice-col { padding: 1.25rem; border-radius: 8px; }
+  .voice-do { background: #F0F9F4; border-left: 4px solid #2F9A5F; }
+  .voice-dont { background: #FDF3F3; border-left: 4px solid #C94141; }
+  .voice-col ul { margin: 0; padding-left: 1.1rem; font-size: 0.95rem; }
+  .voice-col li { margin-bottom: 0.4rem; }
+  .voice-col h4 { margin: 0 0 0.75rem; font-size: 1rem; }
+  .tm { padding: 0.65rem 1rem; background: var(--midnight-navy); color: white; border-radius: 6px; font-weight: 600; margin: 0.25rem; display: inline-block; font-size: 0.9rem; border: 1px solid var(--palace-gold); }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="tagline">The Palace Standard</div>
+  <h1>Palace Porta Potties</h1>
+  <p class="sub">Portable restrooms. Royal treatment.</p>
+</div>
+
+<div class="container">
+
+  <section>
+    <p class="eyebrow">Logo System</p>
+    <h2>Primary Marks</h2>
+    <hr class="gold-rule">
+    <div class="grid-3">
+      <div class="logo-box"><img src="logo.svg" alt="Primary wordmark"></div>
+      <div class="logo-box dark"><img src="logo.svg" alt="Wordmark on navy" style="filter: invert(1) brightness(2);"></div>
+      <div class="logo-box"><img src="mark.svg" alt="Monogram" style="max-height: 120px;"></div>
+    </div>
+    <p style="margin-top: 1rem; color: #4B5563; font-size: 0.95rem;">
+      <strong>Wordmark</strong> for site header, trucks, wraps, and print.
+      <strong>Monogram/crest</strong> for favicon, social avatars, uniforms, and tight-space branding.
+    </p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Color Palette</p>
+    <h2>Brand Colors</h2>
+    <hr class="gold-rule">
+    <div class="grid-6">
+      <div class="swatch" style="background: #173B7A;">Royal Blue<span class="hex">#173B7A</span></div>
+      <div class="swatch" style="background: #0B1F3A;">Midnight Navy<span class="hex">#0B1F3A</span></div>
+      <div class="swatch swatch-light" style="background: #C8A34D;">Palace Gold<span class="hex">#C8A34D</span></div>
+      <div class="swatch" style="background: #6B7280;">Stone Gray<span class="hex">#6B7280</span></div>
+      <div class="swatch swatch-light" style="background: #E5E7EB;">Soft Silver<span class="hex">#E5E7EB</span></div>
+      <div class="swatch swatch-light" style="background: #FFFFFF; border: 1px solid #E5E7EB;">Clean White<span class="hex">#FFFFFF</span></div>
+    </div>
+    <p style="margin-top: 1.25rem; color: #4B5563; font-size: 0.95rem;">
+      <strong>Usage rule:</strong> ~80% blue/navy/white · ~15% gray/silver · ~5% gold accent only.
+      Gold signals premium — never dominant.
+    </p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Typography</p>
+    <h2>Type System</h2>
+    <hr class="gold-rule">
+    <div class="type-sample">
+      <div class="label">Display / Headlines — Georgia (Serif)</div>
+      <div class="serif" style="font-size: 2.5rem; color: var(--midnight-navy); font-weight: 700;">Portable Toilet Rental</div>
+    </div>
+    <div class="type-sample">
+      <div class="label">Subhead</div>
+      <div class="serif" style="font-size: 1.5rem; color: var(--midnight-navy);">A higher standard of portable restroom rental.</div>
+    </div>
+    <div class="type-sample">
+      <div class="label">Body — System Sans</div>
+      <div class="sans" style="font-size: 1rem;">Clean units, fast delivery, and dependable service for events, weddings, job sites, and long-term rentals.</div>
+    </div>
+    <div class="type-sample">
+      <div class="label">Eyebrow / Label</div>
+      <div class="sans" style="font-size: 0.85rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold-deep); font-weight: 600;">The Palace Standard</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Messaging</p>
+    <h2>Taglines</h2>
+    <hr class="gold-rule">
+    <div class="tagline-card">
+      <div class="main">Portable Restrooms. Royal Treatment.</div>
+      <div class="label">Primary — use everywhere</div>
+    </div>
+    <div class="tagline-card">
+      <div class="main">Clean Units. Fast Delivery. Palace Standards.</div>
+      <div class="label">Ads / jobsite-leaning</div>
+    </div>
+    <div class="tagline-card">
+      <div class="main">A Better Portable Toilet Rental Experience.</div>
+      <div class="label">SEO / category differentiator</div>
+    </div>
+    <div class="tagline-card">
+      <div class="main">Portable Toilet Rental With Higher Standards.</div>
+      <div class="label">Homepage H1 sidekick</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Brand Pillars</p>
+    <h2>What Palace Stands For</h2>
+    <hr class="gold-rule">
+    <div class="grid-3">
+      <div class="pillar"><h3>Palace Standard Clean</h3><p>Every unit inspected, cleaned, and stocked before delivery.</p></div>
+      <div class="pillar"><h3>Rapid Response</h3><p>Fast quotes, fast scheduling, same-day dispatch in supported markets.</p></div>
+      <div class="pillar"><h3>Professional Placement</h3><p>We manage delivery, placement, service cadence, and pickup.</p></div>
+      <div class="pillar"><h3>Event-Worthy Presentation</h3><p>Units guests aren't embarrassed to use — wedding-ready when needed.</p></div>
+      <div class="pillar"><h3>Local Accountability</h3><p>Each market runs with a local team and local phone support.</p></div>
+      <div class="pillar"><h3>Expansion-Ready</h3><p>Built city by city, one standard everywhere.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Trademarked Offers</p>
+    <h2>Signature Service Names</h2>
+    <hr class="gold-rule">
+    <div>
+      <span class="tm">The Palace Standard™</span>
+      <span class="tm">Royal Response Quote™</span>
+      <span class="tm">Palace Placement Promise™</span>
+      <span class="tm">Event-Ready Setup™</span>
+      <span class="tm">Jobsite Reliability Plan™</span>
+      <span class="tm">Palace Clean Check™</span>
+    </div>
+    <p style="margin-top: 1rem; color: #4B5563; font-size: 0.95rem;">
+      Use consistently across site, ads, sales scripts, and brochures. Builds entity signals and memorable differentiation.
+    </p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Voice & Tone</p>
+    <h2>How We Sound</h2>
+    <hr class="gold-rule">
+    <div class="voice-grid">
+      <div class="voice-col voice-do">
+        <h4>✓ Do</h4>
+        <ul>
+          <li>Lead with clean, fast, dependable</li>
+          <li>Say it like a pro — direct and confident</li>
+          <li>Use premium language, restrained gold</li>
+          <li>Reinforce Palace as the entity</li>
+          <li>Match category tone: wedding-ready AND jobsite-tough</li>
+        </ul>
+      </div>
+      <div class="voice-col voice-dont">
+        <h4>✗ Don't</h4>
+        <ul>
+          <li>Gross-out or toilet humor on core pages</li>
+          <li>Sound bargain-bin or price-only</li>
+          <li>Fake luxury — no medieval / snobby cues</li>
+          <li>Generic lead-gen site voice</li>
+          <li>Overuse gold or crown imagery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: linear-gradient(135deg, #0B1F3A 0%, #173B7A 100%); color: white;">
+    <p class="eyebrow" style="color: var(--palace-gold);">Elevator Pitch</p>
+    <h2 style="color: white;">In One Paragraph</h2>
+    <hr class="gold-rule">
+    <p style="font-family: Georgia, serif; font-size: 1.3rem; line-height: 1.5; color: #D7DEE8; max-width: 780px;">
+      Palace Porta Potties provides clean, dependable portable restroom rentals for events,
+      weddings, and construction sites — with faster service, better presentation, and a higher
+      standard of execution than the typical porta potty company.
+    </p>
+  </section>
+
+</div>
+
+</body>
+</html>
