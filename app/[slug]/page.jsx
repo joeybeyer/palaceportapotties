@@ -27,16 +27,30 @@ export async function generateMetadata({ params }) {
   };
 }
 
+const HERO_IMAGES = {
+  'portable-toilet-rental-new-york': '/images/generated/NY-HERO.webp',
+  'portable-toilet-rental-denver': '/images/generated/DV-HERO.webp',
+  'portable-toilet-rental-chicago': '/images/generated/CHI-HERO.webp',
+};
+
 export default async function LocationPage({ params }) {
   const loc = await getLocationBySlug(params.slug);
   if (!loc) notFound();
 
   const hours = JSON.parse(loc.hours_json);
   const faqs = JSON.parse(loc.faq_json);
+  const heroImage = HERO_IMAGES[loc.slug];
 
   return (
     <>
-      <section className="hero location-hero">
+      <section
+        className="hero location-hero"
+        style={heroImage ? {
+          backgroundImage: `linear-gradient(135deg, rgba(11,31,58,0.82) 0%, rgba(23,59,122,0.75) 100%), url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        } : undefined}
+      >
         <div className="container">
           <h1>{loc.h1}</h1>
           <div className="intro" dangerouslySetInnerHTML={{ __html: loc.intro_html }} />

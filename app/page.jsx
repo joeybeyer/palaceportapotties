@@ -23,7 +23,14 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="hero">
+      <section
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(11,31,58,0.82) 0%, rgba(23,59,122,0.75) 100%), url(/images/generated/HP-NATIONAL-HERO.webp)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container">
           <span className="eyebrow">The Palace Standard™</span>
           <h1>Portable Toilet Rental</h1>
@@ -90,17 +97,27 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section>
-        <div className="container">
-          <p className="section-eyebrow">How It Works</p>
-          <h2>Clean Scheduling. No Drama.</h2>
-          <hr className="gold-rule" />
-          <ol>
-            <li><strong>Call your nearest Palace location</strong> for transparent, no-pressure pricing.</li>
-            <li><strong>Confirm delivery window</strong>, unit count, and servicing schedule.</li>
-            <li><strong>We deliver, place, and service</strong> units on schedule — every time.</li>
-            <li><strong>Pickup coordinated</strong> on your preferred end date, professionally handled.</li>
-          </ol>
+      <section className="how-it-works">
+        <div className="container how-it-works-grid">
+          <div>
+            <p className="section-eyebrow">How It Works</p>
+            <h2>Clean Scheduling. No Drama.</h2>
+            <hr className="gold-rule" />
+            <ol>
+              <li><strong>Call your nearest Palace location</strong> for transparent, no-pressure pricing.</li>
+              <li><strong>Confirm delivery window</strong>, unit count, and servicing schedule.</li>
+              <li><strong>We deliver, place, and service</strong> units on schedule — every time.</li>
+              <li><strong>Pickup coordinated</strong> on your preferred end date, professionally handled.</li>
+            </ol>
+          </div>
+          <img
+            src="/images/generated/HP-DELIVERY.webp"
+            alt="Palace Porta Potties delivery truck placing a unit at a job site"
+            className="how-it-works-img"
+            width="560"
+            height="560"
+            loading="lazy"
+          />
         </div>
       </section>
 

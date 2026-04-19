@@ -308,3 +308,26 @@ section + section { border-top: 1px solid var(--soft-silver); }
     padding: 10px 10px;
   }
 }
+
+/* ── How It Works grid ── */
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.how-it-works-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .how-it-works-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-it-works-img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
