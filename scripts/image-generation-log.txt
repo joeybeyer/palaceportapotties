@@ -395,3 +395,87 @@
 [2026-04-19T17:05:41.368Z]   Success: 9  |  Skipped: 0  |  Failed: 0
 [2026-04-19T17:05:41.368Z] ────────────────────────────────────────
 
+[2026-04-19T17:28:19.328Z] 
+============================================================
+[2026-04-19T17:28:19.335Z] Phase 4 — 8 images — force=false
+[2026-04-19T17:28:19.335Z] ============================================================
+[2026-04-19T17:28:19.337Z] START HP-HERO-PERSON.png (3:4, 2K)
+[2026-04-19T17:28:19.383Z] START HP-HERO-PERSON-MOBILE.png (3:4, 1K)
+[2026-04-19T17:28:19.934Z]   taskId: 567923d8762be3eac04eeb870b5f5302
+[2026-04-19T17:28:19.968Z]   taskId: 9b87bf05a96a8b6ae12658eba6b0e73f
+[2026-04-19T17:28:20.188Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (0s)
+[2026-04-19T17:28:20.222Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (0s)
+[2026-04-19T17:28:28.502Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (9s)
+[2026-04-19T17:28:28.503Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (9s)
+[2026-04-19T17:28:36.790Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (17s)
+[2026-04-19T17:28:36.811Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (17s)
+[2026-04-19T17:28:45.091Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (25s)
+[2026-04-19T17:28:45.095Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (25s)
+[2026-04-19T17:28:53.456Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (34s)
+[2026-04-19T17:28:53.459Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (33s)
+[2026-04-19T17:29:01.743Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (42s)
+[2026-04-19T17:29:01.779Z]   polling 9b87bf05a96a8b6ae12658eba6b0e73f — state=waiting progress=?% (42s)
+[2026-04-19T17:29:10.024Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (50s)
+[2026-04-19T17:29:11.313Z] DONE HP-HERO-PERSON-MOBILE.png — 52s
+[2026-04-19T17:29:11.314Z] START NY-HERO-PERSON.png (3:4, 2K)
+[2026-04-19T17:29:11.713Z]   taskId: 2d5839e820b36907c015149e2861302b
+[2026-04-19T17:29:11.969Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (0s)
+[2026-04-19T17:29:18.326Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (58s)
+[2026-04-19T17:29:20.228Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (9s)
+[2026-04-19T17:29:26.617Z]   polling 567923d8762be3eac04eeb870b5f5302 — state=waiting progress=?% (67s)
+[2026-04-19T17:29:28.491Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (17s)
+[2026-04-19T17:29:36.753Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (25s)
+[2026-04-19T17:29:39.185Z] DONE HP-HERO-PERSON.png — 80s
+[2026-04-19T17:29:39.186Z] START NY-HERO-PERSON-MOBILE.png (3:4, 1K)
+[2026-04-19T17:29:39.529Z]   taskId: d0fc36207a066df36918d4450e3a9ee1
+[2026-04-19T17:29:39.789Z]   polling d0fc36207a066df36918d4450e3a9ee1 — state=waiting progress=?% (0s)
+[2026-04-19T17:29:45.064Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (33s)
+[2026-04-19T17:29:48.053Z]   polling d0fc36207a066df36918d4450e3a9ee1 — state=waiting progress=?% (9s)
+[2026-04-19T17:29:53.364Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (42s)
+[2026-04-19T17:29:56.315Z]   polling d0fc36207a066df36918d4450e3a9ee1 — state=waiting progress=?% (17s)
+[2026-04-19T17:30:01.678Z]   polling 2d5839e820b36907c015149e2861302b — state=waiting progress=?% (50s)
+[2026-04-19T17:30:04.584Z]   polling d0fc36207a066df36918d4450e3a9ee1 — state=waiting progress=?% (25s)
+[2026-04-19T17:30:13.203Z]   polling d0fc36207a066df36918d4450e3a9ee1 — state=waiting progress=?% (34s)
+[2026-04-19T17:30:28.074Z] DONE NY-HERO-PERSON.png — 77s
+[2026-04-19T17:30:28.077Z] START DV-HERO-PERSON.png (3:4, 2K)
+[2026-04-19T17:30:28.535Z]   taskId: 6a0d192a2b7eeb1b81f7e39c0a0a78ae
+[2026-04-19T17:30:28.815Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (0s)
+[2026-04-19T17:30:30.388Z] DONE NY-HERO-PERSON-MOBILE.png — 51s
+[2026-04-19T17:30:30.389Z] START DV-HERO-PERSON-MOBILE.png (3:4, 1K)
+[2026-04-19T17:30:30.735Z]   taskId: ca5b3146624fea04e714a63a3e473517
+[2026-04-19T17:30:30.994Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (0s)
+[2026-04-19T17:30:37.217Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (9s)
+[2026-04-19T17:30:39.267Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (9s)
+[2026-04-19T17:30:45.538Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (17s)
+[2026-04-19T17:30:47.524Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (17s)
+[2026-04-19T17:30:54.721Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (26s)
+[2026-04-19T17:30:55.846Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (25s)
+[2026-04-19T17:31:03.337Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (35s)
+[2026-04-19T17:31:04.273Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (34s)
+[2026-04-19T17:31:12.211Z]   polling 6a0d192a2b7eeb1b81f7e39c0a0a78ae — state=waiting progress=?% (44s)
+[2026-04-19T17:31:13.038Z]   polling ca5b3146624fea04e714a63a3e473517 — state=waiting progress=?% (42s)
+[2026-04-19T17:31:26.627Z] DONE DV-HERO-PERSON-MOBILE.png — 56s
+[2026-04-19T17:31:26.629Z] START CHI-HERO-PERSON.png (3:4, 2K)
+[2026-04-19T17:31:27.053Z]   taskId: 8ff7558e252a1d9d1e66b00a5003fd86
+[2026-04-19T17:31:27.332Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (0s)
+[2026-04-19T17:31:34.197Z] DONE DV-HERO-PERSON.png — 66s
+[2026-04-19T17:31:34.198Z] START CHI-HERO-PERSON-MOBILE.png (3:4, 1K)
+[2026-04-19T17:31:34.954Z]   taskId: e8eb377e92e8ef20bfda41be2c4acaea
+[2026-04-19T17:31:35.220Z]   polling e8eb377e92e8ef20bfda41be2c4acaea — state=waiting progress=?% (0s)
+[2026-04-19T17:31:35.599Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (9s)
+[2026-04-19T17:31:43.626Z]   polling e8eb377e92e8ef20bfda41be2c4acaea — state=waiting progress=?% (9s)
+[2026-04-19T17:31:43.986Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (17s)
+[2026-04-19T17:31:51.939Z]   polling e8eb377e92e8ef20bfda41be2c4acaea — state=waiting progress=?% (17s)
+[2026-04-19T17:31:52.319Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (25s)
+[2026-04-19T17:32:00.328Z]   polling e8eb377e92e8ef20bfda41be2c4acaea — state=waiting progress=?% (25s)
+[2026-04-19T17:32:00.645Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (34s)
+[2026-04-19T17:32:08.907Z]   polling e8eb377e92e8ef20bfda41be2c4acaea — state=waiting progress=?% (34s)
+[2026-04-19T17:32:09.150Z]   polling 8ff7558e252a1d9d1e66b00a5003fd86 — state=waiting progress=?% (42s)
+[2026-04-19T17:32:21.823Z] DONE CHI-HERO-PERSON-MOBILE.png — 48s
+[2026-04-19T17:32:31.616Z] DONE CHI-HERO-PERSON.png — 65s
+[2026-04-19T17:32:31.617Z] 
+────────────────────────────────────────
+[2026-04-19T17:32:31.618Z] SUMMARY
+[2026-04-19T17:32:31.618Z]   Success: 8  |  Skipped: 0  |  Failed: 0
+[2026-04-19T17:32:31.618Z] ────────────────────────────────────────
+

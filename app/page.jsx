@@ -24,26 +24,31 @@ export default async function HomePage() {
 
   return (
     <>
-      <section
-        className="hero"
-        style={{
-          backgroundImage: `linear-gradient(135deg, rgba(11,31,58,0.82) 0%, rgba(23,59,122,0.75) 100%), url(/images/generated/HP-NATIONAL-HERO.webp)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="container">
-          <span className="eyebrow">The Palace Standard™</span>
-          <h1>Portable Toilet Rental</h1>
-          <p className="lead">
-            Clean units, fast delivery, and dependable service for events, weddings, job sites,
-            and long-term rentals. A higher standard of portable restroom rental — built for crews
-            and guests who expect better.
-          </p>
-          <div className="hero-cta">
-            <a href="tel:+18887085771" className="btn-primary">Get a Fast Quote</a>
-            <a href="#locations" className="btn-secondary">Check Local Availability</a>
+      <section className="hero hero-split">
+        <div className="container hero-split-grid">
+          <div className="hero-content">
+            <span className="eyebrow">Serving construction, events, and film across 3 markets</span>
+            <h1>Portable Toilet Rental That Actually Shows Up Clean</h1>
+            <p className="lead">
+              Most providers drop off a unit and disappear. Palace delivers serviced, stocked
+              restrooms on schedule — so your crew or guests never deal with a filthy
+              portable toilet again.
+            </p>
+            <div className="hero-cta">
+              <a href="tel:+18887085771" className="btn-primary">Get a Free Quote</a>
+              <a href="#locations" className="btn-secondary">Check Local Availability</a>
+            </div>
           </div>
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/images/generated/HP-HERO-PERSON-MOBILE.webp" />
+            <img
+              src="/images/generated/HP-HERO-PERSON.webp"
+              alt="Palace Porta Potties event coordinator ready to help with your rental"
+              className="hero-person-img"
+              width="600"
+              height="800"
+            />
+          </picture>
         </div>
       </section>
 
@@ -51,10 +56,10 @@ export default async function HomePage() {
       <div className="trust-strip">
         <div className="container">
           <div className="trust-items">
-            <div className="trust-item"><span className="icon">✓</span> Clean & Stocked Units</div>
-            <div className="trust-item"><span className="icon">✓</span> Same-Day Dispatch</div>
-            <div className="trust-item"><span className="icon">✓</span> Dependable Service</div>
-            <div className="trust-item"><span className="icon">✓</span> Local Phone Support</div>
+            <div className="trust-item"><span className="icon">✓</span> 3 Markets Nationwide</div>
+            <div className="trust-item"><span className="icon">✓</span> Same-Day Dispatch Available</div>
+            <div className="trust-item"><span className="icon">✓</span> 24/7 Phone Support</div>
+            <div className="trust-item"><span className="icon">✓</span> No Hidden Fees</div>
           </div>
         </div>
       </div>
@@ -103,6 +108,12 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="mid-cta">
+        <div className="container">
+          <a href="tel:+18887085771" className="btn-primary">Call for a Free Quote</a>
+        </div>
+      </div>
 
       <section className="how-it-works">
         <div className="container how-it-works-grid">

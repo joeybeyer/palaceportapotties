@@ -35,6 +35,24 @@ const HERO_IMAGES = {
   'portable-toilet-rental-chicago': '/images/generated/CHI-HERO.webp',
 };
 
+const HERO_PEOPLE = {
+  'portable-toilet-rental-new-york': {
+    desktop: '/images/generated/NY-HERO-PERSON.webp',
+    mobile: '/images/generated/NY-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties site supervisor ready to help with your New York rental',
+  },
+  'portable-toilet-rental-denver': {
+    desktop: '/images/generated/DV-HERO-PERSON.webp',
+    mobile: '/images/generated/DV-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your Denver rental',
+  },
+  'portable-toilet-rental-chicago': {
+    desktop: '/images/generated/CHI-HERO-PERSON.webp',
+    mobile: '/images/generated/CHI-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties site manager ready to help with your Chicago rental',
+  },
+};
+
 const UNIT_IMAGES = {
   'portable-toilet-rental-new-york': [
     { src: '/images/generated/NY-UNIT-HIGHRISE.webp', alt: 'Portable toilet at a New York high-rise construction site' },
@@ -69,29 +87,44 @@ export default async function LocationPage({ params }) {
   const hours = JSON.parse(loc.hours_json);
   const faqs = JSON.parse(loc.faq_json);
   const heroImage = HERO_IMAGES[loc.slug];
+  const heroPerson = HERO_PEOPLE[loc.slug];
   const unitImages = UNIT_IMAGES[loc.slug] || [];
 
   return (
     <>
-      <section
-        className="hero location-hero"
-        style={heroImage ? {
+      <section className={`hero location-hero${heroPerson ? ' hero-split' : ''}`}
+        style={!heroPerson && heroImage ? {
           backgroundImage: `linear-gradient(135deg, rgba(11,31,58,0.82) 0%, rgba(23,59,122,0.75) 100%), url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         } : undefined}
       >
-        <div className="container">
-          <h1>{loc.h1}</h1>
-          <div className="intro" dangerouslySetInnerHTML={{ __html: loc.intro_html }} />
-          <div className="hero-cta">
-            <a href={`tel:${loc.phone_tel}`} className="btn-primary">
-              Call {loc.phone}
-            </a>
-            <a href={loc.gbp_url} target="_blank" rel="noopener" className="btn-secondary">
-              View on Google Maps
-            </a>
+        <div className={`container${heroPerson ? ' hero-split-grid' : ''}`}>
+          <div className={heroPerson ? 'hero-content' : undefined}>
+            <span className="eyebrow">Palace Standard™ — 24/7 dispatch in {loc.city}</span>
+            <h1>{loc.h1}</h1>
+            <div className="intro" dangerouslySetInnerHTML={{ __html: loc.intro_html }} />
+            <div className="hero-cta">
+              <a href={`tel:${loc.phone_tel}`} className="btn-primary">
+                Call for a Free Quote
+              </a>
+              <a href={loc.gbp_url} target="_blank" rel="noopener" className="btn-secondary">
+                View on Google Maps
+              </a>
+            </div>
           </div>
+          {heroPerson && (
+            <picture>
+              <source media="(max-width: 768px)" srcSet={heroPerson.mobile} />
+              <img
+                src={heroPerson.desktop}
+                alt={heroPerson.alt}
+                className="hero-person-img"
+                width="600"
+                height="800"
+              />
+            </picture>
+          )}
         </div>
       </section>
 
@@ -138,6 +171,12 @@ export default async function LocationPage({ params }) {
           </div>
         </section>
       )}
+
+      <div className="mid-cta">
+        <div className="container">
+          <a href={`tel:${loc.phone_tel}`} className="btn-primary">Call for a Free Quote</a>
+        </div>
+      </div>
 
       <section className="local-context">
         <div className="container" dangerouslySetInnerHTML={{ __html: loc.local_context_html }} />

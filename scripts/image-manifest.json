@@ -313,5 +313,83 @@
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
+  ],
+  "phase4": [
+    {
+      "filename": "HP-HERO-PERSON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a confident woman in her mid-30s, event coordinator type, wearing a warm gold amber blouse (#C8A34D tone) with sleeves rolled to the elbows. She is standing with relaxed confident posture, body angled slightly right, head turned to look to HER LEFT (viewer's right) with a warm genuine smile. She is looking slightly off-camera to the left side of the frame where text/CTA would be placed. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text overlay. Background: softly blurred modern warehouse or logistics facility with clean lines, warm natural window light. Shallow depth of field. Hair pulled back neatly. Professional commercial photography, photorealistic, natural skin tones, no heavy retouching.",
+      "image_input": [],
+      "aspect_ratio": "3:4",
+      "resolution": "2K"
+    },
+    {
+      "filename": "HP-HERO-PERSON-MOBILE.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a confident woman in her mid-30s, event coordinator type, wearing a warm gold amber blouse (#C8A34D tone). She is looking UPWARD at a slight angle with a warm genuine smile, as if looking up at text above her. Shoulders-up to waist framing, centered in the frame. Background: softly blurred modern warehouse or logistics facility, warm natural light. Shallow depth of field. Hair pulled back neatly. Professional commercial photography, photorealistic, natural skin tones. The upward gaze is key — she is looking above the camera.",
+      "image_input": [],
+      "aspect_ratio": "3:4",
+      "resolution": "1K"
+    },
+    {
+      "filename": "NY-HERO-PERSON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a male construction site supervisor in his early 40s, wearing a warm gold amber high-visibility safety vest (#C8A34D tone) over a clean white henley shirt. Hard hat held at his side. He is standing with confident posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident calm expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Manhattan construction site — steel beams, crane visible, morning urban light. Shallow depth of field. Clean shaven, weathered but professional. Commercial photography, photorealistic, natural skin tones.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "2K"
+    },
+    {
+      "filename": "NY-HERO-PERSON-MOBILE.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a male construction site supervisor in his early 40s, wearing a warm gold amber high-visibility safety vest (#C8A34D tone) over a clean white henley shirt. He is looking UPWARD at a slight angle with a confident calm expression, as if looking up at text above him. Shoulders-up to waist framing, centered in the frame. Background: softly blurred Manhattan construction site with steel beams, morning light. Shallow depth of field. Clean shaven, weathered but professional. Commercial photography, photorealistic, natural skin tones. The upward gaze is key.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "1K"
+    },
+    {
+      "filename": "DV-HERO-PERSON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a female outdoor event coordinator in her early 30s, wearing a warm gold amber fleece quarter-zip jacket (#C8A34D tone) over a dark navy base layer. Clipboard tucked under one arm. She is standing with relaxed confident posture, body angled slightly right, head turned to look to HER LEFT (viewer's right) with a friendly welcoming smile. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Colorado Front Range mountains, high-altitude clear sky, outdoor event venue with tents in mid-distance. Bright natural daylight. Commercial photography, photorealistic, natural skin tones.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "2K"
+    },
+    {
+      "filename": "DV-HERO-PERSON-MOBILE.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a female outdoor event coordinator in her early 30s, wearing a warm gold amber fleece quarter-zip jacket (#C8A34D tone) over a dark navy base layer. She is looking UPWARD at a slight angle with a friendly welcoming smile, as if looking up at text above her. Shoulders-up to waist framing, centered in the frame. Background: softly blurred Colorado mountains, bright natural daylight. Shallow depth of field. Commercial photography, photorealistic, natural skin tones. The upward gaze is key.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-HERO-PERSON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a male site manager in his mid-40s, wearing a warm gold amber safety vest (#C8A34D tone) over a clean navy Palace-branded polo shirt. He is standing with confident authoritative posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident reassuring expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Chicago Loop architecture — steel and glass towers, 'L' train tracks visible, morning urban light. Shallow depth of field. Professional, trustworthy appearance. Commercial photography, photorealistic, natural skin tones.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "2K"
+    },
+    {
+      "filename": "CHI-HERO-PERSON-MOBILE.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Professional portrait of a male site manager in his mid-40s, wearing a warm gold amber safety vest (#C8A34D tone) over a clean navy Palace-branded polo shirt. He is looking UPWARD at a slight angle with a confident reassuring expression, as if looking up at text above him. Shoulders-up to waist framing, centered in the frame. Background: softly blurred Chicago Loop architecture with glass towers, morning light. Shallow depth of field. Professional, trustworthy. Commercial photography, photorealistic, natural skin tones. The upward gaze is key.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:4",
+      "resolution": "1K"
+    }
   ]
 }
