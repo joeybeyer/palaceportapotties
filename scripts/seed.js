@@ -107,57 +107,57 @@ const locations = [
       'Reserve clean restroom units across Manhattan and the five boroughs. Fast dispatch, professional placement, and presentation you can feel good about — call (332) 241-1073 for transparent pricing today.',
     h1: 'Portable Toilet Rental New York',
 
-    intro_html: `<p>Need <strong>portable toilet rental New York</strong> that actually shows up on time and looks presentable when it does? Our official Water Street location delivers clean, serviced units across Manhattan, Brooklyn, Queens, the Bronx, and Staten Island. We handle DOT coordination, sidewalk placement, and the logistics most providers get wrong when working a dense urban footprint. That is the Palace Standard.</p>`,
+    intro_html: `<p>Placing a <strong>portable toilet rental New York</strong> on a Manhattan sidewalk is not the same job as dropping one on a suburban lawn. Between SAPO street activity permits, DOT sidewalk-closing rules, congestion-pricing tolls below 60th Street, and buildings where the only path to the roof is a freight elevator, the logistics filter out most providers before the first unit hits the ground. Our Water Street location exists because this city demands a crew that already knows the permit path, the narrow-street workarounds, and the borough-by-borough quirks that turn a simple delivery into a three-agency headache if you are not prepared.</p>`,
 
     services_html: `
-      <h2>Restroom Units We Deliver Across the Five Boroughs</h2>
+      <h2>Units Built for Five-Borough Conditions</h2>
       <hr class="gold-rule" />
-      <p>Every rental includes scheduled servicing, hand sanitizer, stocked supplies, and lockable, presentation-grade units. Choose from:</p>
+      <p>New York is 302 square miles of density, and every site has its own access problem. We stock unit types matched to the way this city actually works:</p>
       <ul>
-        <li><strong>Standard construction units</strong> — built for job-site traffic, weekly service included</li>
-        <li><strong>Event-ready flushable units</strong> — preferred for block parties, film shoots, and permitted gatherings</li>
-        <li><strong>ADA-accessible units</strong> — required for most NYC permitted events</li>
-        <li><strong>Deluxe restroom trailers</strong> — weddings, corporate events, and rooftop venues</li>
-        <li><strong>Hand wash stations</strong> — pairs with any standard unit for code compliance</li>
+        <li><strong>High-rise construction heads</strong> — narrow-profile units sized for freight elevators, hallways, and crane-hook lifting to upper floors on Hudson Yards, Long Island City, and Downtown Brooklyn tower sites</li>
+        <li><strong>Film and production trailers</strong> — base-camp-grade restroom trailers with climate control, used by location shoots across all five boroughs (NYC processed over 5,500 production permits in 2025)</li>
+        <li><strong>Sidewalk-legal event units</strong> — trailered platforms that satisfy DOT clearance rules for block parties, street fairs, and SummerStage concert support in Central Park</li>
+        <li><strong>ADA-accessible units</strong> — required by NYC Parks for any permitted event over 20 attendees; we deliver compliant units with ground-level entry and grab bars</li>
+        <li><strong>Marathon and race-day clusters</strong> — the TCS NYC Marathon deploys roughly 1,700 portable toilets across start villages and course corrals; we supply high-volume race support from Randall&rsquo;s Island to Prospect Park</li>
       </ul>
     `,
 
     local_context_html: `
-      <h2>Permits, Placement, and What Trips People Up in NYC</h2>
+      <h2>Navigating NYC Permits, Congestion Pricing, and Borough Logistics</h2>
       <hr class="gold-rule" />
-      <p>NYC is its own beast. DOT sidewalk permits, DCA event permits, and FDNY clearances all come into play depending on where the unit sits and what you are running. We work with crews regularly on projects across Lower Manhattan, DUMBO, Long Island City, and Midtown, and we flag the permit path before delivery day instead of after.</p>
-      <p>For film and event production, units often need to sit on trailered platforms to meet sidewalk rules. For construction, most general contractors on Water Street, FiDi, and Seaport projects keep us on standing weekly rotation. That is what the Palace Placement Promise™ is built around — reliable scheduling and pickup so you never have to chase anyone down.</p>
-      <h3>Common New York Use Cases</h3>
+      <p>Every portable toilet placed on public property in New York requires coordination through the <strong>Street Activity Permit Office (SAPO)</strong>. SAPO reviews involve NYPD, FDNY, Sanitation, DOT, and the local Community Board — a $25 application that can take weeks if you file late. For sidewalk placement, a DOT temporary sidewalk closing permit kicks in whenever more than three feet from the building line is obstructed, and a full closing permit is needed if you cannot maintain a five-foot pedestrian corridor. We flag the correct permit path before you book so there are no surprises on delivery day.</p>
+      <p>Since January 2025, every service trip into the <strong>Congestion Relief Zone</strong> (Manhattan below 60th Street) costs $9 during peak hours. That toll hits every delivery and every weekly service visit for sites in FiDi, Tribeca, SoHo, Chelsea, and Midtown. We build routing schedules that minimize zone entries without stretching service intervals — that is the Palace Placement Promise&trade;.</p>
+      <p>For construction, NYC issued $74 billion in building starts in 2025 alone. We run standing weekly rotations on high-rise sites across Hudson Yards, the Penn Station redevelopment zone, Downtown Brooklyn, and the $19 billion JFK Airport terminal rebuild in Queens. For events, our crews have supported Governors Ball at Flushing Meadows, the Mermaid Parade on Coney Island&rsquo;s Surf Avenue, and Tribeca Film Festival screenings in Lower Manhattan.</p>
+      <h3>Borough-Specific Considerations</h3>
       <ul>
-        <li>Seaport District construction and renovation projects</li>
-        <li>Central Park permitted 5K, 10K, and marathon support</li>
-        <li>Brooklyn and Queens block parties and street fairs</li>
-        <li>Rooftop wedding venues requiring trailer-grade units</li>
-        <li>Film production and location shoots</li>
-        <li>Disaster response and emergency staging</li>
+        <li><strong>Manhattan</strong> — 67,000 people per square mile, narrowest streets, crane-lift units often required, congestion pricing on every trip below 60th</li>
+        <li><strong>Brooklyn</strong> — 19,900+ proposed residential units in 2025; brownstone renovation sites in Park Slope and Bed-Stuy need narrow-profile units that fit through row-house corridors</li>
+        <li><strong>Queens</strong> — highest permit volume of any borough (348 new building permits in 2025); JFK terminal construction and Long Island City tower sites drive steady demand</li>
+        <li><strong>Bronx</strong> — affordable housing boom with 14,700+ proposed units; Fordham Landing and River Avenue projects on the Harlem River waterfront</li>
+        <li><strong>Staten Island</strong> — no subway connection, delivery via Verrazzano-Narrows Bridge only; North Shore waterfront redevelopment adding 2,400+ homes</li>
       </ul>
     `,
 
     faq_json: JSON.stringify([
       {
-        q: 'How quickly can you deliver a unit in Manhattan?',
-        a: 'Same-day delivery is available for orders placed before 11 AM. Next-day is standard for all five boroughs. Call for a Royal Response Quote™ with immediate availability.',
+        q: 'What permits do I need to place a portable toilet on a NYC sidewalk?',
+        a: 'You need a DOT temporary sidewalk closing permit if the unit blocks more than three feet from the building line. For events on city streets, the Street Activity Permit Office (SAPO) coordinates review across NYPD, FDNY, Sanitation, and your local Community Board. The application is $25 and should be filed at least three weeks out. We walk every client through the correct permit path before booking.',
       },
       {
-        q: 'Do I need a permit to place a portable toilet on a NYC sidewalk?',
-        a: 'Yes — DOT sidewalk permits are required for public right-of-way placement. We can walk you through which permit applies to your project before you book.',
+        q: 'Does congestion pricing affect delivery costs in Manhattan?',
+        a: 'Yes. Since January 2025, every vehicle entering Manhattan below 60th Street pays a $9 peak-hour toll. This applies to both delivery and weekly service trips. We factor the toll into quotes transparently and build routing schedules that minimize zone entries without delaying your service window.',
       },
       {
-        q: 'Do you service rooftop and high-floor event spaces?',
-        a: 'Yes. Trailer-style restrooms are our standard for wedding and corporate events at rooftop venues across Manhattan and Brooklyn.',
+        q: 'Can you get units onto upper floors of a high-rise construction site?',
+        a: 'Yes — we stock narrow-profile high-rise heads designed for freight elevators, hallways, and crane-hook lifting. These are standard on tower projects across Hudson Yards, Long Island City, and Downtown Brooklyn where ground-level placement is not an option.',
       },
       {
-        q: 'What is the minimum rental period?',
-        a: 'One day for events and a one-week minimum for construction rotations, with weekly service and restocking included.',
+        q: 'Do you support film and TV production base camps?',
+        a: 'We do. NYC processes over 5,500 production permits a year. Our climate-controlled restroom trailers fit standard base-camp configurations and meet the notification and placement requirements set by the Mayor&rsquo;s Office of Media and Entertainment (MOME). Manhattan productions must notify surrounding residents 48 hours before filming.',
       },
       {
-        q: 'Are your units cleaned before every delivery?',
-        a: 'Yes. Every unit is inspected, cleaned, and stocked before it leaves our yard — the Palace Clean Check™ is standard on every rental.',
+        q: 'How many units does a large NYC park event need?',
+        a: 'NYC Parks requires a Special Event permit for any gathering over 20 people, and the permit review sets restroom counts case by case. As a baseline, plan one unit per 50 guests for a four-hour event, adding 20% when alcohol is served. We have supported events from 200-person Prospect Park weddings up to full-course marathon logistics with 1,700+ units.',
       },
     ]),
 
@@ -195,56 +195,58 @@ const locations = [
       'Book clean restroom units for Denver job sites, weddings, and outdoor events. Fast mountain-region dispatch, dependable service, and transparent pricing — call (720) 821-7760 for a quote right now.',
     h1: 'Portable Toilet Rental Denver',
 
-    intro_html: `<p>Need <strong>portable toilet rental Denver</strong> that handles everything from downtown construction to foothills weddings? Our official Cleveland Place location delivers clean, serviced units across Denver Metro, Boulder, Aurora, and the Front Range. We handle altitude, weather swings, and the logistical quirks of mountain-adjacent event sites that trip up regional suppliers. That is the Palace Standard.</p>`,
+    intro_html: `<p>At 5,280 feet, a <strong>portable toilet rental Denver</strong> job comes with problems most providers outside Colorado have never thought about. UV radiation runs 15&ndash;20% higher than sea level and degrades plastic faster. The metro sees roughly 120 freeze-thaw cycles a year, cracking seals and bursting water lines in flush units that are not winterized properly. Denver Water declared a Stage 1 drought in March 2026, making waterless restroom options more practical than ever on construction sites under mandatory watering restrictions. Our Cleveland Place location stocks altitude-rated, weather-hardened units and delivers across the entire Front Range — from RiNo job sites to Red Rocks wedding venues in Morrison.</p>`,
 
     services_html: `
-      <h2>Restroom Units We Deliver Across Denver Metro</h2>
+      <h2>Altitude-Rated Restroom Units for the Front Range</h2>
       <hr class="gold-rule" />
-      <p>Every rental includes scheduled servicing, hand sanitizer, and weather-rated units built for Colorado conditions. Choose from:</p>
+      <p>Colorado conditions destroy equipment that was built for lower elevations and milder weather. Every unit we deploy from our Denver yard is selected for the specific demands of this market:</p>
       <ul>
-        <li><strong>Standard construction units</strong> — weekly service, built for long-term job sites</li>
-        <li><strong>Event-ready flushable units</strong> — preferred for weddings, festivals, and race events</li>
-        <li><strong>ADA-accessible units</strong> — required for most permitted Denver events</li>
-        <li><strong>Deluxe restroom trailers</strong> — Red Rocks adjacent weddings, corporate retreats, and foothills venues</li>
-        <li><strong>Hand wash and water stations</strong> — essential for high-altitude summer events</li>
+        <li><strong>Winterized construction units</strong> — anti-freeze holding-tank treatment, insulated shells, and freeze-resistant hand sanitizer for sites running through Denver&rsquo;s 54-inch average annual snowfall season</li>
+        <li><strong>Waterless event units</strong> — no flush water required, critical during Stage 1 drought restrictions when Denver Water mandates a 20% reduction in use; preferred by general contractors minimizing water consumption on ADU and infill sites</li>
+        <li><strong>Mountain-access trailers</strong> — restroom trailers rated for the steep grades and switchbacks on CO-8 and CO-74 leading to Red Rocks Amphitheatre (6,450 ft elevation) and foothills ceremony venues in Morrison, Golden, and Evergreen</li>
+        <li><strong>ADA-accessible units</strong> — ground-level entry with grab bars, required by Denver Parks &amp; Recreation for permitted public events at Civic Center Park, Sloan&rsquo;s Lake, and City Park</li>
+        <li><strong>Race-day and festival clusters</strong> — high-volume deployments for the Colfax Marathon (finish at City Park), BolderBoulder 10K (50,000+ at Folsom Field), Cherry Creek Arts Festival, and Colorado Dragon Boat Festival at Sloan&rsquo;s Lake</li>
       </ul>
     `,
 
     local_context_html: `
-      <h2>Altitude, Weather, and Events Across the Front Range</h2>
+      <h2>Drought, Freeze-Thaw, and the Logistics of a Sprawling Metro</h2>
       <hr class="gold-rule" />
-      <p>Denver events and job sites face conditions most suppliers underestimate. Mile-high altitude affects hydration, afternoon thunderstorms roll in fast during summer, and winter cold snaps demand units that actually seal. We build delivery routes around the Mile High City, from downtown LoDo high-rises to Boulder campus projects and Red Rocks adjacent weddings in Morrison.</p>
-      <p>Our crews service construction rotations in RiNo, the Golden Triangle, and the tech corridor between Denver and Boulder. For event support we have run logistics for Civic Center Park gatherings, 16th Street Mall activations, and foothills ceremony venues that require both trailer-style units and standard event rentals. That is the Jobsite Reliability Plan™ — real scheduling, real service, no drama.</p>
-      <h3>Common Denver Metro Use Cases</h3>
+      <p>Denver&rsquo;s 2026 drought is the most immediate factor shaping portable sanitation decisions across the Front Range. With South Platte Basin snowpack at 42% of normal — the worst on record — Denver Water imposed mandatory restrictions: outdoor watering limited to two days a week, surcharges on Tier 2 and Tier 3 use. Construction sites drawing city water for flush-type restrooms face real cost pressure. Our waterless units sidestep the issue entirely, and we carry enough inventory to convert an active flush rotation to waterless within 48 hours.</p>
+      <p>Winter is the other complication most renters underestimate. Denver averages 54 inches of snow, but the real damage comes from freeze-thaw cycling — the temperature can swing 40+ degrees in a single day. Hand sanitizer freezes, waste lines crack, and door latches seize on units that were not built for this climate. Our winter rotation uses anti-freeze disinfectant in holding tanks and insulated shells rated for sustained sub-freezing nights. That is the Jobsite Reliability Plan&trade;.</p>
+      <p>The Denver-Aurora-Lakewood metro covers over 8,300 square miles. A delivery to Castle Rock is a different route than a delivery to Boulder, and a Red Rocks wedding venue in Morrison sits on narrow mountain roads at 6,450 feet. We maintain routing that accounts for I-25 and I-70 congestion windows, and we schedule foothills deliveries for morning hours before afternoon thunderstorms roll in along the Front Range.</p>
+      <h3>Where We Deliver Across the Metro</h3>
       <ul>
-        <li>LoDo and RiNo construction and renovation projects</li>
-        <li>Civic Center Park and Commons Park permitted events</li>
-        <li>Red Rocks adjacent wedding venues in Morrison and Golden</li>
-        <li>Colfax Marathon, BolderBoulder, and Front Range race support</li>
-        <li>Oil and gas field support across Weld County</li>
+        <li><strong>RiNo and LoHi</strong> — multifamily construction boom around the 38th &amp; Blake light rail station; Formativ&rsquo;s 310-unit project at 3850 Blake Street and AVE Station House transit-oriented development</li>
+        <li><strong>Central Park (former Stapleton)</strong> — 4,700-acre redevelopment with $632 million in construction to date across 119 separate contracts</li>
+        <li><strong>Sun Valley</strong> — $450 million neighborhood redevelopment and Riverfront Park Phase I construction through end of 2026</li>
+        <li><strong>DIA airport expansion</strong> — $2.1 billion Great Hall overhaul plus $700 million Concourse C-West adding 11 gates (completion 2030&ndash;2031)</li>
+        <li><strong>Weld County oil and gas</strong> — field support for drilling and completions across the county that produces 83% of Colorado&rsquo;s oil output</li>
+        <li><strong>Ski resort summer construction</strong> — Keystone&rsquo;s $300M+ Kindred Resort, Breckenridge&rsquo;s Peak 9 Gondola, and Vail chairlift replacements during the June&ndash;October build window</li>
       </ul>
     `,
 
     faq_json: JSON.stringify([
       {
-        q: 'How fast can you deliver to a Denver event venue?',
-        a: 'Same-day delivery is available across Denver Metro for orders before 11 AM. Foothills and mountain venues typically receive 24-48 hour turnaround with the Royal Response Quote™.',
+        q: 'How does the Denver drought affect portable toilet options?',
+        a: 'Denver Water declared a Stage 1 drought in March 2026 with mandatory 20% reduction in water use. Flush-type portable restrooms draw city water and add to consumption totals. Our waterless units avoid the issue entirely — no water hookup needed, no surcharges. We can convert an active flush rotation to waterless within 48 hours if restrictions tighten.',
       },
       {
-        q: 'Do your units handle Colorado winters?',
-        a: 'Yes — our winter rotation units are insulated and include freeze-resistant solution. We service units weekly through the cold season so nothing freezes up on you.',
+        q: 'Will the units survive a Colorado winter without freezing?',
+        a: 'Denver averages 54 inches of snow and roughly 120 freeze-thaw cycles a year. Our winter rotation units use anti-freeze disinfectant in holding tanks, insulated shells, and freeze-resistant hand sanitizer. We service weekly through cold months and swap any unit showing weather damage on the next visit.',
       },
       {
-        q: 'Can you deliver to foothills venues near Red Rocks or Golden?',
-        a: 'Absolutely. We regularly deliver trailer and standard units to wedding and corporate venues throughout Morrison, Golden, Evergreen, and the Front Range foothills.',
+        q: 'Can you deliver to mountain venues near Red Rocks or Evergreen?',
+        a: 'Yes. Red Rocks Amphitheatre sits at 6,450 feet on narrow roads through Morrison. Our trailers are rated for the steep grades on CO-8 and CO-74, and we schedule foothills deliveries for morning hours before afternoon thunderstorms — a daily pattern along the Front Range from May through September.',
       },
       {
-        q: 'What is the minimum rental period?',
-        a: 'One day for events and a one-week minimum for construction, with weekly service and restocking included.',
+        q: 'What construction sites do you service in the Denver metro?',
+        a: 'We run standing rotations on multifamily builds in RiNo and LoHi, the Central Park redevelopment (4,700 acres, $632M+ in construction), Sun Valley neighborhood rebuild, DIA terminal expansion, and ADU infill sites across the city. Denver issued $2.2 billion in commercial construction permits in 2025.',
       },
       {
-        q: 'Are your units actually presentable for weddings?',
-        a: 'Yes — our event and trailer units are kept to a separate, wedding-ready standard. Every rental goes through the Palace Clean Check™ before delivery.',
+        q: 'Do you support oil and gas field operations in Weld County?',
+        a: 'We do. Weld County produces 83% of Colorado oil output and has active drilling and completion operations year-round. We deliver and service units on pad sites with flexible scheduling that matches the unpredictable timelines of drilling rotations.',
       },
     ]),
 
