@@ -421,3 +421,51 @@ section + section { border-top: 1px solid var(--soft-silver); }
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ── Why Palace (problem/solution grid) ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.why-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+}
+.why-card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+.why-card ul { padding-left: 1.25rem; margin: 0; }
+.why-card li { margin-bottom: 0.5rem; line-height: 1.5; }
+.why-problem {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+}
+.why-problem h3 { color: #991B1B; }
+.why-solution {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+}
+.why-solution h3 { color: #166534; }
+@media (max-width: 768px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Guarantee section ── */
+.guarantee {
+  background: var(--off-white);
+  text-align: center;
+}
+.guarantee-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.guarantee h2 { margin-top: 0; }
+.guarantee .gold-rule { margin: 0 auto 1.25rem; }
+.guarantee p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}

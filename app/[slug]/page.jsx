@@ -212,6 +212,18 @@ export default async function LocationPage({ params }) {
         </div>
       </section>
 
+      <section className="guarantee">
+        <div className="container guarantee-content">
+          <h2>The Palace Clean Check™ Promise</h2>
+          <hr className="gold-rule" />
+          <p>
+            Every Palace unit passes a documented inspection before delivery: interior sanitized,
+            paper and sanitizer stocked, hardware tested, and exterior washed. If a unit does not
+            meet the Palace Standard™ on arrival, we replace it at no charge — anywhere in {loc.city}.
+          </p>
+        </div>
+      </section>
+
       <section className="faqs">
         <div className="container">
           <h2>Frequently Asked Questions About Rentals in {loc.city}</h2>

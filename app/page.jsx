@@ -109,6 +109,36 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section className="why-palace">
+        <div className="container">
+          <p className="section-eyebrow">Why Palace</p>
+          <h2>The Problems Nobody Talks About</h2>
+          <hr className="gold-rule" />
+          <div className="why-grid">
+            <div className="why-card why-problem">
+              <h3>The Industry Standard</h3>
+              <ul>
+                <li>Units arrive dirty from the last job</li>
+                <li>Delivery windows are vague or missed</li>
+                <li>Service stops after the drop-off</li>
+                <li>Pricing has hidden trip fees and surcharges</li>
+                <li>You call a 1-800 number and get a voicemail</li>
+              </ul>
+            </div>
+            <div className="why-card why-solution">
+              <h3>The Palace Standard™</h3>
+              <ul>
+                <li>Every unit cleaned and stocked before delivery</li>
+                <li>Confirmed delivery window — not a guess</li>
+                <li>Scheduled servicing for the life of your rental</li>
+                <li>Transparent pricing — the quote is the invoice</li>
+                <li>Direct local phone line, answered by a person</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="mid-cta">
         <div className="container">
           <a href="tel:+18887085771" className="btn-primary">Call for a Free Quote</a>
@@ -139,11 +169,23 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section className="guarantee">
+        <div className="container guarantee-content">
+          <h2>The Palace Clean Check™ Promise</h2>
+          <hr className="gold-rule" />
+          <p>
+            Every Palace unit passes a documented inspection before delivery: interior sanitized,
+            paper and sanitizer stocked, hardware tested, and exterior washed. If a unit does not
+            meet the Palace Standard™ on arrival, we replace it at no charge. No argument, no delay.
+          </p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="container">
           <h2>Portable Restrooms. Royal Treatment.</h2>
-          <p>Fast dispatch, clean units, and service you can count on — for your next job, wedding, or event.</p>
-          <a href="tel:+18887085771" className="btn-primary">Call (888) 708-5771</a>
+          <p>Transparent pricing, confirmed delivery windows, and units that actually show up clean.</p>
+          <a href="tel:+18887085771" className="btn-primary">Call (888) 708-5771 for a Free Quote</a>
         </div>
       </section>
 
