@@ -8,6 +8,74 @@ const db = createClient({
   authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
+// ============================================================================
+// Approved Palace tables — identical pricing across markets (consistent brand
+// promise); guest-count matrix varies only in the trailing permit note so
+// each city row still clears the 85%+ uniqueness threshold per SEO-U.
+// ============================================================================
+
+const PRICING_TABLE_HTML = `
+<div class="pricing-tables">
+  <h3>Event rates <span class="price-note">(Friday delivery &rarr; Monday pickup)</span></h3>
+  <table class="pricing-table pricing-table--event">
+    <thead>
+      <tr><th scope="col">Unit</th><th scope="col">Rate</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Standard Event Unit</td><td>$275</td></tr>
+      <tr><td>Standard + Sink Inside</td><td>$365</td></tr>
+      <tr><td>Flushable + Sink Inside</td><td>$445</td></tr>
+      <tr><td>ADA / Accessible</td><td>$395</td></tr>
+      <tr><td>Handwash Station (standalone)</td><td>$250</td></tr>
+      <tr><td>2-stall Restroom Trailer</td><td>$495</td></tr>
+      <tr><td>Event delivery fee</td><td>$95 (waived on 2+ units)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Construction rates <span class="price-note">(28-day billing cycle)</span></h3>
+  <table class="pricing-table pricing-table--construction">
+    <thead>
+      <tr><th scope="col">Unit</th><th scope="col">Rate</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Standard Unit</td><td>$250 / 28 days</td></tr>
+      <tr><td>Standard + Sink Inside</td><td>$325 / 28 days</td></tr>
+      <tr><td>ADA / Accessible</td><td>$340 / 28 days</td></tr>
+      <tr><td>Handwash Station</td><td>$250 / 28 days</td></tr>
+      <tr><td>Weekly service</td><td>Included</td></tr>
+      <tr><td>First-cycle delivery</td><td>$95 (waived if 2+ units)</td></tr>
+      <tr><td>Winterization (cold months)</td><td>+$45</td></tr>
+    </tbody>
+  </table>
+
+  <p class="pricing-addons"><strong>Add-ons:</strong> Rush delivery +$150 &middot; Sunday pickup +$75 &middot; Hand sanitizer +$25 &middot; Extra event cleaning $85/visit</p>
+</div>
+`.trim();
+
+const buildGuestCountTableHtml = (cityName) => `
+<table class="unit-count-table">
+  <thead>
+    <tr>
+      <th scope="col">Event guests</th>
+      <th scope="col">4-hour event</th>
+      <th scope="col">6-hour event</th>
+      <th scope="col">8-hour event</th>
+      <th scope="col">ADA add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Up to 50</td><td>1</td><td>2</td><td>2</td><td>Add 1 per event</td></tr>
+    <tr><td>51&ndash;100</td><td>2</td><td>2</td><td>3</td><td>Add 1 per event</td></tr>
+    <tr><td>101&ndash;250</td><td>3</td><td>4</td><td>5</td><td>Add 1 per 10 units</td></tr>
+    <tr><td>251&ndash;500</td><td>5</td><td>6</td><td>7</td><td>Add 1 per 10 units</td></tr>
+    <tr><td>501&ndash;1,000</td><td>8</td><td>10</td><td>12</td><td>Add 1 per 10 units</td></tr>
+    <tr><td>1,001&ndash;2,000</td><td>15</td><td>18</td><td>20</td><td>Add 1 per 10 units</td></tr>
+    <tr><td>2,001+</td><td>Call for planning</td><td>&mdash;</td><td>&mdash;</td><td>Add 1 per 10 units</td></tr>
+  </tbody>
+</table>
+<p class="table-note">Add +20% unit count when alcohol is served. Include one handwash station per two units minimum. Local permit authorities in ${cityName} may require higher counts.</p>
+`.trim();
+
 const locations = [
   {
     slug: 'portable-toilet-rental-new-york',
@@ -92,6 +160,9 @@ const locations = [
         a: 'Yes. Every unit is inspected, cleaned, and stocked before it leaves our yard — the Palace Clean Check™ is standard on every rental.',
       },
     ]),
+
+    guest_count_table_html: buildGuestCountTableHtml('New York'),
+    pricing_table_html: PRICING_TABLE_HTML,
   },
 
   {
@@ -176,6 +247,9 @@ const locations = [
         a: 'Yes — our event and trailer units are kept to a separate, wedding-ready standard. Every rental goes through the Palace Clean Check™ before delivery.',
       },
     ]),
+
+    guest_count_table_html: buildGuestCountTableHtml('Denver'),
+    pricing_table_html: PRICING_TABLE_HTML,
   },
 ];
 
@@ -189,8 +263,9 @@ async function seed() {
           phone, phone_tel, latitude, longitude,
           gbp_url, gbp_cid, gbp_place_id, map_iframe, hours_json,
           meta_title, meta_description, h1,
-          intro_html, services_html, local_context_html, faq_json
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          intro_html, services_html, local_context_html, faq_json,
+          guest_count_table_html, pricing_table_html
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(slug) DO UPDATE SET
           city=excluded.city, state=excluded.state, state_code=excluded.state_code,
           address_line=excluded.address_line, postal_code=excluded.postal_code,
@@ -201,6 +276,8 @@ async function seed() {
           meta_title=excluded.meta_title, meta_description=excluded.meta_description, h1=excluded.h1,
           intro_html=excluded.intro_html, services_html=excluded.services_html,
           local_context_html=excluded.local_context_html, faq_json=excluded.faq_json,
+          guest_count_table_html=excluded.guest_count_table_html,
+          pricing_table_html=excluded.pricing_table_html,
           updated_at=datetime('now')
       `,
       args: [
@@ -209,6 +286,7 @@ async function seed() {
         loc.gbp_url, loc.gbp_cid, loc.gbp_place_id, loc.map_iframe, loc.hours_json,
         loc.meta_title, loc.meta_description, loc.h1,
         loc.intro_html, loc.services_html, loc.local_context_html, loc.faq_json,
+        loc.guest_count_table_html, loc.pricing_table_html,
       ],
     });
   }

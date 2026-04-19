@@ -29,7 +29,11 @@ CREATE TABLE IF NOT EXISTS locations (
   services_html TEXT NOT NULL,                  -- Locally-relevant services
   local_context_html TEXT NOT NULL,             -- City-specific (permits, events, geo)
   faq_json TEXT NOT NULL,                       -- [{q,a},...] city-specific FAQs
-  
+
+  -- Approved Palace tables (confirmed ranking signal per SEO-U — tables in lower-half of page)
+  guest_count_table_html TEXT,                  -- Event-guests → unit-count planning matrix
+  pricing_table_html TEXT,                      -- Event + construction rate cards
+
   created_at TEXT DEFAULT (datetime('now')),
   updated_at TEXT DEFAULT (datetime('now'))
 );

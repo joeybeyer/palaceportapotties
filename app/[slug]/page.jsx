@@ -86,6 +86,36 @@ export default async function LocationPage({ params }) {
         <div className="container" dangerouslySetInnerHTML={{ __html: loc.local_context_html }} />
       </section>
 
+      {/*
+        Approved Palace tables — SEO-U signal: tables in the lower-half of the
+        page are a confirmed ranking booster. Guest-count matrix covers
+        informational intent; pricing table covers commercial intent.
+        Intros live here (not in DB) so the wording stays consistent across
+        markets while the city name still threads through for local relevance.
+      */}
+      <section className="palace-tables">
+        <div className="container">
+          <h2>How Many Units Does Your {loc.city} Event Need?</h2>
+          <hr className="gold-rule" />
+          <p>
+            Sizing an event is where most providers let clients down. Below is the official
+            Palace planning matrix our dispatch team uses to spec every {loc.city} booking — built
+            from EPA event guidance, years of on-the-ground data, and the real-world throughput of
+            a clean, serviced unit.
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: loc.guest_count_table_html }} />
+
+          <h2>Palace Porta Potties {loc.city} Rental Pricing</h2>
+          <hr className="gold-rule" />
+          <p>
+            Transparent rates — no buried fees, no delivery-window surprises. The pricing below
+            applies to every {loc.city} rental, whether you are booking a one-day event or a
+            multi-month construction rotation.
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: loc.pricing_table_html }} />
+        </div>
+      </section>
+
       <section className="faqs">
         <div className="container">
           <h2>Frequently Asked Questions About Rentals in {loc.city}</h2>
@@ -123,7 +153,7 @@ export default async function LocationPage({ params }) {
             name: 'Palace Porta Potties',
             url: `https://palaceportapotties.com/${loc.slug}/`,
             telephone: loc.phone_tel,
-            image: 'https://palaceportapotties.com/logo.png',
+            image: 'https://palaceportapotties.com/mark.svg',
             address: {
               '@type': 'PostalAddress',
               streetAddress: loc.address_line,
