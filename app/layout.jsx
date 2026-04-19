@@ -3,6 +3,7 @@ export const dynamic = 'force-dynamic';
 
 import { getAllLocations } from '@/lib/db';
 import Link from 'next/link';
+import Header from '@/components/Header';
 import './globals.css';
 
 export const metadata = {
@@ -19,24 +20,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className="site-header">
-          <div className="nav-wrap">
-            <Link href="/" className="brand-logo" aria-label="Palace Porta Potties home">
-              <img src="/logo.svg" alt="Palace Porta Potties" />
-            </Link>
-            <nav className="site-nav">
-              <Link href="/">Portable Toilet Rental</Link>
-              {locations.map((loc) => (
-                <Link key={loc.slug} href={`/${loc.slug}/`}>
-                  {loc.city}
-                </Link>
-              ))}
-            </nav>
-            <a href="tel:+18887085771" className="cta-phone">
-              Call (888) 708-5771
-            </a>
-          </div>
-        </header>
+        <Header locations={locations} />
 
         <main>{children}</main>
 
