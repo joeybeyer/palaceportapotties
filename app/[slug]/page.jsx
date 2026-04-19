@@ -3,10 +3,9 @@ import { getLocationBySlug, getAllSlugs } from '@/lib/db';
 
 export const runtime = 'edge';
 
-// Static params for all locations at build time
+// Return empty so all routes render on-demand at runtime (env vars unavailable at build on CF Pages)
 export async function generateStaticParams() {
-  const slugs = await getAllSlugs();
-  return slugs.map((slug) => ({ slug }));
+  return [];
 }
 
 // Per-page dynamic metadata driven by DB
