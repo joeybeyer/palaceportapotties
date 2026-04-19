@@ -27,15 +27,15 @@ const phaseFlag = args.find((a) => a.startsWith('--phase='));
 const phase = phaseFlag ? phaseFlag.split('=')[1] : null;
 const force = args.includes('--force');
 
-if (!phase || !['1', '2'].includes(phase)) {
-  console.error('Usage: node scripts/generate-images.mjs --phase=1|2 [--force]');
+if (!phase || !['1', '2', '3'].includes(phase)) {
+  console.error('Usage: node scripts/generate-images.mjs --phase=1|2|3 [--force]');
   process.exit(1);
 }
 
 // ── Load manifest ──
 const ROOT = resolve(import.meta.dirname, '..');
 const manifest = JSON.parse(readFileSync(join(ROOT, 'scripts', 'image-manifest.json'), 'utf8'));
-const entries = phase === '1' ? manifest.phase1 : manifest.phase2;
+const entries = phase === '1' ? manifest.phase1 : phase === '2' ? manifest.phase2 : manifest.phase3;
 
 const LOG_FILE = join(ROOT, 'scripts', 'image-generation-log.txt');
 

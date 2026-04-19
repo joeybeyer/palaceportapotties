@@ -218,5 +218,100 @@
         "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
       ]
     }
+  ],
+  "phase3": [
+    {
+      "filename": "CHI-HERO.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A cluster of three Palace Porta Potties portable toilet units matching the reference, arranged along a cordoned-off section of Chicago sidewalk near the Chicago River. The iconic Chicago 'L' elevated train crossing a bridge in the soft-focused background. Early morning, cool blue-hour light reflecting off the river surface, warm vintage-style streetlamp accents. Wet sidewalk after rain, no crowds, quiet pre-event atmosphere. Commercial editorial photography, photorealistic, no CGI look, sharp focus, naturalistic depth of field.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    },
+    {
+      "filename": "CHI-UNIT-LOOP.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A Palace Porta Potties portable toilet unit matching the reference, positioned on a clean concrete pad in Chicago's Loop district. Surrounding context: classic Chicago architecture with Art Deco facades, 'L' tracks overhead casting geometric shadows. Midday overcast light, typical Chicago grey sky. A construction barrier partially visible. No people. Clean, urban, utilitarian. Commercial editorial photography, photorealistic.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "3:2",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-FULTON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A narrow-profile Palace Porta Potties portable toilet unit matching the reference, being crane-lifted to an upper floor of a Fulton Market high-rise construction site in Chicago. Steel I-beams, exposed concrete decking, construction netting visible. Two uniformed Palace crew members in navy polos (matching uniform reference) guide the unit from below. Overcast Chicago sky. Candid action shot, faces in soft focus. Medium-format cinematic realism.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp",
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:2",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-WINTER.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A Palace Porta Potties portable toilet unit matching the reference, on a snowy Chicago construction site. Frozen ground, chain-link fence with windscreen, Chicago skyline with Willis Tower silhouette visible in the hazy distance. Fresh snow on the ground, subtly bulkier insulated variant with frost on the stainless hardware. A uniformed Palace crew member in a heavier navy work jacket with gold crown embroidery checks a clipboard. Mid-morning cold clear winter light, breath visible. Photorealistic, editorial.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp",
+        "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
+      ],
+      "aspect_ratio": "3:2",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-FILM.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A sleek Palace Porta Potties 2-stall restroom trailer in midnight navy with gold accent trim, parked on a Chicago film set base camp in a Pilsen side street. Production trucks lined up, crew cables on wet asphalt, a camera dolly visible in foreground. Brick two-flat buildings typical of Chicago's South Side neighborhoods in the background. Overcast Chicago daylight. One production crew member in anonymous dark jacket walks past. Trailer is pristine. Editorial, not staged.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-PILSEN.png",
+      "output_dir": "public/images/generated",
+      "prompt": "Two Palace Porta Potties portable toilet units matching the reference, positioned behind a temporary barrier on a Pilsen street during a cultural street festival setup. Background: colorful murals on brick buildings typical of Chicago's Pilsen neighborhood, string lights being hung across the street, vendor tents partially assembled. Warm late-afternoon Chicago light. A single event staffer seen from behind carries folding chairs. Pedestrian eye-level shot. Editorial, vibrant but professional.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "3:2",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-ADA.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A wider Palace Porta Potties ADA-accessible portable toilet unit matching the reference but with ADA-accessible width, plus a small gold ADA accessibility icon on the door. Positioned on a paved path at Chicago's Grant Park with Buckingham Fountain softly out of focus in the background. Gentle sloped ramp entry, brushed stainless grab bar visible through partially open door. Soft dappled tree-shade lighting, Lake Michigan visible in the far distance. Empty, dignified, inviting. Editorial.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "4:5",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-MARATHON.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A tight-packed row of fourteen Palace Porta Potties portable toilet units matching the reference, arranged in a line along the edge of a pre-race staging area in Chicago's Grant Park on a misty early morning. Orange construction cones demarcate the perimeter. A Palace service truck (matching truck reference) visible in the background near Columbus Drive. No runners yet — pre-event calm. Cool blue-grey Lake Michigan light, mist catching in the trees. Chicago skyline with skyscrapers in the background. Wide documentary framing emphasizing scale and order.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp",
+        "https://palaceportapotties.com/brand/references/palace-truck-reference.webp"
+      ],
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    },
+    {
+      "filename": "CHI-UNIT-LAKEFRONT.png",
+      "output_dir": "public/images/generated",
+      "prompt": "A Palace Porta Potties portable toilet unit matching the reference, positioned near Chicago's North Avenue Beach with Lake Michigan stretching to the horizon. The distinctive boat-shaped North Avenue Beach House visible in the soft-focused background. Early morning golden light reflecting off the lake surface. Clean sand, empty beach pre-event. Cinematic wide shot, unit in left third of frame, lake in right two-thirds. Commercial editorial photography, photorealistic.",
+      "image_input": [
+        "https://palaceportapotties.com/brand/references/palace-unit-reference.webp"
+      ],
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
   ]
 }

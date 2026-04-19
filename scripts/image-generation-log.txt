@@ -312,3 +312,86 @@
 [2026-04-19T16:49:55.342Z]   Success: 18  |  Skipped: 0  |  Failed: 0
 [2026-04-19T16:49:55.342Z] ────────────────────────────────────────
 
+[2026-04-19T17:02:06.199Z] 
+============================================================
+[2026-04-19T17:02:06.206Z] Phase 3 — 9 images — force=false
+[2026-04-19T17:02:06.207Z] ============================================================
+[2026-04-19T17:02:06.208Z] START CHI-HERO.png (16:9, 2K)
+[2026-04-19T17:02:06.257Z] START CHI-UNIT-LOOP.png (3:2, 1K)
+[2026-04-19T17:02:06.699Z]   taskId: 792c1aa37e7a7ee3a618a82326d62993
+[2026-04-19T17:02:06.710Z]   taskId: 40cb8e6d455aba7ae5936af046e8bf7f
+[2026-04-19T17:02:06.952Z]   polling 792c1aa37e7a7ee3a618a82326d62993 — state=waiting progress=?% (0s)
+[2026-04-19T17:02:06.959Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (0s)
+[2026-04-19T17:02:15.255Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (9s)
+[2026-04-19T17:02:15.261Z]   polling 792c1aa37e7a7ee3a618a82326d62993 — state=waiting progress=?% (9s)
+[2026-04-19T17:02:23.530Z]   polling 792c1aa37e7a7ee3a618a82326d62993 — state=waiting progress=?% (17s)
+[2026-04-19T17:02:23.535Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (17s)
+[2026-04-19T17:02:31.845Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (25s)
+[2026-04-19T17:02:31.846Z]   polling 792c1aa37e7a7ee3a618a82326d62993 — state=waiting progress=?% (25s)
+[2026-04-19T17:02:40.151Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (33s)
+[2026-04-19T17:02:40.152Z]   polling 792c1aa37e7a7ee3a618a82326d62993 — state=waiting progress=?% (33s)
+[2026-04-19T17:02:48.431Z]   polling 40cb8e6d455aba7ae5936af046e8bf7f — state=waiting progress=?% (42s)
+[2026-04-19T17:02:50.065Z] DONE CHI-UNIT-LOOP.png — 44s
+[2026-04-19T17:02:50.066Z] START CHI-UNIT-FULTON.png (3:2, 1K)
+[2026-04-19T17:02:50.410Z]   taskId: e038599cddbafc4bd3eb2e21986811b3
+[2026-04-19T17:02:50.660Z]   polling e038599cddbafc4bd3eb2e21986811b3 — state=waiting progress=?% (0s)
+[2026-04-19T17:02:58.915Z]   polling e038599cddbafc4bd3eb2e21986811b3 — state=waiting progress=?% (9s)
+[2026-04-19T17:03:01.457Z] DONE CHI-HERO.png — 55s
+[2026-04-19T17:03:01.458Z] START CHI-UNIT-WINTER.png (3:2, 1K)
+[2026-04-19T17:03:01.878Z]   taskId: 50ddd90f14d6878487de52738b9aa8e9
+[2026-04-19T17:03:02.124Z]   polling 50ddd90f14d6878487de52738b9aa8e9 — state=waiting progress=?% (0s)
+[2026-04-19T17:03:07.205Z]   polling e038599cddbafc4bd3eb2e21986811b3 — state=waiting progress=?% (17s)
+[2026-04-19T17:03:10.384Z]   polling 50ddd90f14d6878487de52738b9aa8e9 — state=waiting progress=?% (9s)
+[2026-04-19T17:03:15.494Z]   polling e038599cddbafc4bd3eb2e21986811b3 — state=waiting progress=?% (25s)
+[2026-04-19T17:03:18.642Z]   polling 50ddd90f14d6878487de52738b9aa8e9 — state=waiting progress=?% (17s)
+[2026-04-19T17:03:23.791Z]   polling e038599cddbafc4bd3eb2e21986811b3 — state=waiting progress=?% (33s)
+[2026-04-19T17:03:26.907Z]   polling 50ddd90f14d6878487de52738b9aa8e9 — state=waiting progress=?% (25s)
+[2026-04-19T17:03:33.058Z] DONE CHI-UNIT-FULTON.png — 43s
+[2026-04-19T17:03:33.058Z] START CHI-UNIT-FILM.png (16:9, 1K)
+[2026-04-19T17:03:33.386Z]   taskId: 1912fe1696308fab0666de20fdc10d22
+[2026-04-19T17:03:33.633Z]   polling 1912fe1696308fab0666de20fdc10d22 — state=waiting progress=?% (0s)
+[2026-04-19T17:03:35.177Z]   polling 50ddd90f14d6878487de52738b9aa8e9 — state=waiting progress=?% (33s)
+[2026-04-19T17:03:41.938Z]   polling 1912fe1696308fab0666de20fdc10d22 — state=waiting progress=?% (9s)
+[2026-04-19T17:03:44.057Z] DONE CHI-UNIT-WINTER.png — 43s
+[2026-04-19T17:03:44.057Z] START CHI-UNIT-PILSEN.png (3:2, 1K)
+[2026-04-19T17:03:44.468Z]   taskId: 15a7fa6cb8ca0ebc5459f7518f3db775
+[2026-04-19T17:03:44.772Z]   polling 15a7fa6cb8ca0ebc5459f7518f3db775 — state=waiting progress=?% (0s)
+[2026-04-19T17:03:50.229Z]   polling 1912fe1696308fab0666de20fdc10d22 — state=waiting progress=?% (17s)
+[2026-04-19T17:03:53.038Z]   polling 15a7fa6cb8ca0ebc5459f7518f3db775 — state=waiting progress=?% (9s)
+[2026-04-19T17:03:58.518Z]   polling 1912fe1696308fab0666de20fdc10d22 — state=waiting progress=?% (25s)
+[2026-04-19T17:04:01.304Z]   polling 15a7fa6cb8ca0ebc5459f7518f3db775 — state=waiting progress=?% (17s)
+[2026-04-19T17:04:06.798Z]   polling 1912fe1696308fab0666de20fdc10d22 — state=waiting progress=?% (33s)
+[2026-04-19T17:04:09.557Z]   polling 15a7fa6cb8ca0ebc5459f7518f3db775 — state=waiting progress=?% (25s)
+[2026-04-19T17:04:15.661Z] DONE CHI-UNIT-FILM.png — 43s
+[2026-04-19T17:04:15.661Z] START CHI-UNIT-ADA.png (4:5, 1K)
+[2026-04-19T17:04:16.005Z]   taskId: 181c9e3bdefde102f6a9f08bd02caf97
+[2026-04-19T17:04:16.262Z]   polling 181c9e3bdefde102f6a9f08bd02caf97 — state=waiting progress=?% (0s)
+[2026-04-19T17:04:17.825Z]   polling 15a7fa6cb8ca0ebc5459f7518f3db775 — state=waiting progress=?% (33s)
+[2026-04-19T17:04:24.575Z]   polling 181c9e3bdefde102f6a9f08bd02caf97 — state=waiting progress=?% (9s)
+[2026-04-19T17:04:27.732Z] DONE CHI-UNIT-PILSEN.png — 44s
+[2026-04-19T17:04:27.733Z] START CHI-UNIT-MARATHON.png (16:9, 1K)
+[2026-04-19T17:04:28.137Z]   taskId: 9b46b12f8e5ea2b590f1e61eea1ad775
+[2026-04-19T17:04:28.389Z]   polling 9b46b12f8e5ea2b590f1e61eea1ad775 — state=waiting progress=?% (0s)
+[2026-04-19T17:04:32.848Z]   polling 181c9e3bdefde102f6a9f08bd02caf97 — state=waiting progress=?% (17s)
+[2026-04-19T17:04:36.645Z]   polling 9b46b12f8e5ea2b590f1e61eea1ad775 — state=waiting progress=?% (9s)
+[2026-04-19T17:04:41.136Z]   polling 181c9e3bdefde102f6a9f08bd02caf97 — state=waiting progress=?% (25s)
+[2026-04-19T17:04:44.907Z]   polling 9b46b12f8e5ea2b590f1e61eea1ad775 — state=waiting progress=?% (17s)
+[2026-04-19T17:04:49.418Z]   polling 181c9e3bdefde102f6a9f08bd02caf97 — state=waiting progress=?% (33s)
+[2026-04-19T17:04:53.173Z]   polling 9b46b12f8e5ea2b590f1e61eea1ad775 — state=waiting progress=?% (25s)
+[2026-04-19T17:04:58.688Z] DONE CHI-UNIT-ADA.png — 43s
+[2026-04-19T17:04:58.689Z] START CHI-UNIT-LAKEFRONT.png (16:9, 1K)
+[2026-04-19T17:04:59.103Z]   taskId: cd1b11e0b4e8a93a48767a4f6cfcf3c7
+[2026-04-19T17:04:59.352Z]   polling cd1b11e0b4e8a93a48767a4f6cfcf3c7 — state=waiting progress=?% (0s)
+[2026-04-19T17:05:01.442Z]   polling 9b46b12f8e5ea2b590f1e61eea1ad775 — state=waiting progress=?% (33s)
+[2026-04-19T17:05:07.645Z]   polling cd1b11e0b4e8a93a48767a4f6cfcf3c7 — state=waiting progress=?% (9s)
+[2026-04-19T17:05:10.703Z] DONE CHI-UNIT-MARATHON.png — 43s
+[2026-04-19T17:05:15.929Z]   polling cd1b11e0b4e8a93a48767a4f6cfcf3c7 — state=waiting progress=?% (17s)
+[2026-04-19T17:05:24.215Z]   polling cd1b11e0b4e8a93a48767a4f6cfcf3c7 — state=waiting progress=?% (25s)
+[2026-04-19T17:05:32.516Z]   polling cd1b11e0b4e8a93a48767a4f6cfcf3c7 — state=waiting progress=?% (33s)
+[2026-04-19T17:05:41.367Z] DONE CHI-UNIT-LAKEFRONT.png — 43s
+[2026-04-19T17:05:41.367Z] 
+────────────────────────────────────────
+[2026-04-19T17:05:41.367Z] SUMMARY
+[2026-04-19T17:05:41.368Z]   Success: 9  |  Skipped: 0  |  Failed: 0
+[2026-04-19T17:05:41.368Z] ────────────────────────────────────────
+
