@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { getAllLocations } from '@/lib/db';
 import Link from 'next/link';
 import './globals.css';
