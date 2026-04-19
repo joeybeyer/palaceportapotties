@@ -12,6 +12,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const loc = await getLocationBySlug(params.slug);
   if (!loc) return {};
+  const ogImage = HERO_IMAGES[loc.slug];
   return {
     title: loc.meta_title,
     description: loc.meta_description,
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }) {
       description: loc.meta_description,
       url: `https://palaceportapotties.com/${loc.slug}/`,
       type: 'website',
+      ...(ogImage && { images: [{ url: `https://palaceportapotties.com${ogImage}`, width: 1920, height: 1080 }] }),
     },
   };
 }
@@ -33,6 +35,33 @@ const HERO_IMAGES = {
   'portable-toilet-rental-chicago': '/images/generated/CHI-HERO.webp',
 };
 
+const UNIT_IMAGES = {
+  'portable-toilet-rental-new-york': [
+    { src: '/images/generated/NY-UNIT-HIGHRISE.webp', alt: 'Portable toilet at a New York high-rise construction site' },
+    { src: '/images/generated/NY-UNIT-FILM.webp', alt: 'Restroom trailer at a New York film production base camp' },
+    { src: '/images/generated/NY-UNIT-SIDEWALK.webp', alt: 'Event portable restroom on a New York City sidewalk' },
+    { src: '/images/generated/NY-UNIT-ADA.webp', alt: 'ADA-accessible portable restroom in a New York park' },
+    { src: '/images/generated/NY-UNIT-MARATHON.webp', alt: 'Portable toilet cluster at a New York marathon start village' },
+  ],
+  'portable-toilet-rental-denver': [
+    { src: '/images/generated/DV-UNIT-WINTER.webp', alt: 'Portable toilet at a Denver construction site in winter' },
+    { src: '/images/generated/DV-UNIT-WATERLESS.webp', alt: 'Waterless portable restroom at a dry Denver trail site' },
+    { src: '/images/generated/DV-UNIT-MOUNTAIN.webp', alt: 'Portable toilet at a Denver mountain event venue' },
+    { src: '/images/generated/DV-UNIT-ADA-PARK.webp', alt: 'ADA-accessible unit at a Denver park event' },
+    { src: '/images/generated/DV-UNIT-MARATHON.webp', alt: 'Portable toilet bank at a Denver race start line' },
+  ],
+  'portable-toilet-rental-chicago': [
+    { src: '/images/generated/CHI-UNIT-LOOP.webp', alt: 'Portable restroom at a Chicago Loop construction site' },
+    { src: '/images/generated/CHI-UNIT-FULTON.webp', alt: 'Portable toilet near a Fulton Market event venue in Chicago' },
+    { src: '/images/generated/CHI-UNIT-WINTER.webp', alt: 'Portable restroom at a Chicago winter construction site' },
+    { src: '/images/generated/CHI-UNIT-FILM.webp', alt: 'Restroom trailer at a Chicago film production set' },
+    { src: '/images/generated/CHI-UNIT-PILSEN.webp', alt: 'Portable toilet at a Pilsen community festival in Chicago' },
+    { src: '/images/generated/CHI-UNIT-ADA.webp', alt: 'ADA-accessible portable restroom at a Chicago park' },
+    { src: '/images/generated/CHI-UNIT-MARATHON.webp', alt: 'Portable toilet cluster at the Chicago Marathon' },
+    { src: '/images/generated/CHI-UNIT-LAKEFRONT.webp', alt: 'Portable restroom along the Chicago lakefront trail' },
+  ],
+};
+
 export default async function LocationPage({ params }) {
   const loc = await getLocationBySlug(params.slug);
   if (!loc) notFound();
@@ -40,6 +69,7 @@ export default async function LocationPage({ params }) {
   const hours = JSON.parse(loc.hours_json);
   const faqs = JSON.parse(loc.faq_json);
   const heroImage = HERO_IMAGES[loc.slug];
+  const unitImages = UNIT_IMAGES[loc.slug] || [];
 
   return (
     <>
@@ -94,6 +124,20 @@ export default async function LocationPage({ params }) {
       <section className="services">
         <div className="container" dangerouslySetInnerHTML={{ __html: loc.services_html }} />
       </section>
+
+      {unitImages.length > 0 && (
+        <section className="unit-gallery">
+          <div className="container">
+            <h2>Our Units in {loc.city}</h2>
+            <hr className="gold-rule" />
+            <div className="unit-gallery-grid">
+              {unitImages.map((img, i) => (
+                <img key={i} src={img.src} alt={img.alt} loading="lazy" width="400" height="400" />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="local-context">
         <div className="container" dangerouslySetInnerHTML={{ __html: loc.local_context_html }} />
@@ -166,7 +210,7 @@ export default async function LocationPage({ params }) {
             name: 'Palace Porta Potties',
             url: `https://palaceportapotties.com/${loc.slug}/`,
             telephone: loc.phone_tel,
-            image: 'https://palaceportapotties.com/mark.svg',
+            image: heroImage ? `https://palaceportapotties.com${heroImage}` : 'https://palaceportapotties.com/mark.svg',
             address: {
               '@type': 'PostalAddress',
               streetAddress: loc.address_line,

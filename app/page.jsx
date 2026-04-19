@@ -15,6 +15,7 @@ export const metadata = {
       'Clean units, fast delivery, and dependable service for events, weddings, and job sites.',
     url: 'https://palaceportapotties.com/',
     type: 'website',
+    images: [{ url: 'https://palaceportapotties.com/images/generated/HP-NATIONAL-HERO.webp', width: 1920, height: 1080 }],
   },
 };
 
@@ -94,6 +95,12 @@ export default async function HomePage() {
             <li><strong>Hand wash stations</strong> — pair with any unit for code compliance and guest comfort</li>
             <li><strong>Long-term service plans</strong> — scheduled cleaning, restocking, and placement management</li>
           </ul>
+          <div className="service-images">
+            <img src="/images/generated/STK-WEDDING.webp" alt="Palace Porta Potties restroom trailer at an outdoor wedding" loading="lazy" width="400" height="400" />
+            <img src="/images/generated/STK-CREW.webp" alt="Construction crew using Palace portable restrooms on a job site" loading="lazy" width="400" height="400" />
+            <img src="/images/generated/STK-HANDWASH.webp" alt="Palace Porta Potties hand wash station at an event" loading="lazy" width="400" height="400" />
+            <img src="/images/generated/STK-SERVICING.webp" alt="Palace technician servicing a portable restroom unit" loading="lazy" width="400" height="400" />
+          </div>
         </div>
       </section>
 

@@ -331,3 +331,41 @@ section + section { border-top: 1px solid var(--soft-silver); }
     margin: 0 auto;
   }
 }
+
+/* ── Unit gallery grid (city pages) ── */
+.unit-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.unit-gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 2px solid var(--soft-silver);
+  transition: border-color 0.2s;
+}
+.unit-gallery-grid img:hover {
+  border-color: var(--palace-gold);
+}
+
+/* ── Service images (homepage) ── */
+.service-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.service-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+@media (max-width: 768px) {
+  .service-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
