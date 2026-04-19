@@ -136,6 +136,53 @@ const locations = [
         <li><strong>Bronx</strong> — affordable housing boom with 14,700+ proposed units; Fordham Landing and River Avenue projects on the Harlem River waterfront</li>
         <li><strong>Staten Island</strong> — no subway connection, delivery via Verrazzano-Narrows Bridge only; North Shore waterfront redevelopment adding 2,400+ homes</li>
       </ul>
+
+      <h2>Palace New York Coverage Area</h2>
+      <hr class="gold-rule" />
+      <p>Palace dispatches from our Water Street yard in Lower Manhattan and delivers across all five boroughs. Same-day delivery is standard on most orders; longer-lead coordination is reserved for high-rise crane-lift jobs and large event buildouts.</p>
+      <div class="palace-tables">
+        <table>
+          <thead>
+            <tr><th scope="col">Borough / District</th><th scope="col">Typical delivery window</th><th scope="col">Common use cases</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Lower Manhattan / FiDi</td><td>Same-day (local yard)</td><td>Corporate events, construction sites, Seaport District programming</td></tr>
+            <tr><td>Midtown / Times Square</td><td>Same-day</td><td>High-rise construction, Broadway production support, street fairs</td></tr>
+            <tr><td>Hudson Yards / Chelsea</td><td>Same-day</td><td>Mega-project construction, gallery events, High Line programming</td></tr>
+            <tr><td>SoHo / Tribeca</td><td>Same-day</td><td>Film shoots, Tribeca Film Festival, cast-iron district events</td></tr>
+            <tr><td>Upper West / Upper East Side</td><td>Same-day</td><td>Central Park events, museum galas, residential construction</td></tr>
+            <tr><td>Harlem / Washington Heights</td><td>Same-day</td><td>Community events, residential construction, cultural festivals</td></tr>
+            <tr><td>Downtown Brooklyn / DUMBO</td><td>Same-day</td><td>Tower construction, Brooklyn Bridge Park events, tech campus builds</td></tr>
+            <tr><td>Williamsburg / Greenpoint</td><td>Same-day</td><td>Waterfront events, multifamily construction, weekend markets</td></tr>
+            <tr><td>Park Slope / Bed-Stuy</td><td>Same-day</td><td>Brownstone renovations, street fairs, Prospect Park events</td></tr>
+            <tr><td>Long Island City / Astoria</td><td>Same-day</td><td>High-rise construction, Astoria Park events, film production</td></tr>
+            <tr><td>Flushing Meadows / Jamaica</td><td>Same-day</td><td>Governors Ball, US Open, JFK terminal construction</td></tr>
+            <tr><td>South Bronx / Fordham</td><td>Same-day</td><td>Affordable housing construction, Yankee Stadium overflow, community events</td></tr>
+            <tr><td>Coney Island / Brighton Beach</td><td>Same-day</td><td>Mermaid Parade, boardwalk events, seasonal programming</td></tr>
+            <tr><td>Staten Island</td><td>Next-day standard</td><td>North Shore redevelopment, community events, residential construction</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">Emergency deliveries outside standard windows are handled case-by-case &mdash; call the dispatch line for rush availability.</p>
+      </div>
+
+      <h2>What Separates Palace from Other NYC Portable Toilet Providers</h2>
+      <hr class="gold-rule" />
+      <h3>What Palace does differently</h3>
+      <ul>
+        <li><strong>Water Street yard in Lower Manhattan</strong> &mdash; inside the five-borough grid, not stationed across the Hudson. NYC deliveries happen in NYC hours, not after a truck fights tunnel traffic from New Jersey.</li>
+        <li><strong>Congestion-pricing routing built in</strong> &mdash; we schedule deliveries and service visits to minimize Congestion Relief Zone entries at $9 per trip, saving clients money on long-term rotations without stretching service intervals.</li>
+        <li><strong>SAPO and DOT permit coordination handled in-house</strong> &mdash; Street Activity permits and sidewalk-closing permits are filed by the Palace dispatch team, not left to the client to navigate the multi-agency review.</li>
+        <li><strong>High-rise-ready from day one</strong> &mdash; narrow-profile units, crane-hook rigging, and freight elevator delivery are standard capabilities, not special requests. Hudson Yards, LIC, and Downtown Brooklyn tower sites are routine.</li>
+        <li><strong>Five-borough equipment matching</strong> &mdash; Manhattan high-rise gets a crane-lift head. Central Park event gets a cluster with handwash stations. Brownstone renovation in Park Slope gets a unit that fits through a row-house corridor.</li>
+      </ul>
+      <h3>Common mistakes NYC event planners make</h3>
+      <ul>
+        <li><strong>Filing SAPO permits late</strong> &mdash; SAPO reviews involve NYPD, FDNY, Sanitation, DOT, and the local Community Board. Filing less than three weeks out risks delays or denial. Start the permit conversation before booking the provider.</li>
+        <li><strong>Ignoring congestion-pricing costs</strong> &mdash; every delivery and service visit below 60th Street incurs a $9 toll. On a 12-week construction rotation with weekly service, that is $117 in tolls alone. Budget for it or choose a provider who routes efficiently.</li>
+        <li><strong>Underestimating unit count for alcohol events</strong> &mdash; the +20% rule when serving alcohol and the NYC Parks ADA requirement (compliant units for any permitted event over 20 attendees) are commonly missed in initial planning.</li>
+        <li><strong>Assuming ground-level delivery on tower sites</strong> &mdash; many Manhattan and Brooklyn construction sites have zero ground-level space. If the only access is a freight elevator or crane hook, you need a provider with high-rise units, not standard ground-drop equipment.</li>
+        <li><strong>Forgetting handwash stations</strong> &mdash; NYC Health Code requires handwashing facilities at food-serving events. Planners who forget until a week out pay rush delivery fees.</li>
+      </ul>
     `,
 
     faq_json: JSON.stringify([
@@ -225,6 +272,56 @@ const locations = [
         <li><strong>Weld County oil and gas</strong> — field support for drilling and completions across the county that produces 83% of Colorado&rsquo;s oil output</li>
         <li><strong>Ski resort summer construction</strong> — Keystone&rsquo;s $300M+ Kindred Resort, Breckenridge&rsquo;s Peak 9 Gondola, and Vail chairlift replacements during the June&ndash;October build window</li>
       </ul>
+
+      <h2>Palace Denver Coverage Area</h2>
+      <hr class="gold-rule" />
+      <p>Palace dispatches from our Cleveland Place yard in central Denver and delivers across the entire Front Range metro. Same-day delivery is standard on most orders; foothills and mountain venues require morning-window coordination.</p>
+      <div class="palace-tables">
+        <table>
+          <thead>
+            <tr><th scope="col">Area / Corridor</th><th scope="col">Typical delivery window</th><th scope="col">Common use cases</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Downtown / LoDo</td><td>Same-day (local yard)</td><td>Corporate events, Coors Field overflow, construction sites</td></tr>
+            <tr><td>RiNo / LoHi</td><td>Same-day</td><td>Multifamily construction, brewery events, gallery openings</td></tr>
+            <tr><td>Capitol Hill / Cheesman</td><td>Same-day</td><td>Pride events, residential construction, park programming</td></tr>
+            <tr><td>Cherry Creek</td><td>Same-day</td><td>Cherry Creek Arts Festival, luxury residential construction, shopping district events</td></tr>
+            <tr><td>Central Park (Stapleton)</td><td>Same-day</td><td>Large-scale redevelopment construction, community events, school builds</td></tr>
+            <tr><td>Sun Valley / Barnum</td><td>Same-day</td><td>Neighborhood redevelopment, Riverfront Park construction, community events</td></tr>
+            <tr><td>City Park / Sloan&rsquo;s Lake</td><td>Same-day</td><td>Colfax Marathon finish, Dragon Boat Festival, permitted park events</td></tr>
+            <tr><td>Highlands / Berkeley</td><td>Same-day</td><td>Residential infill, Tennyson Street events, ADU construction</td></tr>
+            <tr><td>Wash Park / Platt Park</td><td>Same-day</td><td>Neighborhood events, residential construction, South Pearl Street festivals</td></tr>
+            <tr><td>Aurora / Centennial</td><td>Same-day</td><td>Suburban construction, community events, industrial sites</td></tr>
+            <tr><td>Lakewood / Wheat Ridge</td><td>Same-day</td><td>Suburban construction, community events, I-70 corridor sites</td></tr>
+            <tr><td>Morrison / Red Rocks</td><td>Morning window (before 12 PM)</td><td>Concert events, wedding venues, amphitheatre support</td></tr>
+            <tr><td>Golden / Evergreen</td><td>Morning window (before 12 PM)</td><td>Foothills weddings, construction, community events</td></tr>
+            <tr><td>Boulder / Longmont</td><td>Next-day standard</td><td>BolderBoulder 10K, University events, construction</td></tr>
+            <tr><td>Castle Rock / Parker</td><td>Next-day standard</td><td>Suburban development, community events, I-25 corridor sites</td></tr>
+            <tr><td>Weld County (Greeley, Brighton)</td><td>Next-day standard</td><td>Oil and gas field support, agricultural events, construction</td></tr>
+            <tr><td>Ski resorts (Keystone, Breck, Vail)</td><td>Scheduled (48-hr lead)</td><td>Summer construction, resort events, chairlift replacement projects</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">Emergency deliveries outside standard windows are handled case-by-case &mdash; call the dispatch line for rush availability.</p>
+      </div>
+
+      <h2>What Separates Palace from Other Denver Portable Toilet Providers</h2>
+      <hr class="gold-rule" />
+      <h3>What Palace does differently</h3>
+      <ul>
+        <li><strong>Central Denver yard location</strong> &mdash; inside the metro grid, not stationed in a warehouse park off E-470. Denver deliveries happen in Denver hours, not after a truck fights I-25 traffic from the south suburbs.</li>
+        <li><strong>Altitude-rated equipment</strong> &mdash; every unit we deploy is selected for 5,280+ feet. UV-resistant shells, freeze-thaw-rated seals, and hand sanitizer that does not gel at sub-zero temperatures. Equipment built for sea-level climates fails here.</li>
+        <li><strong>Drought-ready waterless units</strong> &mdash; with Denver Water on Stage 1 restrictions, waterless units sidestep the consumption issue entirely. We carry enough inventory to convert a flush rotation to waterless within 48 hours.</li>
+        <li><strong>Mountain-access capability</strong> &mdash; trailers rated for the steep grades on CO-8 and CO-74 to Red Rocks, Morrison, Golden, and Evergreen. Morning delivery windows before afternoon thunderstorms are standard on foothills jobs.</li>
+        <li><strong>Front Range equipment matching</strong> &mdash; RiNo multifamily build gets a winterized construction head. Red Rocks wedding gets a mountain-access trailer. Weld County drilling pad gets a unit rated for field conditions.</li>
+      </ul>
+      <h3>Common mistakes Denver event planners make</h3>
+      <ul>
+        <li><strong>Ignoring the altitude factor</strong> &mdash; UV radiation at 5,280 feet is 15&ndash;20% higher than sea level, and units built for lower elevations degrade faster. Cheap plastic shells crack within one season. Ask about UV-rated equipment.</li>
+        <li><strong>Skipping winterization on fall bookings</strong> &mdash; Denver&rsquo;s first snow can hit in October. A long-term construction rental booked in September without winterization specified will fail when the first freeze-thaw cycle arrives.</li>
+        <li><strong>Booking flush units during drought restrictions</strong> &mdash; Denver Water&rsquo;s 2026 Stage 1 restrictions add surcharges for excess water use. Flush-type portable restrooms draw city water and add to your consumption total. Waterless units avoid the issue.</li>
+        <li><strong>Underestimating foothills delivery logistics</strong> &mdash; Red Rocks, Morrison, and Evergreen venues sit on narrow mountain roads. Afternoon thunderstorms roll in daily from May through September. Providers who schedule afternoon deliveries regularly miss windows.</li>
+        <li><strong>Forgetting ADA requirements</strong> &mdash; Denver Parks &amp; Recreation requires ADA-accessible units for any permitted public event. Planners who skip this in initial orders scramble for rush delivery at premium rates.</li>
+      </ul>
     `,
 
     faq_json: JSON.stringify([
@@ -251,6 +348,152 @@ const locations = [
     ]),
 
     guest_count_table_html: buildGuestCountTableHtml('Denver'),
+    pricing_table_html: PRICING_TABLE_HTML,
+  },
+
+  {
+    slug: 'portable-toilet-rental-chicago',
+    city: 'Chicago',
+    state: 'Illinois',
+    state_code: 'IL',
+    address_line: '1311 W 18th Pl',
+    postal_code: '60608',
+    phone: '(872) 366-7440',
+    phone_tel: '+18723667440',
+    latitude: 41.8568781,
+    longitude: -87.6593354,
+    gbp_url: 'https://maps.app.goo.gl/Sh2a4pP1mWaHMWvR7',
+    gbp_cid: '',
+    gbp_place_id: '',
+    map_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.5!2d-87.6593354!3d41.8568781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUxJzI0LjgiTiA4N8KwMzknMzMuNiJX!5e0!3m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    hours_json: JSON.stringify({
+      mon: 'Open 24 hours',
+      tue: 'Open 24 hours',
+      wed: 'Open 24 hours',
+      thu: 'Open 24 hours',
+      fri: 'Open 24 hours',
+      sat: 'Open 24 hours',
+      sun: 'Open 24 hours',
+    }),
+
+    meta_title: 'Portable Toilet Rental Chicago: Official Same-Day Delivery 2026',
+    meta_description:
+      'Palace delivers clean, professionally serviced portable restrooms across Chicago \u2014 Loop to Lakeview, Pilsen to the North Side. Permit coordination, winterization, and same-week dispatch from our 18th Place yard.',
+    h1: 'Portable Toilet Rental Chicago',
+
+    intro_html: `<p>Running a <strong>portable toilet rental Chicago</strong> job means planning around CDOT public-way permits, Chicago Department of Buildings inspections, Streets &amp; Sanitation windows, and the freeze-thaw reality of a city that swings from &minus;15&deg;F polar vortex to 95&deg;F lake-effect humidity within a single year. Between the Loop&rsquo;s loading-zone restrictions, Fulton Market&rsquo;s construction crane density, and Grant Park&rsquo;s festival permitting, Chicago logistics filter out providers who treat every delivery the same. Our Pilsen location on 18th Place was chosen because the yard sits inside the city grid &mdash; close enough to the Loop for same-day dispatch, close enough to the Stevenson for construction runs out to the suburbs, and close enough to Lake Shore Drive to reach every lakefront event without fighting Dan Ryan traffic.</p>`,
+
+    services_html: `
+      <h2>Units Built for Chicago Conditions</h2>
+      <hr class="gold-rule" />
+      <p>Chicago is 234 square miles of dense grid, industrial corridor, and lakefront, and every site has its own access problem. We stock unit types matched to the way this city actually works:</p>
+      <ul>
+        <li><strong>Winterized construction heads</strong> &mdash; insulated shells and anti-freeze holding-tank treatment for jobsites running through the 38 days per year Chicago averages below freezing, plus polar vortex events that can hold the city at &minus;20&deg;F for a week</li>
+        <li><strong>High-rise construction units</strong> &mdash; narrow-profile hoisted units for tower sites in Fulton Market, Streeterville, and the West Loop where crane-lift delivery is the only way to reach upper floors</li>
+        <li><strong>Film and TV production trailers</strong> &mdash; base-camp-grade restroom trailers with climate control, deployed regularly on Chicago PD, Chicago Fire, Chicago Med, The Bear, and Power Book IV base camps across Cinespace Chicago Film Studios and neighborhood location shoots</li>
+        <li><strong>Sidewalk-legal event units</strong> &mdash; trailered platforms that satisfy CDOT clearance rules for Chicago Park District events, Mexican Independence Day Parade staging along Cermak, and Pilsen street festivals</li>
+        <li><strong>ADA-accessible units</strong> &mdash; required by the Chicago Park District for any permitted lakefront event; we deliver compliant units with ground-level entry and grab bars</li>
+        <li><strong>Marathon and race-day clusters</strong> &mdash; the Bank of America Chicago Marathon draws 45,000 runners through all 29 neighborhoods and requires roughly 1,400 portable toilets across start corrals in Grant Park and 20+ aid stations along the course; we supply high-volume race support from Grant Park to Washington Park</li>
+      </ul>
+    `,
+
+    local_context_html: `
+      <h2>Navigating Chicago Permits, Weather, and Neighborhood Logistics</h2>
+      <hr class="gold-rule" />
+      <p>Every portable toilet placed on public property in Chicago requires coordination through the Chicago Department of Transportation&rsquo;s Public Way Use permit system. CDOT reviews involve the Department of Streets &amp; Sanitation, the Chicago Police Department&rsquo;s event permitting desk, and &mdash; for any placement within a historic district or landmark boundary &mdash; the Commission on Chicago Landmarks. Standard public-way applications run $100 for the first 100 square feet with additional fees for extended placements, and Chicago requires a minimum five-foot accessible pedestrian path maintained around any obstruction. Lakefront events inside Grant Park, Millennium Park, or Soldier Field perimeters require Chicago Park District permits, which have separate lead times.</p>
+      <p>Winter is a logistics variable that Sun Belt providers never see. From December through March, Chicago averages 38 inches of snowfall, and the city&rsquo;s 2019 polar vortex event held temperatures below &minus;20&deg;F for five consecutive days &mdash; cold enough to crack holding tanks and freeze service trucks. Every Palace winter rental ships with anti-freeze treatment, insulated shells on long-term units, and a servicing schedule built around the freeze-thaw reality of Chicago winter.</p>
+      <p>For construction, the City of Chicago issued over 23,000 building permits in 2024 with major concentrations in Fulton Market, the 78 megadevelopment south of Roosevelt, Lincoln Yards along the North Branch Chicago River, and the continuing residential boom in Logan Square and Avondale. For events, our crews have supported Lollapalooza at Grant Park (400,000 attendees across four days), Taste of Chicago, the Chicago Air and Water Show along North Avenue Beach, Pride Parade on Halsted, and the Bud Billiken Parade in Bronzeville.</p>
+      <h3>Neighborhood-Specific Considerations</h3>
+      <ul>
+        <li><strong>The Loop</strong> &mdash; tight loading-zone windows, TIF-district construction density, congestion pricing proposals in discussion for 2026</li>
+        <li><strong>Fulton Market / West Loop</strong> &mdash; highest construction volume in the city, crane-lift deliveries common, narrow alleyway access to rear sites</li>
+        <li><strong>Pilsen / Little Village</strong> &mdash; historic district overlays, parking-permit requirements for 18th Street and 26th Street corridors, street fair volume during Mexican Independence Day season</li>
+        <li><strong>Lincoln Park / Lakeview</strong> &mdash; Chicago Park District permits for any lakefront placement, residential HOA coordination in high-density blocks</li>
+        <li><strong>South Loop / Bronzeville</strong> &mdash; active development zone with 78 megaproject rollout, ongoing institutional expansion at IIT</li>
+        <li><strong>North Side / Wrigleyville</strong> &mdash; Cubs game-day restrictions on Clark and Addison, 2.6 million annual Wrigley Field visitors plus overflow event deployments</li>
+        <li><strong>Hyde Park / South Shore</strong> &mdash; University of Chicago event volume, summer lakefront festival circuit, coordinated deliveries with Chicago Park District</li>
+      </ul>
+
+      <h2>Palace Chicago Coverage Area</h2>
+      <hr class="gold-rule" />
+      <p>Palace dispatches from the 18th Place yard in Pilsen and delivers across every Chicago neighborhood plus near-suburban construction zones. Same-day delivery is standard on most orders; longer-lead coordination is reserved for high-rise crane-lift jobs and large event buildouts.</p>
+      <div class="palace-tables">
+        <table>
+          <thead>
+            <tr><th scope="col">Neighborhood / District</th><th scope="col">Typical delivery window</th><th scope="col">Common use cases</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>The Loop</td><td>Same-day (before 11 AM cutoff)</td><td>Corporate events, Millennium Park programming, street fairs</td></tr>
+            <tr><td>West Loop / Fulton Market</td><td>Same-day</td><td>High-rise construction, restaurant events, crane-lift rentals</td></tr>
+            <tr><td>Pilsen / Little Village</td><td>Same-day (local yard)</td><td>Street festivals, cultural events, mural tours, historic-district programming</td></tr>
+            <tr><td>River North</td><td>Same-day</td><td>Gallery openings, high-rise construction, Merchandise Mart events</td></tr>
+            <tr><td>Lincoln Park / Lakeview</td><td>Same-day</td><td>Wrigleyville game-day overflow, Lincoln Park Zoo events, residential construction</td></tr>
+            <tr><td>Gold Coast / Old Town</td><td>Same-day</td><td>Private events, Oak Street events, historic-district construction</td></tr>
+            <tr><td>Wicker Park / Bucktown</td><td>Same-day</td><td>Festival weekends, residential construction, 606 Trail events</td></tr>
+            <tr><td>Logan Square / Avondale</td><td>Same-day</td><td>Residential construction boom, Logan Square Farmers Market, Kedzie corridor events</td></tr>
+            <tr><td>South Loop / Near South</td><td>Same-day</td><td>Soldier Field events, Museum Campus, McCormick Place conference overflow</td></tr>
+            <tr><td>Bronzeville / Kenwood</td><td>Same-day</td><td>IIT events, Bud Billiken Parade, residential construction</td></tr>
+            <tr><td>Hyde Park / South Shore</td><td>Same-day</td><td>University of Chicago events, Jackson Park programming, lakefront festivals</td></tr>
+            <tr><td>Wrigleyville / North Center</td><td>Same-day</td><td>Cubs game days, Metro concerts, residential construction</td></tr>
+            <tr><td>Uptown / Edgewater</td><td>Same-day</td><td>Riviera Theatre events, Foster Beach programming, multifamily construction</td></tr>
+            <tr><td>Midway / Garfield Ridge</td><td>Same-day</td><td>Airport-adjacent construction, industrial sites, community events</td></tr>
+            <tr><td>Humboldt Park / West Town</td><td>Same-day</td><td>Puerto Rican Parade, 606 Trail, residential development</td></tr>
+            <tr><td>North Suburbs (Evanston, Skokie)</td><td>Next-day standard</td><td>University events, residential construction, suburban festivals</td></tr>
+            <tr><td>West Suburbs (Oak Park, Cicero)</td><td>Next-day standard</td><td>Frank Lloyd Wright district events, construction</td></tr>
+            <tr><td>South Suburbs (Oak Lawn, Blue Island)</td><td>Next-day standard</td><td>Community events, construction sites</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">Emergency deliveries outside standard windows are handled case-by-case &mdash; call the dispatch line for rush availability.</p>
+      </div>
+
+      <h2>What Separates Palace from Other Chicago Portable Toilet Providers</h2>
+      <hr class="gold-rule" />
+      <h3>What Palace does differently</h3>
+      <ul>
+        <li><strong>Pilsen yard location</strong> &mdash; inside the city grid, not stationed in the suburbs. Chicago deliveries happen in Chicago hours, not after a truck fights rush-hour traffic down I-55.</li>
+        <li><strong>Winterization built in</strong> &mdash; every long-term rental from November through March ships with anti-freeze holding-tank treatment and insulated shells. No upcharge, no cracked tank on the day a polar vortex rolls through.</li>
+        <li><strong>CDOT permit coordination handled in-house</strong> &mdash; Public Way Use permits are filed by the Palace dispatch team, not left to the client to figure out three weeks before an event.</li>
+        <li><strong>Same-week dispatch as the default</strong> &mdash; event planners who book Monday usually see delivery by Thursday. Construction GCs get same-day on standard units unless the site requires a crane-lift coordination.</li>
+        <li><strong>Chicago-grade equipment</strong> &mdash; unit selection is matched to the site, not the default. Fulton Market high-rise gets a narrow-profile head. Grant Park festival gets a cluster with handwash stations. Pilsen historic-district event gets a trailered platform that fits the cleared corridor.</li>
+      </ul>
+      <h3>Common mistakes Chicago event planners make</h3>
+      <ul>
+        <li><strong>Booking without a permit conversation first</strong> &mdash; CDOT Public Way Use permits can take 3+ weeks. Events that book a provider before securing the permit frequently delay their delivery or scramble to pay rush fees.</li>
+        <li><strong>Underestimating guest count</strong> &mdash; the alcohol adjustment (+20% unit count when serving) and the ADA requirement (Chicago Park District mandates ADA units for any permitted event) are commonly skipped in initial planning. Undersized events mean lines and complaints.</li>
+        <li><strong>Picking a provider based only on price</strong> &mdash; the portable toilet rental market has a wide quality gap. The cheapest providers routinely skip servicing, deliver off-window, or show up with equipment that was last cleaned at the previous booking. The $30 price difference costs the event.</li>
+        <li><strong>Not accounting for winter</strong> &mdash; booking a long-term construction rental in October without specifying winterization means the first polar vortex day in January becomes a problem the GC has to solve on-site. Ask about winterization on any rental that crosses November.</li>
+        <li><strong>Forgetting handwash stations</strong> &mdash; Chicago Park District permits for food-serving events require handwash stations. So does Cook County health code for food truck events. Planners who forget until a week out pay rush rates for a stand-alone unit.</li>
+      </ul>
+    `,
+
+    faq_json: JSON.stringify([
+      {
+        q: 'What permits do I need to place a portable toilet on a Chicago sidewalk?',
+        a: 'You need a Chicago Department of Transportation Public Way Use permit if the unit is placed on the public right-of-way. Applications run $100 for placements under 100 square feet and should be filed at least three weeks out. CDOT coordinates review with Streets & Sanitation, the Chicago Police Department\u2019s event permitting desk, and, inside a landmark district, the Commission on Chicago Landmarks. We walk every client through the correct permit path before booking.',
+      },
+      {
+        q: 'How do you handle portable toilets during Chicago winter?',
+        a: 'Every Palace winter rental from November through March ships with anti-freeze holding-tank treatment and, on construction long-term rentals, insulated exterior shells. Our servicing schedule accounts for sub-zero weeks where standard units risk freezing \u2014 we adjust pump-out frequency so tanks never hold liquid overnight during a cold snap. During polar vortex events we pre-treat units the day before the forecasted low hits.',
+      },
+      {
+        q: 'Can you deliver to high-rise construction sites in Fulton Market or the Loop?',
+        a: 'Yes. Our narrow-profile high-rise construction units are sized for crane-hook lifting to upper floors and for freight elevator delivery where the site has one. Fulton Market and the Loop are routine delivery zones \u2014 we coordinate crane windows with the GC\u2019s site superintendent before dispatch and handle the CDOT lane-closure permit if one is required for the lift.',
+      },
+      {
+        q: 'Do you support the Chicago Marathon and other large races?',
+        a: 'Yes. The Bank of America Chicago Marathon requires approximately 1,400 portable toilets across start corrals in Grant Park and aid stations at every mile along the 29-neighborhood course. We also supply the BTN Big 10K, the Bank of America Chicago 13.1, the Chicago Half, and the Shamrock Shuffle. Race-day clusters include handwash stations and ADA units scaled to participant count.',
+      },
+      {
+        q: 'Can you deliver to film and TV productions shot in Chicago?',
+        a: 'Yes. Chicago\u2019s film production market is the strongest it has been in a decade, and Palace delivers base-camp-grade luxury restroom trailers, ADA units, and handwash stations to sets regularly \u2014 from Cinespace Chicago Film Studios in Douglas Park to neighborhood location shoots across the city. Early-morning delivery windows, mid-shoot servicing, and Chicago Film Office permit coordination are standard on every production booking.',
+      },
+      {
+        q: 'What about Pilsen, Little Village, and historic-district events?',
+        a: 'Our yard is in Pilsen, so we know the 18th Street corridor and the 26th Street corridor in Little Village better than any provider outside the neighborhood. For Mexican Independence Day Parade staging, Dia de Muertos programming at the National Museum of Mexican Art, and Pilsen Open Studios weekends, we handle the historic-district permit coordination and deliver before street closures go live.',
+      },
+    ]),
+
+    guest_count_table_html: buildGuestCountTableHtml('Chicago'),
     pricing_table_html: PRICING_TABLE_HTML,
   },
 ];

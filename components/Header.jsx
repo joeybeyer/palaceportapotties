@@ -6,6 +6,7 @@ import Link from 'next/link';
 const PHONE_BY_ROUTE = {
   '/portable-toilet-rental-new-york/': { display: '(332) 241-1073', tel: '+13322411073' },
   '/portable-toilet-rental-denver/':   { display: '(720) 821-7760', tel: '+17208217760' },
+  '/portable-toilet-rental-chicago/':  { display: '(872) 366-7440', tel: '+18723667440' },
 };
 
 const DEFAULT_PHONE = { display: '(888) 708-5771', tel: '+18887085771' };
