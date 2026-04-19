@@ -1,0 +1,314 @@
+[2026-04-19T16:30:36.338Z] 
+============================================================
+[2026-04-19T16:30:36.346Z] Phase 1 — 3 images — force=false
+[2026-04-19T16:30:36.348Z] ============================================================
+[2026-04-19T16:30:36.349Z] START palace-unit-reference.png (4:5, 2K)
+[2026-04-19T16:30:36.400Z] START palace-truck-reference.png (16:9, 2K)
+[2026-04-19T16:30:36.766Z] FAIL palace-truck-reference.png — createTask failed: Unauthorized – Authentication failed. Please check that your Authorization and Content-Type headers are correctly set. (0s)
+[2026-04-19T16:30:36.767Z] START palace-uniform-reference.png (4:5, 1K)
+[2026-04-19T16:30:36.770Z] FAIL palace-unit-reference.png — createTask failed: Unauthorized – Authentication failed. Please check that your Authorization and Content-Type headers are correctly set. (0s)
+[2026-04-19T16:30:37.020Z] FAIL palace-uniform-reference.png — createTask failed: Unauthorized – Authentication failed. Please check that your Authorization and Content-Type headers are correctly set. (0s)
+[2026-04-19T16:30:37.020Z] 
+────────────────────────────────────────
+[2026-04-19T16:30:37.021Z] SUMMARY
+[2026-04-19T16:30:37.021Z]   Success: 0  |  Skipped: 0  |  Failed: 3
+[2026-04-19T16:30:37.021Z] ────────────────────────────────────────
+
+[2026-04-19T16:31:02.310Z] 
+============================================================
+[2026-04-19T16:31:02.313Z] Phase 1 — 3 images — force=true
+[2026-04-19T16:31:02.314Z] ============================================================
+[2026-04-19T16:31:02.315Z] START palace-unit-reference.png (4:5, 2K)
+[2026-04-19T16:31:02.335Z] START palace-truck-reference.png (16:9, 2K)
+[2026-04-19T16:31:02.662Z] FAIL palace-truck-reference.png — createTask failed: Request rejected: the server IP does not match the IP whitelist for this API key. Please check. (0s)
+[2026-04-19T16:31:02.663Z] START palace-uniform-reference.png (4:5, 1K)
+[2026-04-19T16:31:02.712Z] FAIL palace-unit-reference.png — createTask failed: Request rejected: the server IP does not match the IP whitelist for this API key. Please check. (0s)
+[2026-04-19T16:31:02.919Z] FAIL palace-uniform-reference.png — createTask failed: Request rejected: the server IP does not match the IP whitelist for this API key. Please check. (0s)
+[2026-04-19T16:31:02.920Z] 
+────────────────────────────────────────
+[2026-04-19T16:31:02.920Z] SUMMARY
+[2026-04-19T16:31:02.920Z]   Success: 0  |  Skipped: 0  |  Failed: 3
+[2026-04-19T16:31:02.920Z] ────────────────────────────────────────
+
+[2026-04-19T16:33:02.762Z] 
+============================================================
+[2026-04-19T16:33:02.768Z] Phase 1 — 3 images — force=true
+[2026-04-19T16:33:02.769Z] ============================================================
+[2026-04-19T16:33:02.769Z] START palace-unit-reference.png (4:5, 2K)
+[2026-04-19T16:33:02.818Z] START palace-truck-reference.png (16:9, 2K)
+[2026-04-19T16:33:03.254Z]   taskId: ad61625446be75f987bd6b2dd775308d
+[2026-04-19T16:33:03.258Z]   taskId: 19a3c019a0e07724d90f7212136b7bc5
+[2026-04-19T16:33:03.515Z]   polling ad61625446be75f987bd6b2dd775308d — state=waiting progress=?% (0s)
+[2026-04-19T16:33:03.518Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (0s)
+[2026-04-19T16:33:11.822Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (9s)
+[2026-04-19T16:33:11.823Z]   polling ad61625446be75f987bd6b2dd775308d — state=waiting progress=?% (9s)
+[2026-04-19T16:33:20.116Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (17s)
+[2026-04-19T16:33:20.117Z]   polling ad61625446be75f987bd6b2dd775308d — state=waiting progress=?% (17s)
+[2026-04-19T16:33:28.422Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (25s)
+[2026-04-19T16:33:28.423Z]   polling ad61625446be75f987bd6b2dd775308d — state=waiting progress=?% (25s)
+[2026-04-19T16:33:36.697Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (33s)
+[2026-04-19T16:33:36.700Z]   polling ad61625446be75f987bd6b2dd775308d — state=waiting progress=?% (33s)
+[2026-04-19T16:33:44.983Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (42s)
+[2026-04-19T16:33:49.335Z] DONE palace-unit-reference.png — 47s
+[2026-04-19T16:33:49.336Z] START palace-uniform-reference.png (4:5, 1K)
+[2026-04-19T16:33:49.761Z]   taskId: 54508c0b5f0087b3c8410cbcbc3e2714
+[2026-04-19T16:33:50.009Z]   polling 54508c0b5f0087b3c8410cbcbc3e2714 — state=waiting progress=?% (0s)
+[2026-04-19T16:33:53.241Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (50s)
+[2026-04-19T16:33:58.303Z]   polling 54508c0b5f0087b3c8410cbcbc3e2714 — state=waiting progress=?% (9s)
+[2026-04-19T16:34:01.504Z]   polling 19a3c019a0e07724d90f7212136b7bc5 — state=waiting progress=?% (58s)
+[2026-04-19T16:34:06.595Z]   polling 54508c0b5f0087b3c8410cbcbc3e2714 — state=waiting progress=?% (17s)
+[2026-04-19T16:34:13.011Z] DONE palace-truck-reference.png — 70s
+[2026-04-19T16:34:14.894Z]   polling 54508c0b5f0087b3c8410cbcbc3e2714 — state=waiting progress=?% (25s)
+[2026-04-19T16:34:23.191Z]   polling 54508c0b5f0087b3c8410cbcbc3e2714 — state=waiting progress=?% (33s)
+[2026-04-19T16:34:32.122Z] DONE palace-uniform-reference.png — 43s
+[2026-04-19T16:34:32.123Z] 
+────────────────────────────────────────
+[2026-04-19T16:34:32.123Z] SUMMARY
+[2026-04-19T16:34:32.123Z]   Success: 3  |  Skipped: 0  |  Failed: 0
+[2026-04-19T16:34:32.123Z] ────────────────────────────────────────
+
+[2026-04-19T16:38:18.847Z] 
+============================================================
+[2026-04-19T16:38:18.851Z] Phase 2 — 18 images — force=false
+[2026-04-19T16:38:18.851Z] ============================================================
+[2026-04-19T16:38:18.852Z] START NY-HERO.png (16:9, 2K)
+[2026-04-19T16:38:18.887Z] START DV-HERO.png (16:9, 2K)
+[2026-04-19T16:38:19.381Z]   taskId: b9a5399b285292aa954f0ef4641babb7
+[2026-04-19T16:38:19.431Z]   taskId: 73c8fab72efb3d68a0b1c958443a917d
+[2026-04-19T16:38:19.635Z]   polling b9a5399b285292aa954f0ef4641babb7 — state=waiting progress=?% (0s)
+[2026-04-19T16:38:19.683Z]   polling 73c8fab72efb3d68a0b1c958443a917d — state=waiting progress=?% (0s)
+[2026-04-19T16:38:27.962Z] FAIL NY-HERO.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:27.963Z] START HP-NATIONAL-HERO.png (16:9, 2K)
+[2026-04-19T16:38:27.978Z] FAIL DV-HERO.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:27.979Z] START HP-DELIVERY.png (3:2, 2K)
+[2026-04-19T16:38:28.319Z]   taskId: 188b7d86f13cf0ac0a6ab0b1bfedfd3e
+[2026-04-19T16:38:28.322Z]   taskId: 11e6d0987e25b530c299f888bd6b4970
+[2026-04-19T16:38:28.572Z]   polling 188b7d86f13cf0ac0a6ab0b1bfedfd3e — state=waiting progress=?% (0s)
+[2026-04-19T16:38:28.574Z]   polling 11e6d0987e25b530c299f888bd6b4970 — state=waiting progress=?% (0s)
+[2026-04-19T16:38:36.857Z] FAIL HP-DELIVERY.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:36.858Z] START NY-UNIT-HIGHRISE.png (3:2, 1K)
+[2026-04-19T16:38:36.865Z] FAIL HP-NATIONAL-HERO.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:36.866Z] START NY-UNIT-FILM.png (16:9, 1K)
+[2026-04-19T16:38:37.259Z]   taskId: 9e3b6043109b71635e7bf113d0658649
+[2026-04-19T16:38:37.272Z]   taskId: 8981e1729f9a890b6a6c3cd693cd18af
+[2026-04-19T16:38:37.509Z]   polling 9e3b6043109b71635e7bf113d0658649 — state=waiting progress=?% (0s)
+[2026-04-19T16:38:37.528Z]   polling 8981e1729f9a890b6a6c3cd693cd18af — state=waiting progress=?% (0s)
+[2026-04-19T16:38:45.800Z] FAIL NY-UNIT-HIGHRISE.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-uniform-reference.webp (9s)
+[2026-04-19T16:38:45.801Z] START NY-UNIT-SIDEWALK.png (3:2, 1K)
+[2026-04-19T16:38:45.811Z] FAIL NY-UNIT-FILM.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:45.812Z] START NY-UNIT-ADA.png (4:5, 1K)
+[2026-04-19T16:38:46.169Z]   taskId: 10980873ac97b6e4ee10da2c0604555f
+[2026-04-19T16:38:46.211Z]   taskId: 6c142c3b088e39167ef4aeeecddce796
+[2026-04-19T16:38:46.424Z]   polling 10980873ac97b6e4ee10da2c0604555f — state=waiting progress=?% (0s)
+[2026-04-19T16:38:46.463Z]   polling 6c142c3b088e39167ef4aeeecddce796 — state=waiting progress=?% (0s)
+[2026-04-19T16:38:54.718Z] FAIL NY-UNIT-ADA.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:54.719Z] START NY-UNIT-MARATHON.png (16:9, 1K)
+[2026-04-19T16:38:54.743Z] FAIL NY-UNIT-SIDEWALK.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:38:54.743Z] START DV-UNIT-WINTER.png (3:2, 1K)
+[2026-04-19T16:38:55.059Z]   taskId: 5d06bcb9a93d2ee7e2a731aab7c6a28d
+[2026-04-19T16:38:55.145Z]   taskId: 41f1b57ec6f8012a91fb1d63a81c99ef
+[2026-04-19T16:38:55.309Z]   polling 5d06bcb9a93d2ee7e2a731aab7c6a28d — state=waiting progress=?% (0s)
+[2026-04-19T16:38:55.395Z]   polling 41f1b57ec6f8012a91fb1d63a81c99ef — state=waiting progress=?% (0s)
+[2026-04-19T16:39:03.593Z] FAIL NY-UNIT-MARATHON.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-truck-reference.webp (9s)
+[2026-04-19T16:39:03.594Z] START DV-UNIT-WATERLESS.png (4:5, 1K)
+[2026-04-19T16:39:03.676Z] FAIL DV-UNIT-WINTER.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-uniform-reference.webp (9s)
+[2026-04-19T16:39:03.676Z] START DV-UNIT-MOUNTAIN.png (16:9, 1K)
+[2026-04-19T16:39:04.004Z]   taskId: acef11940ffe5c275e339f1814dad6c8
+[2026-04-19T16:39:04.013Z]   taskId: 84388bcd0516f1e1ac62b9db3088378a
+[2026-04-19T16:39:04.253Z]   polling acef11940ffe5c275e339f1814dad6c8 — state=waiting progress=?% (0s)
+[2026-04-19T16:39:04.259Z]   polling 84388bcd0516f1e1ac62b9db3088378a — state=waiting progress=?% (0s)
+[2026-04-19T16:39:12.545Z] FAIL DV-UNIT-WATERLESS.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:12.546Z] START DV-UNIT-ADA-PARK.png (4:5, 1K)
+[2026-04-19T16:39:12.552Z] FAIL DV-UNIT-MOUNTAIN.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-truck-reference.webp (9s)
+[2026-04-19T16:39:12.553Z] START DV-UNIT-MARATHON.png (16:9, 1K)
+[2026-04-19T16:39:12.888Z]   taskId: 31787aa52a04197bcde0e4a89dbf42c7
+[2026-04-19T16:39:12.923Z]   taskId: b1e5e36bb970281efd6edcf32b50618d
+[2026-04-19T16:39:13.134Z]   polling 31787aa52a04197bcde0e4a89dbf42c7 — state=waiting progress=?% (0s)
+[2026-04-19T16:39:13.170Z]   polling b1e5e36bb970281efd6edcf32b50618d — state=waiting progress=?% (0s)
+[2026-04-19T16:39:21.419Z] FAIL DV-UNIT-MARATHON.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:21.419Z] START STK-CREW.png (4:5, 1K)
+[2026-04-19T16:39:21.476Z] FAIL DV-UNIT-ADA-PARK.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:21.476Z] START STK-SERVICING.png (16:9, 1K)
+[2026-04-19T16:39:21.767Z]   taskId: 43e024296ca1d2f26b8a42f736dad88b
+[2026-04-19T16:39:21.857Z]   taskId: aa70041b6a7eec5fe3da0a812206e278
+[2026-04-19T16:39:22.022Z]   polling 43e024296ca1d2f26b8a42f736dad88b — state=waiting progress=?% (0s)
+[2026-04-19T16:39:22.108Z]   polling aa70041b6a7eec5fe3da0a812206e278 — state=waiting progress=?% (0s)
+[2026-04-19T16:39:30.300Z] FAIL STK-CREW.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:30.301Z] START STK-WEDDING.png (3:2, 1K)
+[2026-04-19T16:39:30.391Z] FAIL STK-SERVICING.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-truck-reference.webp (9s)
+[2026-04-19T16:39:30.392Z] START STK-HANDWASH.png (4:5, 1K)
+[2026-04-19T16:39:30.650Z]   taskId: 658083ec14e1e982c4c655ae454056e7
+[2026-04-19T16:39:30.743Z]   taskId: 6d2d65235c95c5e12249403c21cce71e
+[2026-04-19T16:39:30.899Z]   polling 658083ec14e1e982c4c655ae454056e7 — state=waiting progress=?% (0s)
+[2026-04-19T16:39:30.990Z]   polling 6d2d65235c95c5e12249403c21cce71e — state=waiting progress=?% (0s)
+[2026-04-19T16:39:39.199Z] FAIL STK-WEDDING.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:39.265Z] FAIL STK-HANDWASH.png — Task failed: 404 Client Error: Not Found for url: https://palaceportapotties.com/brand/references/palace-unit-reference.webp (9s)
+[2026-04-19T16:39:39.265Z] 
+────────────────────────────────────────
+[2026-04-19T16:39:39.265Z] SUMMARY
+[2026-04-19T16:39:39.266Z]   Success: 0  |  Skipped: 0  |  Failed: 18
+[2026-04-19T16:39:39.266Z] ────────────────────────────────────────
+
+[2026-04-19T16:42:31.844Z] 
+============================================================
+[2026-04-19T16:42:31.846Z] Phase 2 — 18 images — force=true
+[2026-04-19T16:42:31.847Z] ============================================================
+[2026-04-19T16:42:31.847Z] START NY-HERO.png (16:9, 2K)
+[2026-04-19T16:42:31.868Z] START DV-HERO.png (16:9, 2K)
+[2026-04-19T16:42:32.292Z]   taskId: fe62bad2bf1384e3a393bdb4b67a0899
+[2026-04-19T16:42:32.322Z]   taskId: 6dc50a8c2f0b91a8cf94a55225c13478
+[2026-04-19T16:42:32.543Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (0s)
+[2026-04-19T16:42:32.580Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (0s)
+[2026-04-19T16:42:40.845Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (9s)
+[2026-04-19T16:42:40.866Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (9s)
+[2026-04-19T16:42:49.135Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (17s)
+[2026-04-19T16:42:49.148Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (17s)
+[2026-04-19T16:42:57.454Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (25s)
+[2026-04-19T16:42:57.546Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (25s)
+[2026-04-19T16:43:05.759Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (33s)
+[2026-04-19T16:43:05.832Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (34s)
+[2026-04-19T16:43:14.060Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (42s)
+[2026-04-19T16:43:14.104Z]   polling 6dc50a8c2f0b91a8cf94a55225c13478 — state=waiting progress=?% (42s)
+[2026-04-19T16:43:22.365Z]   polling fe62bad2bf1384e3a393bdb4b67a0899 — state=waiting progress=?% (50s)
+[2026-04-19T16:43:27.272Z] DONE NY-HERO.png — 55s
+[2026-04-19T16:43:27.273Z] START HP-NATIONAL-HERO.png (16:9, 2K)
+[2026-04-19T16:43:27.809Z]   taskId: 3a9ba2e317a18680714aec7adeb47016
+[2026-04-19T16:43:28.061Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (0s)
+[2026-04-19T16:43:35.255Z] DONE DV-HERO.png — 63s
+[2026-04-19T16:43:35.256Z] START HP-DELIVERY.png (3:2, 2K)
+[2026-04-19T16:43:35.747Z]   taskId: f0a585f82645ec8ad8b1118351c23632
+[2026-04-19T16:43:36.001Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (0s)
+[2026-04-19T16:43:36.343Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (9s)
+[2026-04-19T16:43:44.290Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (9s)
+[2026-04-19T16:43:44.595Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (17s)
+[2026-04-19T16:43:52.580Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (17s)
+[2026-04-19T16:43:52.949Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (25s)
+[2026-04-19T16:44:00.859Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (25s)
+[2026-04-19T16:44:01.206Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (33s)
+[2026-04-19T16:44:09.153Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (33s)
+[2026-04-19T16:44:09.462Z]   polling 3a9ba2e317a18680714aec7adeb47016 — state=waiting progress=?% (42s)
+[2026-04-19T16:44:17.444Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (42s)
+[2026-04-19T16:44:20.053Z] DONE HP-NATIONAL-HERO.png — 53s
+[2026-04-19T16:44:20.054Z] START NY-UNIT-HIGHRISE.png (3:2, 1K)
+[2026-04-19T16:44:20.390Z]   taskId: ccdc5c7190d5fcf928ad89157d1d5653
+[2026-04-19T16:44:20.643Z]   polling ccdc5c7190d5fcf928ad89157d1d5653 — state=waiting progress=?% (0s)
+[2026-04-19T16:44:25.731Z]   polling f0a585f82645ec8ad8b1118351c23632 — state=waiting progress=?% (50s)
+[2026-04-19T16:44:28.899Z]   polling ccdc5c7190d5fcf928ad89157d1d5653 — state=waiting progress=?% (9s)
+[2026-04-19T16:44:36.659Z] DONE HP-DELIVERY.png — 61s
+[2026-04-19T16:44:36.659Z] START NY-UNIT-FILM.png (16:9, 1K)
+[2026-04-19T16:44:37.056Z]   taskId: 85030a16b0afee46ce75a1debb29a6ea
+[2026-04-19T16:44:37.192Z]   polling ccdc5c7190d5fcf928ad89157d1d5653 — state=waiting progress=?% (17s)
+[2026-04-19T16:44:37.303Z]   polling 85030a16b0afee46ce75a1debb29a6ea — state=waiting progress=?% (0s)
+[2026-04-19T16:44:45.493Z]   polling ccdc5c7190d5fcf928ad89157d1d5653 — state=waiting progress=?% (25s)
+[2026-04-19T16:44:45.602Z]   polling 85030a16b0afee46ce75a1debb29a6ea — state=waiting progress=?% (9s)
+[2026-04-19T16:44:53.781Z]   polling ccdc5c7190d5fcf928ad89157d1d5653 — state=waiting progress=?% (33s)
+[2026-04-19T16:44:53.890Z]   polling 85030a16b0afee46ce75a1debb29a6ea — state=waiting progress=?% (17s)
+[2026-04-19T16:45:02.191Z]   polling 85030a16b0afee46ce75a1debb29a6ea — state=waiting progress=?% (25s)
+[2026-04-19T16:45:02.981Z] DONE NY-UNIT-HIGHRISE.png — 43s
+[2026-04-19T16:45:02.981Z] START NY-UNIT-SIDEWALK.png (3:2, 1K)
+[2026-04-19T16:45:03.322Z]   taskId: 31c67070339eea5833b4e12b7e59ae85
+[2026-04-19T16:45:03.573Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (0s)
+[2026-04-19T16:45:10.484Z]   polling 85030a16b0afee46ce75a1debb29a6ea — state=waiting progress=?% (33s)
+[2026-04-19T16:45:11.957Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (9s)
+[2026-04-19T16:45:20.520Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (17s)
+[2026-04-19T16:45:21.146Z] DONE NY-UNIT-FILM.png — 44s
+[2026-04-19T16:45:21.147Z] START NY-UNIT-ADA.png (4:5, 1K)
+[2026-04-19T16:45:21.569Z]   taskId: c2534b2cfe72e783f5b3d7b67b53d7c9
+[2026-04-19T16:45:21.828Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (0s)
+[2026-04-19T16:45:28.812Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (25s)
+[2026-04-19T16:45:30.090Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (9s)
+[2026-04-19T16:45:37.096Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (34s)
+[2026-04-19T16:45:38.348Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (17s)
+[2026-04-19T16:45:45.402Z]   polling 31c67070339eea5833b4e12b7e59ae85 — state=waiting progress=?% (42s)
+[2026-04-19T16:45:46.618Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (25s)
+[2026-04-19T16:45:54.831Z] DONE NY-UNIT-SIDEWALK.png — 52s
+[2026-04-19T16:45:54.831Z] START NY-UNIT-MARATHON.png (16:9, 1K)
+[2026-04-19T16:45:54.869Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (33s)
+[2026-04-19T16:45:55.212Z]   taskId: 72e91f4f0da3d72866087f77c1aa39e6
+[2026-04-19T16:45:55.464Z]   polling 72e91f4f0da3d72866087f77c1aa39e6 — state=waiting progress=?% (0s)
+[2026-04-19T16:46:03.161Z]   polling c2534b2cfe72e783f5b3d7b67b53d7c9 — state=waiting progress=?% (42s)
+[2026-04-19T16:46:03.719Z]   polling 72e91f4f0da3d72866087f77c1aa39e6 — state=waiting progress=?% (9s)
+[2026-04-19T16:46:12.044Z]   polling 72e91f4f0da3d72866087f77c1aa39e6 — state=waiting progress=?% (17s)
+[2026-04-19T16:46:12.604Z] DONE NY-UNIT-ADA.png — 51s
+[2026-04-19T16:46:12.605Z] START DV-UNIT-WINTER.png (3:2, 1K)
+[2026-04-19T16:46:13.017Z]   taskId: 73cce3418143da1bd862ace97d00971b
+[2026-04-19T16:46:13.273Z]   polling 73cce3418143da1bd862ace97d00971b — state=waiting progress=?% (0s)
+[2026-04-19T16:46:20.335Z]   polling 72e91f4f0da3d72866087f77c1aa39e6 — state=waiting progress=?% (25s)
+[2026-04-19T16:46:21.550Z]   polling 73cce3418143da1bd862ace97d00971b — state=waiting progress=?% (9s)
+[2026-04-19T16:46:28.644Z]   polling 72e91f4f0da3d72866087f77c1aa39e6 — state=waiting progress=?% (33s)
+[2026-04-19T16:46:29.824Z]   polling 73cce3418143da1bd862ace97d00971b — state=waiting progress=?% (17s)
+[2026-04-19T16:46:38.222Z]   polling 73cce3418143da1bd862ace97d00971b — state=waiting progress=?% (25s)
+[2026-04-19T16:46:39.282Z] DONE NY-UNIT-MARATHON.png — 44s
+[2026-04-19T16:46:39.283Z] START DV-UNIT-WATERLESS.png (4:5, 1K)
+[2026-04-19T16:46:39.684Z]   taskId: 53763a9a91d98294758d09cc6990c625
+[2026-04-19T16:46:39.940Z]   polling 53763a9a91d98294758d09cc6990c625 — state=waiting progress=?% (0s)
+[2026-04-19T16:46:46.583Z]   polling 73cce3418143da1bd862ace97d00971b — state=waiting progress=?% (34s)
+[2026-04-19T16:46:48.200Z]   polling 53763a9a91d98294758d09cc6990c625 — state=waiting progress=?% (9s)
+[2026-04-19T16:46:55.585Z] DONE DV-UNIT-WINTER.png — 43s
+[2026-04-19T16:46:55.585Z] START DV-UNIT-MOUNTAIN.png (16:9, 1K)
+[2026-04-19T16:46:55.975Z]   taskId: e32496d08f1168fce33023e6795d899e
+[2026-04-19T16:46:56.235Z]   polling e32496d08f1168fce33023e6795d899e — state=waiting progress=?% (0s)
+[2026-04-19T16:46:56.519Z]   polling 53763a9a91d98294758d09cc6990c625 — state=waiting progress=?% (17s)
+[2026-04-19T16:47:04.529Z]   polling e32496d08f1168fce33023e6795d899e — state=waiting progress=?% (9s)
+[2026-04-19T16:47:04.790Z]   polling 53763a9a91d98294758d09cc6990c625 — state=waiting progress=?% (25s)
+[2026-04-19T16:47:12.812Z]   polling e32496d08f1168fce33023e6795d899e — state=waiting progress=?% (17s)
+[2026-04-19T16:47:13.082Z]   polling 53763a9a91d98294758d09cc6990c625 — state=waiting progress=?% (33s)
+[2026-04-19T16:47:21.092Z]   polling e32496d08f1168fce33023e6795d899e — state=waiting progress=?% (25s)
+[2026-04-19T16:47:22.108Z] DONE DV-UNIT-WATERLESS.png — 43s
+[2026-04-19T16:47:22.108Z] START DV-UNIT-ADA-PARK.png (4:5, 1K)
+[2026-04-19T16:47:22.467Z]   taskId: 2f89b2d6acb2b0f880de64f3e7da6f02
+[2026-04-19T16:47:22.724Z]   polling 2f89b2d6acb2b0f880de64f3e7da6f02 — state=waiting progress=?% (0s)
+[2026-04-19T16:47:29.416Z]   polling e32496d08f1168fce33023e6795d899e — state=waiting progress=?% (33s)
+[2026-04-19T16:47:30.981Z]   polling 2f89b2d6acb2b0f880de64f3e7da6f02 — state=waiting progress=?% (9s)
+[2026-04-19T16:47:38.667Z] DONE DV-UNIT-MOUNTAIN.png — 43s
+[2026-04-19T16:47:38.668Z] START DV-UNIT-MARATHON.png (16:9, 1K)
+[2026-04-19T16:47:39.028Z]   taskId: 75d8dc269b3b57e6b7b6d08363419f7a
+[2026-04-19T16:47:39.271Z]   polling 2f89b2d6acb2b0f880de64f3e7da6f02 — state=waiting progress=?% (17s)
+[2026-04-19T16:47:39.281Z]   polling 75d8dc269b3b57e6b7b6d08363419f7a — state=waiting progress=?% (0s)
+[2026-04-19T16:47:47.564Z]   polling 75d8dc269b3b57e6b7b6d08363419f7a — state=waiting progress=?% (9s)
+[2026-04-19T16:47:47.566Z]   polling 2f89b2d6acb2b0f880de64f3e7da6f02 — state=waiting progress=?% (25s)
+[2026-04-19T16:47:55.847Z]   polling 75d8dc269b3b57e6b7b6d08363419f7a — state=waiting progress=?% (17s)
+[2026-04-19T16:47:55.849Z]   polling 2f89b2d6acb2b0f880de64f3e7da6f02 — state=waiting progress=?% (33s)
+[2026-04-19T16:48:04.129Z]   polling 75d8dc269b3b57e6b7b6d08363419f7a — state=waiting progress=?% (25s)
+[2026-04-19T16:48:04.866Z] DONE DV-UNIT-ADA-PARK.png — 43s
+[2026-04-19T16:48:04.867Z] START STK-CREW.png (4:5, 1K)
+[2026-04-19T16:48:05.252Z]   taskId: df00dc7a5195a40c15259fe6d24b1535
+[2026-04-19T16:48:05.501Z]   polling df00dc7a5195a40c15259fe6d24b1535 — state=waiting progress=?% (0s)
+[2026-04-19T16:48:12.427Z]   polling 75d8dc269b3b57e6b7b6d08363419f7a — state=waiting progress=?% (33s)
+[2026-04-19T16:48:13.761Z]   polling df00dc7a5195a40c15259fe6d24b1535 — state=waiting progress=?% (9s)
+[2026-04-19T16:48:21.797Z] DONE DV-UNIT-MARATHON.png — 43s
+[2026-04-19T16:48:21.797Z] START STK-SERVICING.png (16:9, 1K)
+[2026-04-19T16:48:22.039Z]   polling df00dc7a5195a40c15259fe6d24b1535 — state=waiting progress=?% (17s)
+[2026-04-19T16:48:22.190Z]   taskId: c644b8360b494624036f93372582430f
+[2026-04-19T16:48:22.440Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (0s)
+[2026-04-19T16:48:30.346Z]   polling df00dc7a5195a40c15259fe6d24b1535 — state=waiting progress=?% (25s)
+[2026-04-19T16:48:30.698Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (9s)
+[2026-04-19T16:48:38.647Z]   polling df00dc7a5195a40c15259fe6d24b1535 — state=waiting progress=?% (33s)
+[2026-04-19T16:48:38.967Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (17s)
+[2026-04-19T16:48:47.223Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (25s)
+[2026-04-19T16:48:47.504Z] DONE STK-CREW.png — 43s
+[2026-04-19T16:48:47.504Z] START STK-WEDDING.png (3:2, 1K)
+[2026-04-19T16:48:47.908Z]   taskId: cdfc272c3e25dd022f0a08e9d60ac0f3
+[2026-04-19T16:48:48.158Z]   polling cdfc272c3e25dd022f0a08e9d60ac0f3 — state=waiting progress=?% (0s)
+[2026-04-19T16:48:55.520Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (33s)
+[2026-04-19T16:48:56.702Z]   polling cdfc272c3e25dd022f0a08e9d60ac0f3 — state=waiting progress=?% (9s)
+[2026-04-19T16:49:03.803Z]   polling c644b8360b494624036f93372582430f — state=waiting progress=?% (42s)
+[2026-04-19T16:49:04.973Z]   polling cdfc272c3e25dd022f0a08e9d60ac0f3 — state=waiting progress=?% (17s)
+[2026-04-19T16:49:12.720Z] DONE STK-SERVICING.png — 51s
+[2026-04-19T16:49:12.721Z] START STK-HANDWASH.png (4:5, 1K)
+[2026-04-19T16:49:13.109Z]   taskId: 0fdd1e6e9c24b5f15951e08bbc46cfd2
+[2026-04-19T16:49:13.260Z]   polling cdfc272c3e25dd022f0a08e9d60ac0f3 — state=waiting progress=?% (25s)
+[2026-04-19T16:49:13.360Z]   polling 0fdd1e6e9c24b5f15951e08bbc46cfd2 — state=waiting progress=?% (0s)
+[2026-04-19T16:49:21.542Z]   polling cdfc272c3e25dd022f0a08e9d60ac0f3 — state=waiting progress=?% (34s)
+[2026-04-19T16:49:21.637Z]   polling 0fdd1e6e9c24b5f15951e08bbc46cfd2 — state=waiting progress=?% (9s)
+[2026-04-19T16:49:29.908Z]   polling 0fdd1e6e9c24b5f15951e08bbc46cfd2 — state=waiting progress=?% (17s)
+[2026-04-19T16:49:31.017Z] DONE STK-WEDDING.png — 44s
+[2026-04-19T16:49:38.211Z]   polling 0fdd1e6e9c24b5f15951e08bbc46cfd2 — state=waiting progress=?% (25s)
+[2026-04-19T16:49:46.500Z]   polling 0fdd1e6e9c24b5f15951e08bbc46cfd2 — state=waiting progress=?% (33s)
+[2026-04-19T16:49:55.341Z] DONE STK-HANDWASH.png — 43s
+[2026-04-19T16:49:55.341Z] 
+────────────────────────────────────────
+[2026-04-19T16:49:55.342Z] SUMMARY
+[2026-04-19T16:49:55.342Z]   Success: 18  |  Skipped: 0  |  Failed: 0
+[2026-04-19T16:49:55.342Z] ────────────────────────────────────────
+
