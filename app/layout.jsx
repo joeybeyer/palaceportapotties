@@ -32,8 +32,8 @@ export default async function RootLayout({ children }) {
                 </Link>
               ))}
             </nav>
-            <a href="tel:+13322411073" className="cta-phone">
-              Call (332) 241-1073
+            <a href="tel:+18887085771" className="cta-phone">
+              Call (888) 708-5771
             </a>
           </div>
         </header>

@@ -33,7 +33,7 @@ export default async function HomePage() {
             and guests who expect better.
           </p>
           <div className="hero-cta">
-            <a href="tel:+13322411073" className="btn-primary">Get a Fast Quote</a>
+            <a href="tel:+18887085771" className="btn-primary">Get a Fast Quote</a>
             <a href="#locations" className="btn-secondary">Check Local Availability</a>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default async function HomePage() {
         <div className="container">
           <h2>Portable Restrooms. Royal Treatment.</h2>
           <p>Fast dispatch, clean units, and service you can count on — for your next job, wedding, or event.</p>
-          <a href="tel:+13322411073" className="btn-primary">Call (332) 241-1073</a>
+          <a href="tel:+18887085771" className="btn-primary">Call (888) 708-5771</a>
         </div>
       </section>
 
