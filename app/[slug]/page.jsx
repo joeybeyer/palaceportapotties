@@ -256,7 +256,12 @@ export default async function LocationPage({ params }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'HomeAndConstructionBusiness',
+            '@type': 'LocalBusiness',
+            additionalType: [
+              'https://schema.org/HomeAndConstructionBusiness',
+              'https://www.productontology.org/id/Portable_toilet',
+              'https://www.productontology.org/id/Equipment_rental',
+            ],
             '@id': `https://palaceportapotties.com/${loc.slug}/#business`,
             name: 'Palace Porta Potties',
             url: `https://palaceportapotties.com/${loc.slug}/`,
@@ -282,6 +287,30 @@ export default async function LocationPage({ params }) {
             openingHoursSpecification: [
               { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' },
             ],
+            // sameAs — only emitted when Joey provides external profile URLs
+            ...(loc.same_as_urls && JSON.parse(loc.same_as_urls).length > 0 && {
+              sameAs: JSON.parse(loc.same_as_urls),
+            }),
+            // aggregateRating — only emitted when real review data exists
+            ...(loc.rating_value != null && loc.review_count != null && loc.review_count > 0 && {
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: String(loc.rating_value),
+                reviewCount: String(loc.review_count),
+                bestRating: '5',
+              },
+            }),
+            // makesOffer — service array per city
+            ...(loc.services_json && {
+              makesOffer: JSON.parse(loc.services_json).map((serviceName) => ({
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: serviceName,
+                  areaServed: { '@type': 'City', name: loc.city },
+                },
+              })),
+            }),
           }),
         }}
       />

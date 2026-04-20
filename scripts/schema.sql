@@ -34,6 +34,12 @@ CREATE TABLE IF NOT EXISTS locations (
   guest_count_table_html TEXT,                  -- Event-guests → unit-count planning matrix
   pricing_table_html TEXT,                      -- Event + construction rate cards
 
+  -- Entity Vector Signal 2 — schema enrichment fields
+  same_as_urls TEXT,                            -- JSON array of external profile URLs (GBP, Yelp, BBB, etc.)
+  rating_value REAL,                            -- Aggregate Google review rating (null = omit from schema)
+  review_count INTEGER,                         -- Total Google review count (null = omit from schema)
+  services_json TEXT,                           -- JSON array of service name strings for makesOffer schema
+
   created_at TEXT DEFAULT (datetime('now')),
   updated_at TEXT DEFAULT (datetime('now'))
 );

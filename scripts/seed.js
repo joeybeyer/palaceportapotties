@@ -210,6 +210,21 @@ const locations = [
 
     guest_count_table_html: buildGuestCountTableHtml('New York'),
     pricing_table_html: PRICING_TABLE_HTML,
+
+    // Entity Vector Signal 2 — populated when Joey provides external profile URLs
+    same_as_urls: null,
+    rating_value: null,
+    review_count: null,
+    services_json: JSON.stringify([
+      'Portable toilet rental for construction sites',
+      'Wedding portable toilet rental',
+      'ADA-accessible portable toilet rental',
+      'Luxury restroom trailer rental',
+      'Festival and event portable toilet rental',
+      'Handwash station rental',
+      'Emergency same-day portable toilet delivery',
+      'Film and TV production portable toilet rental',
+    ]),
   },
 
   {
@@ -349,6 +364,21 @@ const locations = [
 
     guest_count_table_html: buildGuestCountTableHtml('Denver'),
     pricing_table_html: PRICING_TABLE_HTML,
+
+    same_as_urls: null,
+    rating_value: null,
+    review_count: null,
+    services_json: JSON.stringify([
+      'Portable toilet rental for construction sites',
+      'Wedding portable toilet rental',
+      'ADA-accessible portable toilet rental',
+      'Luxury restroom trailer rental',
+      'Festival and event portable toilet rental',
+      'Handwash station rental',
+      'Emergency same-day portable toilet delivery',
+      'Film and TV production portable toilet rental',
+      'Mountain venue portable toilet rental',
+    ]),
   },
 
   {
@@ -495,6 +525,21 @@ const locations = [
 
     guest_count_table_html: buildGuestCountTableHtml('Chicago'),
     pricing_table_html: PRICING_TABLE_HTML,
+
+    same_as_urls: null,
+    rating_value: null,
+    review_count: null,
+    services_json: JSON.stringify([
+      'Portable toilet rental for construction sites',
+      'Wedding portable toilet rental',
+      'ADA-accessible portable toilet rental',
+      'Luxury restroom trailer rental',
+      'Festival and event portable toilet rental',
+      'Handwash station rental',
+      'Emergency same-day portable toilet delivery',
+      'Film and TV production portable toilet rental',
+      'Lakefront event portable toilet rental',
+    ]),
   },
 ];
 
@@ -509,8 +554,9 @@ async function seed() {
           gbp_url, gbp_cid, gbp_place_id, map_iframe, hours_json,
           meta_title, meta_description, h1,
           intro_html, services_html, local_context_html, faq_json,
-          guest_count_table_html, pricing_table_html
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          guest_count_table_html, pricing_table_html,
+          same_as_urls, rating_value, review_count, services_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(slug) DO UPDATE SET
           city=excluded.city, state=excluded.state, state_code=excluded.state_code,
           address_line=excluded.address_line, postal_code=excluded.postal_code,
@@ -523,6 +569,10 @@ async function seed() {
           local_context_html=excluded.local_context_html, faq_json=excluded.faq_json,
           guest_count_table_html=excluded.guest_count_table_html,
           pricing_table_html=excluded.pricing_table_html,
+          same_as_urls=excluded.same_as_urls,
+          rating_value=excluded.rating_value,
+          review_count=excluded.review_count,
+          services_json=excluded.services_json,
           updated_at=datetime('now')
       `,
       args: [
@@ -532,6 +582,7 @@ async function seed() {
         loc.meta_title, loc.meta_description, loc.h1,
         loc.intro_html, loc.services_html, loc.local_context_html, loc.faq_json,
         loc.guest_count_table_html, loc.pricing_table_html,
+        loc.same_as_urls, loc.rating_value, loc.review_count, loc.services_json,
       ],
     });
   }
