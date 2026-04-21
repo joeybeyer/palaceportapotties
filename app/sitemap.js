@@ -14,6 +14,12 @@ export default async function sitemap() {
       changeFrequency: 'weekly',
       priority: 1.0,
     },
+    {
+      url: `${base}/about/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     ...locations.map((loc) => ({
       url: `${base}/${loc.slug}/`,
       lastModified: new Date(loc.updated_at || Date.now()),

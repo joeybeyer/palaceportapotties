@@ -171,6 +171,7 @@ a:hover { color: var(--midnight-navy); }
   object-fit: cover;
   object-position: center top;
   display: block;
+  aspect-ratio: 3 / 4;
 }
 
 /* ── Mid-page CTA strip ── */
@@ -189,7 +190,7 @@ a:hover { color: var(--midnight-navy); }
   }
   .hero-content { padding: 3rem 0 2rem; }
   .hero-split h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
-  .hero-person-img { min-height: 300px; max-height: 380px; }
+  .hero-person-img { min-height: 300px; max-height: 380px; aspect-ratio: 3 / 4; }
   .hero-cta {
     flex-direction: column;
   }

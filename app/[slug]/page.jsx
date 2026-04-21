@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { getLocationBySlug, getAllSlugs } from '@/lib/db';
 
 export const runtime = 'edge';
@@ -80,6 +81,21 @@ const UNIT_IMAGES = {
   ],
 };
 
+const SIBLING_LINKS = {
+  'portable-toilet-rental-new-york': [
+    { href: '/portable-toilet-rental-denver/', anchor: 'Denver restroom rentals', city: 'Denver' },
+    { href: '/portable-toilet-rental-chicago/', anchor: 'Chicago event restroom service', city: 'Chicago' },
+  ],
+  'portable-toilet-rental-denver': [
+    { href: '/portable-toilet-rental-new-york/', anchor: 'New York portable restroom service', city: 'New York' },
+    { href: '/portable-toilet-rental-chicago/', anchor: 'Chicago event restroom rental', city: 'Chicago' },
+  ],
+  'portable-toilet-rental-chicago': [
+    { href: '/portable-toilet-rental-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/portable-toilet-rental-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  ],
+};
+
 export default async function LocationPage({ params }) {
   const loc = await getLocationBySlug(params.slug);
   if (!loc) notFound();
@@ -89,6 +105,7 @@ export default async function LocationPage({ params }) {
   const heroImage = HERO_IMAGES[loc.slug];
   const heroPerson = HERO_PEOPLE[loc.slug];
   const unitImages = UNIT_IMAGES[loc.slug] || [];
+  const siblingLinks = SIBLING_LINKS[loc.slug] || [];
 
   return (
     <>
@@ -122,6 +139,7 @@ export default async function LocationPage({ params }) {
                 className="hero-person-img"
                 width="600"
                 height="800"
+                fetchPriority="high"
               />
             </picture>
           )}
@@ -179,7 +197,21 @@ export default async function LocationPage({ params }) {
       </div>
 
       <section className="local-context">
-        <div className="container" dangerouslySetInnerHTML={{ __html: loc.local_context_html }} />
+        <div className="container">
+          <div dangerouslySetInnerHTML={{ __html: loc.local_context_html }} />
+          {siblingLinks.length > 0 && (
+            <p>
+              Palace also operates in{' '}
+              {siblingLinks.map((s, i) => (
+                <span key={i}>
+                  {i > 0 && ' and '}
+                  <Link href={s.href}>{s.anchor}</Link>
+                </span>
+              ))}
+              — same Palace Standard™ your {loc.city} team delivers.
+            </p>
+          )}
+        </div>
       </section>
 
       {/*

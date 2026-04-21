@@ -47,6 +47,7 @@ export default async function HomePage() {
               className="hero-person-img"
               width="600"
               height="800"
+              fetchPriority="high"
             />
           </picture>
         </div>
@@ -70,9 +71,13 @@ export default async function HomePage() {
           <h2>Palace Service Locations</h2>
           <hr className="gold-rule" />
           <p>
-            Each Palace Porta Potties location runs on the same standard: clean units, rapid
-            dispatch, and professional placement. Choose your nearest city for local pricing and
-            availability.
+            Palace operates from yards in three of the country's toughest rental markets.
+            Our <Link href="/portable-toilet-rental-new-york/">New York team</Link> handles
+            SAPO permits and freight-elevator deliveries across five boroughs.
+            Our <Link href="/portable-toilet-rental-denver/">Denver crew</Link> winterizes
+            every long-term rental and delivers up to Front Range mountain venues.
+            And our <Link href="/portable-toilet-rental-chicago/">Chicago dispatch</Link> covers
+            CDOT permit coordination from the Pilsen yard out to the lakefront.
           </p>
           <div className="location-grid">
             {locations.map((loc) => (

@@ -47,6 +47,7 @@ export default async function RootLayout({ children }) {
                   {loc.city}, {loc.state_code}
                 </Link>
               ))}
+              <Link href="/about/">About</Link>
             </nav>
             <p>
               <a href="tel:+18887085771">(888) 708-5771</a> — Available 24/7

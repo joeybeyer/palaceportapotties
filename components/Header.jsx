@@ -29,6 +29,7 @@ export default function Header({ locations }) {
                 {loc.city}
               </Link>
             ))}
+            <Link href="/about/">About</Link>
           </nav>
           <a href={`tel:${phone.tel}`} className="cta-phone">
             Call {phone.display}
