@@ -1,40 +1,40 @@
-# Palace Porta Potties — Claude Code Project Guide
+# Palace Porta Potties - Claude Code Project Guide
 
 This file encodes how Claude Code should operate in this repo. Read it fully before any non-trivial task.
 
 ---
 
-## PART 1 — The Four Principles (Karpathy)
+## PART 1 - The Four Principles (Karpathy)
 
 These are non-negotiable. They apply to every task in this repo.
 
-### P1 — Think Before Coding
+### P1 - Think Before Coding
 
 Before writing or editing any code:
 
 1. **Restate** what you believe the user wants in your own words.
 2. **List assumptions** you are making.
-3. **Ask 1–3 focused clarifying questions** if intent is ambiguous.
-4. **Explore first** — list the files you plan to touch before touching them.
+3. **Ask 1-3 focused clarifying questions** if intent is ambiguous.
+4. **Explore first** - list the files you plan to touch before touching them.
 5. **Surface inconsistencies** between the request and existing code.
 
 Never jump straight to editing on the first turn of a non-trivial task. Never invent requirements the user didn't state.
 
-### P2 — Simplicity First
+### P2 - Simplicity First
 
 Write the **minimum** working change. Report line count added.
 
 - No speculative abstractions
 - No "while I'm in here" additions
 - No defensive scaffolding for problems the user didn't mention
-- No new managers, services, or helpers unless reused ≥2x
+- No new managers, services, or helpers unless reused >=2x
 - No config toggles "for future flexibility"
 - No try/except blocks that only hide bugs
 - Inline simple logic instead of factoring it out
 
 If the same task can be 20 lines or 50 lines, write 20.
 
-### P3 — Surgical Changes
+### P3 - Surgical Changes
 
 Touch **only** the lines the task requires.
 
@@ -43,13 +43,13 @@ Touch **only** the lines the task requires.
 - No reordering imports or declarations
 - No deleting comments you don't recognize
 - No bundling "improvements" into the same change
-- If a refactor is warranted, **propose it first** — don't sneak it in
+- If a refactor is warranted, **propose it first** - don't sneak it in
 
 The diff must be reviewable. If the user reads the diff and sees changes they didn't ask for, the task failed.
 
-### P4 — Goal-Driven Execution
+### P4 - Goal-Driven Execution
 
-Every meaningful task starts with a **definition of done** — what the user should be able to do, see, or measure when the change is complete.
+Every meaningful task starts with a **definition of done** - what the user should be able to do, see, or measure when the change is complete.
 
 - Plan backward from that criterion.
 - Loop until satisfied, not until "done enough."
@@ -58,7 +58,7 @@ Every meaningful task starts with a **definition of done** — what the user sho
 
 ---
 
-## PART 2 — Project Context
+## PART 2 - Project Context
 
 ### What this is
 
@@ -66,9 +66,9 @@ Palace Porta Potties is a multi-location portable toilet rental site. Next.js 14
 
 ### Brand
 
-- Brand name is **Palace Porta Potties** — always. Never "Porta Potties," never "palace porta potties lowercase."
+- Brand name is **Palace Porta Potties** - always. Never "Porta Potties," never "palace porta potties lowercase."
 - Voice: clean, direct, professional. Premium but not snobby. No toilet humor on core pages.
-- Trademarked offers — use with ™ when referenced: Palace Standard™, Royal Response Quote™, Palace Placement Promise™, Event-Ready Setup™, Jobsite Reliability Plan™, Palace Clean Check™.
+- Trademarked offers - use with (TM) when referenced: Palace Standard(TM), Royal Response Quote(TM), Palace Placement Promise(TM), Event-Ready Setup(TM), Jobsite Reliability Plan(TM), Palace Clean Check(TM).
 - Tagline: "Portable Restrooms. Royal Treatment."
 
 ### Entity consistency
@@ -81,7 +81,7 @@ Every surface must say **Palace Porta Potties** consistently:
 
 ---
 
-## PART 3 — SEO Rules (Hard Constraints)
+## PART 3 - SEO Rules (Hard Constraints)
 
 These come from SEO University and are field-tested. **Do not deviate without explicit approval.** These take precedence over general "best practices" you might know.
 
@@ -89,7 +89,7 @@ These come from SEO University and are field-tested. **Do not deviate without ex
 
 - Flat EMQ slugs only: `/portable-toilet-rental-[city]/`
 - Trailing slash enforced via `next.config.mjs`
-- **Never change a URL after it is indexed** — puts the site under Google's anti-SEO microscope.
+- **Never change a URL after it is indexed** - puts the site under Google's anti-SEO microscope.
 - No `/locations/`, `/services/`, `/cities/`, or other subfolders.
 
 ### Title tags
@@ -105,7 +105,7 @@ Format: `EMQ: Complete sentence ~6 words. 2026`
 
 ### Meta descriptions
 
-- **No EMQ** — use synonyms, entities, PMQs
+- **No EMQ** - use synonyms, entities, PMQs
 - CTA format: verb + perks
 - Include phone number
 - Tend longer, not shorter
@@ -119,15 +119,15 @@ Format: `EMQ: Complete sentence ~6 words. 2026`
 
 ### Content
 
-- Each city page must be 85%+ unique vs other city pages — otherwise gets soft-404'd
+- Each city page must be 85%+ unique vs other city pages - otherwise gets soft-404'd
 - Unique local info required: permits, venues, geography, industry clusters
 - First paragraph contains the EMQ once
 - Do not stuff EMQ in CSS classes, IDs, alt text, or HTML attributes
-- Keep EMQ count per page at 1–2 max unless competitor analysis justifies more
+- Keep EMQ count per page at 1-2 max unless competitor analysis justifies more
 
 ### Navigation
 
-- Flat linking — every city page linked from every page via top nav
+- Flat linking - every city page linked from every page via top nav
 - Real `<a>` tags in the DOM, not JS-rendered
 - When cities exceed ~8, migrate to a state-grouped mega-menu with DOM-rendered links
 
@@ -135,29 +135,29 @@ Format: `EMQ: Complete sentence ~6 words. 2026`
 
 - Homepage: `Organization` schema only
 - City pages: `LocalBusiness` + `FAQPage` schema, with GBP place data
-- Do not overuse schema — no product schema, no review schema on pages without real reviews
+- Do not overuse schema - no product schema, no review schema on pages without real reviews
 
 ### NAP
 
-- Must match the GBP **exactly** — same business name, same address format, same phone format
+- Must match the GBP **exactly** - same business name, same address format, same phone format
 - Each city page embeds the GBP iframe from Google Maps
 
 ---
 
-## PART 4 — Infrastructure Rules
+## PART 4 - Infrastructure Rules
 
 ### Database
 
 - Turso/libSQL, one `locations` table, one row per physical GBP location
-- Never hardcode city data in components — always fetch from DB
+- Never hardcode city data in components - always fetch from DB
 - Adding a city = adding a row to `scripts/seed.js` + running `npm run db:seed`
 
 ### Deployment
 
 - **Primary target: Vercel** (matches other Joey portfolio sites, native Turso integration)
-- **Alternative: Cloudflare Pages** — fine from an SEO standpoint per SEO-U validation. Use if Vercel costs become prohibitive.
+- **Alternative: Cloudflare Pages** - fine from an SEO standpoint per SEO-U validation. Use if Vercel costs become prohibitive.
 - Env vars required: `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`
-- **Never upload the `.next` folder to a server** — upload source, build on server (Joey's operator rule)
+- **Never upload the `.next` folder to a server** - upload source, build on server (Joey's operator rule)
 
 ### Joey's global infra rules (inherited)
 
@@ -167,31 +167,31 @@ Format: `EMQ: Complete sentence ~6 words. 2026`
 
 ---
 
-## PART 5 — The Daily SOP
+## PART 5 - The Daily SOP
 
 Follow this workflow for every meaningful task:
 
-### Step 1 — Brainstorm
+### Step 1 - Brainstorm
 
 Before any non-trivial work:
 
 1. User states the goal (declarative: "user should be able to X").
 2. You restate, list assumptions, ask clarifying questions.
-3. You propose 2–3 approaches with tradeoffs.
+3. You propose 2-3 approaches with tradeoffs.
 4. User approves an approach.
 
 If Superpowers plugin is installed: `/superpowers:brainstorm`.
 
-### Step 2 — Plan
+### Step 2 - Plan
 
 1. Turn the approved approach into a line-by-line implementation plan.
 2. List every file you will touch.
 3. Flag any files you will NOT touch but that are tangentially related.
-4. User reviews and catches bad decisions here — not after code is written.
+4. User reviews and catches bad decisions here - not after code is written.
 
 If Superpowers plugin is installed: `/superpowers:write-plan`.
 
-### Step 3 — Execute
+### Step 3 - Execute
 
 1. Write the minimum code to satisfy the plan.
 2. Run the code. Verify the definition of done is actually met.
@@ -207,7 +207,7 @@ If Superpowers plugin is installed: `/superpowers:execute-plan`.
 
 ---
 
-## PART 6 — Checklists
+## PART 6 - Checklists
 
 ### Before editing
 
@@ -238,19 +238,19 @@ If Superpowers plugin is installed: `/superpowers:execute-plan`.
 
 ---
 
-## PART 7 — Repetition Rule
+## PART 7 - Repetition Rule
 
 If you (or the user) do a task three times, it becomes a custom skill in `.claude/skills/`.
 
 Current repeatable workflows already captured:
 
-- `.claude/commands/add-city.md` — Onboard a new GBP-verified city
-- `.claude/commands/seo-check.md` — Audit a page against SEO-U rules
-- `.claude/commands/deploy.md` — Deploy to Vercel with env checks
+- `.claude/commands/add-city.md` - Onboard a new GBP-verified city
+- `.claude/commands/seo-check.md` - Audit a page against SEO-U rules
+- `.claude/commands/deploy.md` - Deploy to Vercel with env checks
 
 ---
 
-## PART 8 — What to Refuse / Flag
+## PART 8 - What to Refuse / Flag
 
 Refuse or pause and confirm with the user if:
 

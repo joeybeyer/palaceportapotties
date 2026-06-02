@@ -3,7 +3,7 @@
 
 CREATE TABLE IF NOT EXISTS locations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  slug TEXT NOT NULL UNIQUE,                    -- portable-toilet-rental-new-york
+  slug TEXT NOT NULL UNIQUE,                    -- porta-potties-new-york
   city TEXT NOT NULL,                           -- New York
   state TEXT NOT NULL,                          -- New York
   state_code TEXT NOT NULL,                     -- NY
@@ -30,11 +30,11 @@ CREATE TABLE IF NOT EXISTS locations (
   local_context_html TEXT NOT NULL,             -- City-specific (permits, events, geo)
   faq_json TEXT NOT NULL,                       -- [{q,a},...] city-specific FAQs
 
-  -- Approved Palace tables (confirmed ranking signal per SEO-U — tables in lower-half of page)
-  guest_count_table_html TEXT,                  -- Event-guests → unit-count planning matrix
+  -- Approved Palace tables (confirmed ranking signal per SEO-U - tables in lower-half of page)
+  guest_count_table_html TEXT,                  -- Event-guests -> unit-count planning matrix
   pricing_table_html TEXT,                      -- Event + construction rate cards
 
-  -- Entity Vector Signal 2 — schema enrichment fields
+  -- Entity Vector Signal 2 - schema enrichment fields
   same_as_urls TEXT,                            -- JSON array of external profile URLs (GBP, Yelp, BBB, etc.)
   rating_value REAL,                            -- Aggregate Google review rating (null = omit from schema)
   review_count INTEGER,                         -- Total Google review count (null = omit from schema)

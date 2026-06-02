@@ -70,18 +70,123 @@ a:hover { color: var(--midnight-navy); }
 .brand-logo { display: block; }
 .brand-logo img { height: 48px; width: auto; display: block; }
 .site-nav {
-  display: flex; gap: 1.5rem; flex: 1; flex-wrap: wrap;
+  display: flex; gap: 1.5rem; flex: 1; flex-wrap: wrap; align-items: center;
   font-size: 0.96rem;
 }
 .site-nav a {
   color: var(--midnight-navy); font-weight: 500;
   padding: 0.25rem 0; position: relative;
+  cursor: pointer;
 }
 .site-nav a:hover { color: var(--royal-blue); }
 .site-nav a:hover::after {
   content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
   height: 2px; background: var(--palace-gold);
 }
+.nav-menu {
+  position: relative;
+}
+.site-nav .nav-menu-trigger {
+  color: var(--midnight-navy);
+  font-weight: 500;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+.site-nav .nav-menu-trigger:hover { color: var(--royal-blue); }
+.nav-menu-panel--solutions {
+  width: min(640px, calc(100vw - 2rem));
+}
+.nav-menu-trigger::before {
+  content: '+';
+  color: var(--gold-deep);
+  margin-right: 0.35rem;
+}
+.nav-menu:hover .nav-menu-trigger::before,
+.nav-menu:focus-within .nav-menu-trigger::before {
+  content: '-';
+}
+.nav-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.9rem);
+  left: 0;
+  width: min(560px, calc(100vw - 2rem));
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  background: var(--clean-white);
+  border: 1px solid var(--soft-silver);
+  border-top: 3px solid var(--palace-gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 1rem;
+  z-index: 80;
+}
+.nav-menu:hover .nav-menu-panel,
+.nav-menu:focus-within .nav-menu-panel {
+  display: grid;
+}
+.nav-menu-group p {
+  margin: 0 0 0.45rem;
+  color: var(--stone-gray);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.nav-menu-group a {
+  display: block;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--soft-silver);
+}
+.nav-menu-group a::after {
+  display: none;
+}
+.nav-menu-group span {
+  display: block;
+  color: var(--midnight-navy);
+  font-weight: 700;
+}
+.nav-menu-group small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+/* Nested city -> use-case flyout (Option A: location-first matrix) */
+.nav-city { position: relative; }
+.nav-menu-group .nav-city-link::after {
+  display: inline-block;
+  content: '\25b8';
+  float: right;
+  color: var(--gold-deep);
+  font-size: 0.8rem;
+}
+.nav-city-flyout {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  min-width: 240px;
+  background: var(--clean-white);
+  border: 1px solid var(--soft-silver);
+  border-top: 3px solid var(--palace-gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem;
+  z-index: 90;
+}
+.nav-city:hover > .nav-city-flyout,
+.nav-city:focus-within > .nav-city-flyout {
+  display: block;
+}
+.nav-city-flyout a {
+  padding: 0.45rem 0.6rem;
+  border-top: 0;
+  font-weight: 500;
+  color: var(--midnight-navy);
+  border-radius: 6px;
+}
+.nav-city-flyout a:hover { background: var(--soft-silver); }
 .cta-phone {
   background: var(--midnight-navy);
   color: var(--clean-white) !important;
@@ -91,11 +196,31 @@ a:hover { color: var(--midnight-navy); }
 }
 .cta-phone:hover { background: var(--royal-blue); color: var(--clean-white) !important; }
 
-/* ── Sticky mobile CTA ── */
+/* -- Sticky mobile CTA -- */
 .sticky-mobile-cta {
   display: none;
 }
 @media (max-width: 768px) {
+  .nav-menu {
+    width: 100%;
+  }
+  .nav-menu-panel {
+    position: static;
+    display: grid;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+  }
+  .nav-city-flyout {
+    position: static;
+    display: block;
+    min-width: 0;
+    border: 0;
+    border-top: 1px solid var(--soft-silver);
+    box-shadow: none;
+    padding: 0 0 0.5rem 0.75rem;
+  }
+  .nav-menu-group .nav-city-link::after { display: none; }
   .sticky-mobile-cta {
     display: block;
     position: fixed;
@@ -135,7 +260,7 @@ a:hover { color: var(--midnight-navy); }
 }
 .hero > .container { position: relative; z-index: 1; }
 /* Optical guide: progressive max-width narrowing creates a diagonal
-   right edge that funnels the eye from headline → description → CTA.
+   right edge that funnels the eye from headline -> description -> CTA.
    H1 is widest, description narrower, buttons narrowest = funnel shape. */
 .hero h1 { color: var(--clean-white); max-width: 640px; }
 .hero .eyebrow {
@@ -152,7 +277,7 @@ a:hover { color: var(--midnight-navy); }
 .hero .intro strong { color: var(--palace-gold); }
 .hero-cta { display: flex; gap: 0.85rem; margin-top: 1.75rem; flex-wrap: wrap; }
 
-/* ── Hero Split Layout (Type 2: content left, person right) ── */
+/* -- Hero Split Layout (Type 2: content left, person right) -- */
 .hero-split { padding: 0; overflow: hidden; }
 .hero-split-grid {
   display: grid;
@@ -174,7 +299,7 @@ a:hover { color: var(--midnight-navy); }
   aspect-ratio: 3 / 4;
 }
 
-/* ── Mid-page CTA strip ── */
+/* -- Mid-page CTA strip -- */
 .mid-cta {
   background: var(--off-white);
   text-align: center;
@@ -183,7 +308,7 @@ a:hover { color: var(--midnight-navy); }
   border-bottom: 1px solid var(--soft-silver);
 }
 
-/* ── Mobile hero optimization ── */
+/* -- Mobile hero optimization -- */
 @media (max-width: 768px) {
   .hero-split-grid {
     grid-template-columns: 1fr;
@@ -247,8 +372,11 @@ section + section { border-top: 1px solid var(--soft-silver); }
   box-shadow: var(--shadow-md); transform: translateY(-2px);
 }
 .location-card h3 { margin-top: 0; color: var(--midnight-navy); font-size: 1.35rem; }
+.location-card h4 { margin-top: 0; color: var(--midnight-navy); font-size: 1.2rem; }
 .location-card .phone { font-weight: 700; color: var(--royal-blue); margin: 0.25rem 0; }
 .location-card .view-link { color: var(--gold-deep); font-weight: 600; font-size: 0.95rem; }
+.location-state-group { margin-top: 2rem; }
+.location-state-group h3 { margin-bottom: 1rem; color: var(--midnight-navy); }
 
 .nap-block { background: var(--off-white); }
 .nap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
@@ -282,7 +410,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   list-style: none; display: flex; justify-content: space-between; align-items: center;
 }
 .faqs summary::after { content: '+'; color: var(--gold-deep); font-size: 1.5rem; line-height: 1; }
-.faqs details[open] summary::after { content: '−'; }
+.faqs details[open] summary::after { content: '-'; }
 .faqs p { margin: 0.85rem 0 0; color: var(--text-muted); }
 
 .cta-band {
@@ -312,9 +440,10 @@ section + section { border-top: 1px solid var(--soft-silver); }
 .site-footer a:hover { color: var(--palace-gold); }
 .site-footer strong { color: var(--clean-white); }
 .footer-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1.25rem 0; }
+.footer-location-group { display: inline-flex; gap: 0.7rem; flex-wrap: wrap; }
 .copyright { font-size: 0.9rem; color: #6B7684; border-top: 1px solid #1E2F4A; padding-top: 1.5rem; margin-top: 1.5rem; }
 
-/* ── Palace Tables (guest-count + pricing) ── */
+/* -- Palace Tables (guest-count + pricing) -- */
 .palace-tables {
   margin: 2rem 0;
 }
@@ -398,7 +527,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   }
 }
 
-/* ── How It Works grid ── */
+/* -- How It Works grid -- */
 .how-it-works-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -421,7 +550,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   }
 }
 
-/* ── Unit gallery grid (city pages) ── */
+/* -- Unit gallery grid (city pages) -- */
 .unit-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -440,7 +569,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   border-color: var(--palace-gold);
 }
 
-/* ── Service images (homepage) ── */
+/* -- Service images (homepage) -- */
 .service-images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -459,7 +588,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   }
 }
 
-/* ── Why Palace (problem/solution grid) ── */
+/* -- Why Palace (problem/solution grid) -- */
 .why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -490,7 +619,7 @@ section + section { border-top: 1px solid var(--soft-silver); }
   .why-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Guarantee section ── */
+/* -- Guarantee section -- */
 .guarantee {
   background: var(--off-white);
   text-align: center;
