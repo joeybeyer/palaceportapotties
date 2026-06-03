@@ -545,7 +545,7 @@ const locations = [
     gbp_url: 'https://www.google.com/maps?q=915%20S%20Duncan%20Ave%2C%20Los%20Angeles%2C%20CA%2090022',
     gbp_cid: '',
     gbp_place_id: '',
-    map_iframe: '<iframe src="https://www.google.com/maps?q=915%20S%20Duncan%20Ave%2C%20Los%20Angeles%2C%20CA%2090022&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    map_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.3705865338216!2d-118.17016039999999!3d34.022980200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cfe0464bbbfb%3A0xb92c343f102d6e56!2sPalace%20Porta%20Potties!5e1!3m2!1sen!2sus!4v1780497065167!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     hours_json: JSON.stringify({
       mon: 'Open 24 hours',
       tue: 'Open 24 hours',
@@ -687,7 +687,7 @@ const locations = [
     gbp_url: 'https://www.google.com/maps?q=14781%20Biscayne%20Blvd%2C%20North%20Miami%2C%20FL%2033181',
     gbp_cid: '',
     gbp_place_id: '',
-    map_iframe: '<iframe src="https://www.google.com/maps?q=14781%20Biscayne%20Blvd%2C%20North%20Miami%2C%20FL%2033181&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    map_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167353.3353703851!2d-80.43263683021684!3d25.778960657431067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ad6f7f7de2fd%3A0x939de209fb2b8703!2sPalace%20Porta%20Potties!5e0!3m2!1sen!2sus!4v1780496165576!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     hours_json: JSON.stringify({
       mon: 'Open 24 hours',
       tue: 'Open 24 hours',
@@ -829,7 +829,7 @@ const locations = [
     gbp_url: 'https://www.google.com/maps?q=3237%20Independence%20Pkwy%2C%20Plano%2C%20TX%2075075',
     gbp_cid: '',
     gbp_place_id: '',
-    map_iframe: '<iframe src="https://www.google.com/maps?q=3237%20Independence%20Pkwy%2C%20Plano%2C%20TX%2075075&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    map_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.636165615114!2d-96.7549404!3d33.039714700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c23f28160f2f3%3A0x10ee3556835d7018!2sPalace%20Porta%20Potties!5e0!3m2!1sen!2sus!4v1780496250118!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     hours_json: JSON.stringify({
       mon: 'Open 24 hours',
       tue: 'Open 24 hours',
@@ -971,7 +971,7 @@ const locations = [
     gbp_url: 'https://www.google.com/maps?q=2416%20NW%2087th%20Ave%2C%20Doral%2C%20FL%2033172',
     gbp_cid: '',
     gbp_place_id: '',
-    map_iframe: '<iframe src="https://www.google.com/maps?q=2416%20NW%2087th%20Ave%2C%20Doral%2C%20FL%2033172&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    map_iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.2476949437746!2d-80.3382938!3d25.7954012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b98a1116a22d%3A0xbe752ee1f73d2b0d!2sPalace%20Porta%20Potties!5e0!3m2!1sen!2sus!4v1780496327385!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     hours_json: JSON.stringify({
       mon: 'Open 24 hours',
       tue: 'Open 24 hours',
