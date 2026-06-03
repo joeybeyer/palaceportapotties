@@ -1,4 +1,4 @@
-﻿// Run with: node scripts/schema.js
+// Run with: node scripts/schema.js
 import 'dotenv/config';
 import { createClient } from '@libsql/client';
 import fs from 'node:fs';
@@ -25,4 +25,4 @@ for (const stmt of statements) {
   await db.execute(stmt);
 }
 
-console.log(`✓ Schema applied (${statements.length} statements).`);
+console.log(`OK Schema applied (${statements.length} statements).`);

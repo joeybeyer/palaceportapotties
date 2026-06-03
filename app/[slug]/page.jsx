@@ -1,6 +1,9 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
-import { getLocationBySlug, getAllSlugs } from '@/lib/db';
+import { getLocationBySlug, getAllLocations } from '@/lib/db';
+import { getHubUseCase, parseComboSlug, USE_CASES } from '@/lib/useCases';
+import ComboPage from '@/components/ComboPage';
+import HubPage from '@/components/HubPage';
 
 export const runtime = 'edge';
 
@@ -9,8 +12,57 @@ export async function generateStaticParams() {
   return [];
 }
 
+const OLD_SLUG_REDIRECTS = {
+  'portable-toilet-rental-new-york': 'porta-potties-new-york',
+  'portable-toilet-rental-denver': 'porta-potties-denver',
+  'portable-toilet-rental-chicago': 'porta-potties-chicago',
+  'portable-toilet-rental-long-beach': 'porta-potties-long-beach',
+  'portable-toilet-rental-los-angeles': 'porta-potties-los-angeles',
+  'portable-toilet-rental-north-miami': 'porta-potties-north-miami',
+  'portable-toilet-rental-plano': 'porta-potties-plano',
+  'portable-toilet-rental-doral': 'porta-potties-doral',
+};
+
 // Per-page dynamic metadata driven by DB
 export async function generateMetadata({ params }) {
+  const redirectedSlug = OLD_SLUG_REDIRECTS[params.slug];
+  if (redirectedSlug) {
+    return {
+      alternates: {
+        canonical: `https://palaceportapotties.com/${redirectedSlug}/`,
+      },
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
+
+  // Use-case hub page
+  const hubUseCase = getHubUseCase(params.slug);
+  if (hubUseCase) {
+    return {
+      title: hubUseCase.hubTitle,
+      description: hubUseCase.hubMeta,
+      alternates: { canonical: `https://palaceportapotties.com/${hubUseCase.hubSlug}/` },
+    };
+  }
+
+  // Use-case x city combo page
+  const combo = parseComboSlug(params.slug);
+  if (combo) {
+    const comboLoc = await getLocationBySlug(combo.citySlug);
+    if (comboLoc) {
+      const url = `https://palaceportapotties.com/${combo.useCase.comboPrefix}-${comboLoc.slug}/`;
+      return {
+        title: combo.useCase.comboTitle(comboLoc.city),
+        description: combo.useCase.comboMeta(comboLoc.city, comboLoc.phone),
+        alternates: { canonical: url },
+        openGraph: { title: combo.useCase.comboTitle(comboLoc.city), url, type: 'website' },
+      };
+    }
+  }
+
   const loc = await getLocationBySlug(params.slug);
   if (!loc) return {};
   const ogImage = HERO_IMAGES[loc.slug];
@@ -31,45 +83,75 @@ export async function generateMetadata({ params }) {
 }
 
 const HERO_IMAGES = {
-  'portable-toilet-rental-new-york': '/images/generated/NY-HERO.webp',
-  'portable-toilet-rental-denver': '/images/generated/DV-HERO.webp',
-  'portable-toilet-rental-chicago': '/images/generated/CHI-HERO.webp',
+  'porta-potties-new-york': '/images/generated/NY-HERO.webp',
+  'porta-potties-denver': '/images/generated/DV-HERO.webp',
+  'porta-potties-chicago': '/images/generated/CHI-HERO.webp',
+  'porta-potties-long-beach': '/images/generated/HP-NATIONAL-HERO.webp',
+  'porta-potties-los-angeles': '/images/generated/HP-NATIONAL-HERO.webp',
+  'porta-potties-north-miami': '/images/generated/HP-NATIONAL-HERO.webp',
+  'porta-potties-plano': '/images/generated/HP-NATIONAL-HERO.webp',
+  'porta-potties-doral': '/images/generated/HP-NATIONAL-HERO.webp',
 };
 
 const HERO_PEOPLE = {
-  'portable-toilet-rental-new-york': {
+  'porta-potties-new-york': {
     desktop: '/images/generated/NY-HERO-PERSON.webp',
     mobile: '/images/generated/NY-HERO-PERSON-MOBILE.webp',
     alt: 'Palace Porta Potties site supervisor ready to help with your New York rental',
   },
-  'portable-toilet-rental-denver': {
+  'porta-potties-denver': {
     desktop: '/images/generated/DV-HERO-PERSON.webp',
     mobile: '/images/generated/DV-HERO-PERSON-MOBILE.webp',
     alt: 'Palace Porta Potties event coordinator ready to help with your Denver rental',
   },
-  'portable-toilet-rental-chicago': {
+  'porta-potties-chicago': {
     desktop: '/images/generated/CHI-HERO-PERSON.webp',
     mobile: '/images/generated/CHI-HERO-PERSON-MOBILE.webp',
     alt: 'Palace Porta Potties site manager ready to help with your Chicago rental',
   },
+  'porta-potties-long-beach': {
+    desktop: '/images/generated/HP-HERO-PERSON.webp',
+    mobile: '/images/generated/HP-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your Long Beach rental',
+  },
+  'porta-potties-los-angeles': {
+    desktop: '/images/generated/HP-HERO-PERSON.webp',
+    mobile: '/images/generated/HP-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your Los Angeles rental',
+  },
+  'porta-potties-north-miami': {
+    desktop: '/images/generated/HP-HERO-PERSON.webp',
+    mobile: '/images/generated/HP-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your North Miami rental',
+  },
+  'porta-potties-plano': {
+    desktop: '/images/generated/HP-HERO-PERSON.webp',
+    mobile: '/images/generated/HP-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your Plano rental',
+  },
+  'porta-potties-doral': {
+    desktop: '/images/generated/HP-HERO-PERSON.webp',
+    mobile: '/images/generated/HP-HERO-PERSON-MOBILE.webp',
+    alt: 'Palace Porta Potties event coordinator ready to help with your Doral rental',
+  },
 };
 
 const UNIT_IMAGES = {
-  'portable-toilet-rental-new-york': [
+  'porta-potties-new-york': [
     { src: '/images/generated/NY-UNIT-HIGHRISE.webp', alt: 'Portable toilet at a New York high-rise construction site' },
     { src: '/images/generated/NY-UNIT-FILM.webp', alt: 'Restroom trailer at a New York film production base camp' },
     { src: '/images/generated/NY-UNIT-SIDEWALK.webp', alt: 'Event portable restroom on a New York City sidewalk' },
     { src: '/images/generated/NY-UNIT-ADA.webp', alt: 'ADA-accessible portable restroom in a New York park' },
     { src: '/images/generated/NY-UNIT-MARATHON.webp', alt: 'Portable toilet cluster at a New York marathon start village' },
   ],
-  'portable-toilet-rental-denver': [
+  'porta-potties-denver': [
     { src: '/images/generated/DV-UNIT-WINTER.webp', alt: 'Portable toilet at a Denver construction site in winter' },
     { src: '/images/generated/DV-UNIT-WATERLESS.webp', alt: 'Waterless portable restroom at a dry Denver trail site' },
     { src: '/images/generated/DV-UNIT-MOUNTAIN.webp', alt: 'Portable toilet at a Denver mountain event venue' },
     { src: '/images/generated/DV-UNIT-ADA-PARK.webp', alt: 'ADA-accessible unit at a Denver park event' },
     { src: '/images/generated/DV-UNIT-MARATHON.webp', alt: 'Portable toilet bank at a Denver race start line' },
   ],
-  'portable-toilet-rental-chicago': [
+  'porta-potties-chicago': [
     { src: '/images/generated/CHI-UNIT-LOOP.webp', alt: 'Portable restroom at a Chicago Loop construction site' },
     { src: '/images/generated/CHI-UNIT-FULTON.webp', alt: 'Portable toilet near a Fulton Market event venue in Chicago' },
     { src: '/images/generated/CHI-UNIT-WINTER.webp', alt: 'Portable restroom at a Chicago winter construction site' },
@@ -82,21 +164,84 @@ const UNIT_IMAGES = {
 };
 
 const SIBLING_LINKS = {
-  'portable-toilet-rental-new-york': [
-    { href: '/portable-toilet-rental-denver/', anchor: 'Denver restroom rentals', city: 'Denver' },
-    { href: '/portable-toilet-rental-chicago/', anchor: 'Chicago event restroom service', city: 'Chicago' },
+  'porta-potties-new-york': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-denver/', anchor: 'Denver restroom rentals', city: 'Denver' },
   ],
-  'portable-toilet-rental-denver': [
-    { href: '/portable-toilet-rental-new-york/', anchor: 'New York portable restroom service', city: 'New York' },
-    { href: '/portable-toilet-rental-chicago/', anchor: 'Chicago event restroom rental', city: 'Chicago' },
+  'porta-potties-denver': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-new-york/', anchor: 'New York portable restroom service', city: 'New York' },
   ],
-  'portable-toilet-rental-chicago': [
-    { href: '/portable-toilet-rental-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
-    { href: '/portable-toilet-rental-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  'porta-potties-long-beach': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/porta-potties-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  ],
+  'porta-potties-los-angeles': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/porta-potties-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  ],
+  'porta-potties-north-miami': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/porta-potties-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  ],
+  'porta-potties-plano': [
+    { href: '/porta-potties-doral/', anchor: 'Doral restroom service', city: 'Doral' },
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/porta-potties-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
+  ],
+  'porta-potties-doral': [
+    { href: '/porta-potties-north-miami/', anchor: 'North Miami restroom service', city: 'North Miami' },
+    { href: '/porta-potties-plano/', anchor: 'Plano restroom service', city: 'Plano' },
+    { href: '/porta-potties-los-angeles/', anchor: 'Los Angeles restroom service', city: 'Los Angeles' },
+    { href: '/porta-potties-long-beach/', anchor: 'Long Beach restroom service', city: 'Long Beach' },
+    { href: '/porta-potties-new-york/', anchor: 'New York restroom rental service', city: 'New York' },
+    { href: '/porta-potties-denver/', anchor: 'Denver portable restroom service', city: 'Denver' },
   ],
 };
 
 export default async function LocationPage({ params }) {
+  const redirectedSlug = OLD_SLUG_REDIRECTS[params.slug];
+  if (redirectedSlug) {
+    redirect(`/${redirectedSlug}/`);
+  }
+
+  // Use-case hub page
+  const hubUseCase = getHubUseCase(params.slug);
+  if (hubUseCase) {
+    const locations = await getAllLocations();
+    return <HubPage useCase={hubUseCase} locations={locations} />;
+  }
+
+  // Use-case x city combo page
+  const combo = parseComboSlug(params.slug);
+  if (combo) {
+    const comboLoc = await getLocationBySlug(combo.citySlug);
+    if (comboLoc) return <ComboPage useCase={combo.useCase} loc={comboLoc} />;
+  }
+
   const loc = await getLocationBySlug(params.slug);
   if (!loc) notFound();
 
@@ -106,6 +251,7 @@ export default async function LocationPage({ params }) {
   const heroPerson = HERO_PEOPLE[loc.slug];
   const unitImages = UNIT_IMAGES[loc.slug] || [];
   const siblingLinks = SIBLING_LINKS[loc.slug] || [];
+  const hasVerifiedMapListing = Boolean(loc.gbp_cid || loc.gbp_place_id);
 
   return (
     <>
@@ -118,7 +264,7 @@ export default async function LocationPage({ params }) {
       >
         <div className={`container${heroPerson ? ' hero-split-grid' : ''}`}>
           <div className={heroPerson ? 'hero-content' : undefined}>
-            <span className="eyebrow">Palace Standard™ — 24/7 dispatch in {loc.city}</span>
+            <span className="eyebrow">Palace Standard&trade; - 24/7 dispatch in {loc.city}</span>
             <h1>{loc.h1}</h1>
             <div className="intro" dangerouslySetInnerHTML={{ __html: loc.intro_html }} />
             <div className="hero-cta">
@@ -126,7 +272,7 @@ export default async function LocationPage({ params }) {
                 Call for a Free Quote
               </a>
               <a href={loc.gbp_url} target="_blank" rel="noopener" className="btn-secondary">
-                View on Google Maps
+                {hasVerifiedMapListing ? 'View Google Business Profile' : 'View Address on Maps'}
               </a>
             </div>
           </div>
@@ -146,16 +292,27 @@ export default async function LocationPage({ params }) {
         </div>
       </section>
 
-      {/* NAP block — exact match to GBP */}
-      <section className="nap-block">
+      {/* NAP block - exact match to GBP */}
+      <section className="nap-block" itemScope itemType="https://schema.org/LocalBusiness">
+        <meta itemProp="url" content={`https://palaceportapotties.com/${loc.slug}/`} />
+        {hasVerifiedMapListing && <link itemProp="hasMap" href={loc.gbp_url} />}
+        <div itemProp="geo" itemScope itemType="https://schema.org/GeoCoordinates">
+          <meta itemProp="latitude" content={String(loc.latitude)} />
+          <meta itemProp="longitude" content={String(loc.longitude)} />
+        </div>
         <div className="container nap-grid">
           <div>
             <h2>Visit or Contact Our {loc.city} Location</h2>
             <p className="nap">
-              <strong>Palace Porta Potties</strong><br />
-              {loc.address_line}<br />
-              {loc.city}, {loc.state_code} {loc.postal_code}<br />
-              <a href={`tel:${loc.phone_tel}`}>{loc.phone}</a>
+              <strong itemProp="name">Palace Porta Potties</strong><br />
+              <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                <span itemProp="streetAddress">{loc.address_line}</span><br />
+                <span itemProp="addressLocality">{loc.city}</span>,{' '}
+                <span itemProp="addressRegion">{loc.state_code}</span>{' '}
+                <span itemProp="postalCode">{loc.postal_code}</span>
+                <meta itemProp="addressCountry" content="US" />
+              </span><br />
+              <a itemProp="telephone" href={`tel:${loc.phone_tel}`}>{loc.phone}</a>
             </p>
             <h3>Hours</h3>
             <dl className="hours">
@@ -174,6 +331,21 @@ export default async function LocationPage({ params }) {
 
       <section className="services">
         <div className="container" dangerouslySetInnerHTML={{ __html: loc.services_html }} />
+      </section>
+
+      <section className="services">
+        <div className="container">
+          <h2>Rentals by Use Case in {loc.city}</h2>
+          <hr className="gold-rule" />
+          <div className="location-grid">
+            {USE_CASES.map((u) => (
+              <Link key={u.key} href={`/${u.comboPrefix}-${loc.slug}/`} className="location-card">
+                <h3>{u.navLabel}</h3>
+                <span className="view-link">{u.navLabel} in {loc.city} &rarr;</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       {unitImages.length > 0 && (
@@ -208,14 +380,14 @@ export default async function LocationPage({ params }) {
                   <Link href={s.href}>{s.anchor}</Link>
                 </span>
               ))}
-              — same Palace Standard™ your {loc.city} team delivers.
+              - same Palace Standard&trade; your {loc.city} team delivers.
             </p>
           )}
         </div>
       </section>
 
       {/*
-        Approved Palace tables — SEO-U signal: tables in the lower-half of the
+        Approved Palace tables - SEO-U signal: tables in the lower-half of the
         page are a confirmed ranking booster. Guest-count matrix covers
         informational intent; pricing table covers commercial intent.
         Intros live here (not in DB) so the wording stays consistent across
@@ -227,7 +399,7 @@ export default async function LocationPage({ params }) {
           <hr className="gold-rule" />
           <p>
             Sizing an event is where most providers let clients down. Below is the official
-            Palace planning matrix our dispatch team uses to spec every {loc.city} booking — built
+            Palace planning matrix our dispatch team uses to spec every {loc.city} booking - built
             from EPA event guidance, years of on-the-ground data, and the real-world throughput of
             a clean, serviced unit.
           </p>
@@ -236,7 +408,7 @@ export default async function LocationPage({ params }) {
           <h2>Palace Porta Potties {loc.city} Rental Pricing</h2>
           <hr className="gold-rule" />
           <p>
-            Transparent rates — no buried fees, no delivery-window surprises. The pricing below
+            Transparent rates - no buried fees, no delivery-window surprises. The pricing below
             applies to every {loc.city} rental, whether you are booking a one-day event or a
             multi-month construction rotation.
           </p>
@@ -246,12 +418,12 @@ export default async function LocationPage({ params }) {
 
       <section className="guarantee">
         <div className="container guarantee-content">
-          <h2>The Palace Clean Check™ Promise</h2>
+          <h2>The Palace Clean Check&trade; Promise</h2>
           <hr className="gold-rule" />
           <p>
             Every Palace unit passes a documented inspection before delivery: interior sanitized,
             paper and sanitizer stocked, hardware tested, and exterior washed. If a unit does not
-            meet the Palace Standard™ on arrival, we replace it at no charge — anywhere in {loc.city}.
+            meet the Palace Standard&trade; on arrival, we replace it at no charge - anywhere in {loc.city}.
           </p>
         </div>
       </section>
@@ -278,7 +450,7 @@ export default async function LocationPage({ params }) {
       </section>
 
       {/*
-        HomeAndConstructionBusiness is a niche sub-type of LocalBusiness —
+        HomeAndConstructionBusiness is a niche sub-type of LocalBusiness -
         SEO-U recommended niche schema types for the relevant industry.
         Portable toilet rental primarily serves construction + events, so
         HomeAndConstructionBusiness is the closest semantic fit.
@@ -319,11 +491,11 @@ export default async function LocationPage({ params }) {
             openingHoursSpecification: [
               { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' },
             ],
-            // sameAs — only emitted when Joey provides external profile URLs
+            // sameAs - only emitted when Joey provides external profile URLs
             ...(loc.same_as_urls && JSON.parse(loc.same_as_urls).length > 0 && {
               sameAs: JSON.parse(loc.same_as_urls),
             }),
-            // aggregateRating — only emitted when real review data exists
+            // aggregateRating - only emitted when real review data exists
             ...(loc.rating_value != null && loc.review_count != null && loc.review_count > 0 && {
               aggregateRating: {
                 '@type': 'AggregateRating',
@@ -332,7 +504,7 @@ export default async function LocationPage({ params }) {
                 bestRating: '5',
               },
             }),
-            // makesOffer — service array per city
+            // makesOffer - service array per city
             ...(loc.services_json && {
               makesOffer: JSON.parse(loc.services_json).map((serviceName) => ({
                 '@type': 'Offer',

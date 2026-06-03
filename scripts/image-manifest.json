@@ -3,7 +3,7 @@
     {
       "filename": "palace-unit-reference.png",
       "output_dir": "public/brand/references",
-      "prompt": "Product photograph of a single portable toilet rental unit. Exterior entirely in deep midnight navy blue (#0B1F3A), matte finish. A single horizontal accent stripe in warm brushed gold (#C8A34D) runs across the unit near the top, about 6 inches below the roof line. Centered on the main door panel: a small gold crown icon above gold wordmark 'PALACE' in elegant serif capitals. All hinges, handles, and vents in brushed stainless steel — never plastic chrome. Unit is clean, pristine, professionally staged on a smooth concrete surface. Soft overcast daylight, slight shadow. Shot from a three-quarter front angle. Commercial editorial photography, photorealistic, no CGI look, sharp focus, shallow depth of field. No people, no text other than the PALACE wordmark. Background: softly blurred neutral gray.",
+      "prompt": "Product photograph of a single portable toilet rental unit. Exterior entirely in deep midnight navy blue (#0B1F3A), matte finish. A single horizontal accent stripe in warm brushed gold (#C8A34D) runs across the unit near the top, about 6 inches below the roof line. Centered on the main door panel: a small gold crown icon above gold wordmark 'PALACE' in elegant serif capitals. All hinges, handles, and vents in brushed stainless steel - never plastic chrome. Unit is clean, pristine, professionally staged on a smooth concrete surface. Soft overcast daylight, slight shadow. Shot from a three-quarter front angle. Commercial editorial photography, photorealistic, no CGI look, sharp focus, shallow depth of field. No people, no text other than the PALACE wordmark. Background: softly blurred neutral gray.",
       "image_input": [],
       "aspect_ratio": "4:5",
       "resolution": "2K"
@@ -11,7 +11,7 @@
     {
       "filename": "palace-truck-reference.png",
       "output_dir": "public/brand/references",
-      "prompt": "Side-profile commercial photograph of a service truck — midnight navy blue (#0B1F3A) body paint, matte finish. Gold (#C8A34D) lettering on the side panel reading 'PALACE PORTA POTTIES' in clean serif capitals with a small gold crown icon preceding the text. Truck is a modern flatbed delivery truck with 4 portable toilet units loaded on the bed (units matching the Palace brand — midnight navy with gold accent stripe and PALACE wordmark). Clean suburban street background, softly blurred. Morning daylight, crisp shadows. No people visible. Commercial editorial photography, photorealistic, no CGI look, sharp focus. Shot at eye level, full side profile.",
+      "prompt": "Side-profile commercial photograph of a service truck - midnight navy blue (#0B1F3A) body paint, matte finish. Gold (#C8A34D) lettering on the side panel reading 'PALACE PORTA POTTIES' in clean serif capitals with a small gold crown icon preceding the text. Truck is a modern flatbed delivery truck with 4 portable toilet units loaded on the bed (units matching the Palace brand - midnight navy with gold accent stripe and PALACE wordmark). Clean suburban street background, softly blurred. Morning daylight, crisp shadows. No people visible. Commercial editorial photography, photorealistic, no CGI look, sharp focus. Shot at eye level, full side profile.",
       "image_input": [],
       "aspect_ratio": "16:9",
       "resolution": "2K"
@@ -59,7 +59,7 @@
     {
       "filename": "HP-DELIVERY.png",
       "output_dir": "public/images/generated",
-      "prompt": "A Palace Porta Potties service truck matching the truck reference, parked on a clean suburban residential street in soft morning light. One uniformed crew member in navy polo with gold crown embroidery (matching the uniform reference) is mid-action, gloved hand adjusting the tailgate — candid documentary posture, not posed. Three Palace-branded portable toilet units visible on the truck bed. Low three-quarter angle emphasizing truck branding. Cool neutral color grade. Cinematic depth. Photorealistic, editorial.",
+      "prompt": "A Palace Porta Potties service truck matching the truck reference, parked on a clean suburban residential street in soft morning light. One uniformed crew member in navy polo with gold crown embroidery (matching the uniform reference) is mid-action, gloved hand adjusting the tailgate - candid documentary posture, not posed. Three Palace-branded portable toilet units visible on the truck bed. Low three-quarter angle emphasizing truck branding. Cool neutral color grade. Cinematic depth. Photorealistic, editorial.",
       "aspect_ratio": "3:2",
       "resolution": "2K",
       "image_input": [
@@ -114,7 +114,7 @@
     {
       "filename": "NY-UNIT-MARATHON.png",
       "output_dir": "public/images/generated",
-      "prompt": "A tight-packed row of twelve Palace Porta Potties portable toilet units matching the reference, arranged in a crescent along the edge of a pre-race staging area in Central Park on a misty early morning. Orange construction cones demarcate the perimeter. A Palace service truck (matching truck reference) visible pulling away in background. No runners yet — pre-event calm. Cool blue-grey light, mist catching on trees. Wide documentary framing emphasizing scale and order.",
+      "prompt": "A tight-packed row of twelve Palace Porta Potties portable toilet units matching the reference, arranged in a crescent along the edge of a pre-race staging area in Central Park on a misty early morning. Orange construction cones demarcate the perimeter. A Palace service truck (matching truck reference) visible pulling away in background. No runners yet - pre-event calm. Cool blue-grey light, mist catching on trees. Wide documentary framing emphasizing scale and order.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [
@@ -125,7 +125,7 @@
     {
       "filename": "DV-UNIT-WINTER.png",
       "output_dir": "public/images/generated",
-      "prompt": "A Palace Porta Potties portable toilet unit matching the reference, on a snowy Colorado construction site. Frozen ground, rebar stacks dusted with snow, Front Range peaks in distance. Subtly bulkier insulated variant. Faint steam near the vent (cold-weather atmospheric detail). A uniformed crew member in heavier navy work jacket with gold crown embroidery checks a clipboard. Mid-morning cold clear winter light. No snow falling — fresh snowfall aftermath. Photorealistic.",
+      "prompt": "A Palace Porta Potties portable toilet unit matching the reference, on a snowy Colorado construction site. Frozen ground, rebar stacks dusted with snow, Front Range peaks in distance. Subtly bulkier insulated variant. Faint steam near the vent (cold-weather atmospheric detail). A uniformed crew member in heavier navy work jacket with gold crown embroidery checks a clipboard. Mid-morning cold clear winter light. No snow falling - fresh snowfall aftermath. Photorealistic.",
       "aspect_ratio": "3:2",
       "resolution": "1K",
       "image_input": [
@@ -136,7 +136,7 @@
     {
       "filename": "DV-UNIT-WATERLESS.png",
       "output_dir": "public/images/generated",
-      "prompt": "A sleek Palace Porta Potties waterless portable toilet unit matching the reference, with a small green-and-gold leaf icon near the door indicating drought-compliant technology. Positioned near a RiNo Denver brewery event setup — exposed brick warehouse wall, string lights, empty tables being set up in background. Late afternoon golden hour. One event staffer seen from behind carries folded linens past. Modern, sustainability-forward, event-premium.",
+      "prompt": "A sleek Palace Porta Potties waterless portable toilet unit matching the reference, with a small green-and-gold leaf icon near the door indicating drought-compliant technology. Positioned near a RiNo Denver brewery event setup - exposed brick warehouse wall, string lights, empty tables being set up in background. Late afternoon golden hour. One event staffer seen from behind carries folded linens past. Modern, sustainability-forward, event-premium.",
       "aspect_ratio": "4:5",
       "resolution": "1K",
       "image_input": [
@@ -178,7 +178,7 @@
     {
       "filename": "STK-CREW.png",
       "output_dir": "public/images/generated",
-      "prompt": "Dignified three-quarter portrait of a uniformed Palace Porta Potties crew member — navy polo shirt with small gold embroidered crown logo on chest (matching uniform reference), clean grooming, neutral trustworthy expression, standing in front of a softly-blurred navy Palace unit with gold accent stripe. Soft natural overcast light. Medium-format portrait feel. Real person energy, not stock-photo smile.",
+      "prompt": "Dignified three-quarter portrait of a uniformed Palace Porta Potties crew member - navy polo shirt with small gold embroidered crown logo on chest (matching uniform reference), clean grooming, neutral trustworthy expression, standing in front of a softly-blurred navy Palace unit with gold accent stripe. Soft natural overcast light. Medium-format portrait feel. Real person energy, not stock-photo smile.",
       "aspect_ratio": "4:5",
       "resolution": "1K",
       "image_input": [
@@ -201,7 +201,7 @@
     {
       "filename": "STK-WEDDING.png",
       "output_dir": "public/images/generated",
-      "prompt": "A Palace Porta Potties luxury restroom trailer in midnight navy with gold accent trim, parked beside a manicured garden wedding venue. String lights overhead, white folding chairs arranged in rows blurred in background. Soft late-afternoon golden light. Trailer pristine, hospitality-grade. No wedding guests in frame — quiet setup before ceremony. Editorial wedding photography aesthetic.",
+      "prompt": "A Palace Porta Potties luxury restroom trailer in midnight navy with gold accent trim, parked beside a manicured garden wedding venue. String lights overhead, white folding chairs arranged in rows blurred in background. Soft late-afternoon golden light. Trailer pristine, hospitality-grade. No wedding guests in frame - quiet setup before ceremony. Editorial wedding photography aesthetic.",
       "aspect_ratio": "3:2",
       "resolution": "1K",
       "image_input": [
@@ -211,7 +211,7 @@
     {
       "filename": "STK-HANDWASH.png",
       "output_dir": "public/images/generated",
-      "prompt": "A freestanding Palace Porta Potties handwash station — midnight navy frame with gold accent trim, stainless foot-pump pedals, soap and sanitizer dispensers — positioned near the open door of a Palace portable toilet unit matching the reference. Clean outdoor event setting, soft daylight, potted plants in periphery. Minimalist, hygienic, purposeful.",
+      "prompt": "A freestanding Palace Porta Potties handwash station - midnight navy frame with gold accent trim, stainless foot-pump pedals, soap and sanitizer dispensers - positioned near the open door of a Palace portable toilet unit matching the reference. Clean outdoor event setting, soft daylight, potted plants in periphery. Minimalist, hygienic, purposeful.",
       "aspect_ratio": "4:5",
       "resolution": "1K",
       "image_input": [
@@ -295,7 +295,7 @@
     {
       "filename": "CHI-UNIT-MARATHON.png",
       "output_dir": "public/images/generated",
-      "prompt": "A tight-packed row of fourteen Palace Porta Potties portable toilet units matching the reference, arranged in a line along the edge of a pre-race staging area in Chicago's Grant Park on a misty early morning. Orange construction cones demarcate the perimeter. A Palace service truck (matching truck reference) visible in the background near Columbus Drive. No runners yet — pre-event calm. Cool blue-grey Lake Michigan light, mist catching in the trees. Chicago skyline with skyscrapers in the background. Wide documentary framing emphasizing scale and order.",
+      "prompt": "A tight-packed row of fourteen Palace Porta Potties portable toilet units matching the reference, arranged in a line along the edge of a pre-race staging area in Chicago's Grant Park on a misty early morning. Orange construction cones demarcate the perimeter. A Palace service truck (matching truck reference) visible in the background near Columbus Drive. No runners yet - pre-event calm. Cool blue-grey Lake Michigan light, mist catching in the trees. Chicago skyline with skyscrapers in the background. Wide documentary framing emphasizing scale and order.",
       "image_input": [
         "https://palaceportapotties.com/brand/references/palace-unit-reference.webp",
         "https://palaceportapotties.com/brand/references/palace-truck-reference.webp"
@@ -326,7 +326,7 @@
     {
       "filename": "HP-HERO-PERSON-MOBILE.png",
       "output_dir": "public/images/generated",
-      "prompt": "Professional portrait of a confident woman in her mid-30s, event coordinator type, wearing a warm gold amber blouse (#C8A34D tone). She is looking UPWARD at a slight angle with a warm genuine smile, as if looking up at text above her. Shoulders-up to waist framing, centered in the frame. Background: softly blurred modern warehouse or logistics facility, warm natural light. Shallow depth of field. Hair pulled back neatly. Professional commercial photography, photorealistic, natural skin tones. The upward gaze is key — she is looking above the camera.",
+      "prompt": "Professional portrait of a confident woman in her mid-30s, event coordinator type, wearing a warm gold amber blouse (#C8A34D tone). She is looking UPWARD at a slight angle with a warm genuine smile, as if looking up at text above her. Shoulders-up to waist framing, centered in the frame. Background: softly blurred modern warehouse or logistics facility, warm natural light. Shallow depth of field. Hair pulled back neatly. Professional commercial photography, photorealistic, natural skin tones. The upward gaze is key - she is looking above the camera.",
       "image_input": [],
       "aspect_ratio": "3:4",
       "resolution": "1K"
@@ -334,7 +334,7 @@
     {
       "filename": "NY-HERO-PERSON.png",
       "output_dir": "public/images/generated",
-      "prompt": "Professional portrait of a male construction site supervisor in his early 40s, wearing a warm gold amber high-visibility safety vest (#C8A34D tone) over a clean white henley shirt. Hard hat held at his side. He is standing with confident posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident calm expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Manhattan construction site — steel beams, crane visible, morning urban light. Shallow depth of field. Clean shaven, weathered but professional. Commercial photography, photorealistic, natural skin tones.",
+      "prompt": "Professional portrait of a male construction site supervisor in his early 40s, wearing a warm gold amber high-visibility safety vest (#C8A34D tone) over a clean white henley shirt. Hard hat held at his side. He is standing with confident posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident calm expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Manhattan construction site - steel beams, crane visible, morning urban light. Shallow depth of field. Clean shaven, weathered but professional. Commercial photography, photorealistic, natural skin tones.",
       "image_input": [
         "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
       ],
@@ -374,7 +374,7 @@
     {
       "filename": "CHI-HERO-PERSON.png",
       "output_dir": "public/images/generated",
-      "prompt": "Professional portrait of a male site manager in his mid-40s, wearing a warm gold amber safety vest (#C8A34D tone) over a clean navy Palace-branded polo shirt. He is standing with confident authoritative posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident reassuring expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Chicago Loop architecture — steel and glass towers, 'L' train tracks visible, morning urban light. Shallow depth of field. Professional, trustworthy appearance. Commercial photography, photorealistic, natural skin tones.",
+      "prompt": "Professional portrait of a male site manager in his mid-40s, wearing a warm gold amber safety vest (#C8A34D tone) over a clean navy Palace-branded polo shirt. He is standing with confident authoritative posture, body angled slightly right, head turned to look to HIS LEFT (viewer's right) with a confident reassuring expression. Waist-up framing, positioned in the RIGHT THIRD of the frame leaving negative space on the left for text. Background: softly blurred Chicago Loop architecture - steel and glass towers, 'L' train tracks visible, morning urban light. Shallow depth of field. Professional, trustworthy appearance. Commercial photography, photorealistic, natural skin tones.",
       "image_input": [
         "https://palaceportapotties.com/brand/references/palace-uniform-reference.webp"
       ],

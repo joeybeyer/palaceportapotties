@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Optimize generated images for web delivery.
- * Converts PNG → WebP, resizes to sensible max dimensions, quality 80.
+ * Converts PNG -> WebP, resizes to sensible max dimensions, quality 80.
  *
  * Usage: node scripts/optimize-images.mjs
  */
@@ -32,7 +32,7 @@ async function optimizeFile(filePath) {
   const meta = await sharp(filePath).metadata();
   const origKB = Math.round(statSync(filePath).size / 1024);
 
-  // Determine max resize — fit within bounds, preserve aspect ratio
+  // Determine max resize - fit within bounds, preserve aspect ratio
   const maxDim = Math.max(meta.width, meta.height) > MAX_LONG_EDGE
     ? MAX_LONG_EDGE
     : undefined;
@@ -53,7 +53,7 @@ async function optimizeFile(filePath) {
   const outKB = Math.round(statSync(outPath).size / 1024);
   const savings = Math.round((1 - outKB / origKB) * 100);
 
-  console.log(`${name} → .webp | ${origKB}KB → ${outKB}KB (${savings}% smaller)`);
+  console.log(`${name} -> .webp | ${origKB}KB -> ${outKB}KB (${savings}% smaller)`);
   return { name, origKB, outKB, savings };
 }
 
@@ -83,7 +83,7 @@ async function main() {
 
   const totalOrig = results.reduce((s, r) => s + r.origKB, 0);
   const totalOut = results.reduce((s, r) => s + r.outKB, 0);
-  console.log(`\nTotal: ${totalOrig}KB → ${totalOut}KB (${Math.round((1 - totalOut / totalOrig) * 100)}% reduction)`);
+  console.log(`\nTotal: ${totalOrig}KB -> ${totalOut}KB (${Math.round((1 - totalOut / totalOrig) * 100)}% reduction)`);
 }
 
 main().catch((err) => {

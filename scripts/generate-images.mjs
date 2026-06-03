@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Palace Porta Potties — Image generation via kie.ai Nano Banana Pro API
+ * Palace Porta Potties - Image generation via kie.ai Nano Banana Pro API
  *
  * Usage:
  *   node scripts/generate-images.mjs --phase=1          # Generate reference images
@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } fr
 import { resolve, join } from 'path';
 import { config } from 'dotenv';
 
-// ── Load env ──
+// -- Load env --
 config({ path: resolve(import.meta.dirname, '..', '.env') });
 
 const KIE_KEY = process.env.KIE_KEY;
@@ -21,7 +21,7 @@ if (!KIE_KEY) {
   process.exit(1);
 }
 
-// ── Parse CLI args ──
+// -- Parse CLI args --
 const args = process.argv.slice(2);
 const phaseFlag = args.find((a) => a.startsWith('--phase='));
 const phase = phaseFlag ? phaseFlag.split('=')[1] : null;
@@ -32,7 +32,7 @@ if (!phase || !['1', '2', '3', '4'].includes(phase)) {
   process.exit(1);
 }
 
-// ── Load manifest ──
+// -- Load manifest --
 const ROOT = resolve(import.meta.dirname, '..');
 const manifest = JSON.parse(readFileSync(join(ROOT, 'scripts', 'image-manifest.json'), 'utf8'));
 const entries = manifest[`phase${phase}`];
@@ -45,7 +45,7 @@ function log(msg) {
   appendFileSync(LOG_FILE, line + '\n');
 }
 
-// ── API helpers ──
+// -- API helpers --
 const API_BASE = 'https://api.kie.ai/api/v1/jobs';
 const headers = {
   Authorization: `Bearer ${KIE_KEY}`,
@@ -99,7 +99,7 @@ async function pollTask(taskId, timeoutMs = 300_000) {
     }
 
     const elapsed = Math.round((Date.now() - start) / 1000);
-    log(`  polling ${taskId} — state=${state} progress=${progress || '?'}% (${elapsed}s)`);
+    log(`  polling ${taskId} - state=${state} progress=${progress || '?'}% (${elapsed}s)`);
 
     // Wait 8 seconds between polls
     await new Promise((r) => setTimeout(r, 8000));
@@ -115,7 +115,7 @@ async function downloadImage(url, destPath) {
   writeFileSync(destPath, buffer);
 }
 
-// ── Concurrency limiter (max 2) ──
+// -- Concurrency limiter (max 2) --
 async function runWithConcurrency(tasks, limit) {
   const results = [];
   const executing = new Set();
@@ -136,10 +136,10 @@ async function runWithConcurrency(tasks, limit) {
   return Promise.allSettled(results);
 }
 
-// ── Main ──
+// -- Main --
 async function main() {
   log(`\n${'='.repeat(60)}`);
-  log(`Phase ${phase} — ${entries.length} images — force=${force}`);
+  log(`Phase ${phase} - ${entries.length} images - force=${force}`);
   log(`${'='.repeat(60)}`);
 
   const tasks = entries.map((entry) => async () => {
@@ -149,7 +149,7 @@ async function main() {
 
     // Skip if already exists (unless --force)
     if (!force && existsSync(destPath)) {
-      log(`SKIP ${entry.filename} — already exists`);
+      log(`SKIP ${entry.filename} - already exists`);
       return { filename: entry.filename, status: 'skipped' };
     }
 
@@ -167,11 +167,11 @@ async function main() {
 
       await downloadImage(urls[0], destPath);
       const elapsed = Math.round((Date.now() - startTime) / 1000);
-      log(`DONE ${entry.filename} — ${elapsed}s`);
+      log(`DONE ${entry.filename} - ${elapsed}s`);
       return { filename: entry.filename, status: 'success', elapsed };
     } catch (err) {
       const elapsed = Math.round((Date.now() - startTime) / 1000);
-      log(`FAIL ${entry.filename} — ${err.message} (${elapsed}s)`);
+      log(`FAIL ${entry.filename} - ${err.message} (${elapsed}s)`);
       return { filename: entry.filename, status: 'failed', error: err.message };
     }
   });
@@ -179,7 +179,7 @@ async function main() {
   const results = await runWithConcurrency(tasks, 2);
 
   // Summary
-  log(`\n${'─'.repeat(40)}`);
+  log(`\n${'-'.repeat(40)}`);
   log('SUMMARY');
   let ok = 0, fail = 0, skip = 0;
   for (const r of results) {
@@ -189,7 +189,7 @@ async function main() {
     else fail++;
   }
   log(`  Success: ${ok}  |  Skipped: ${skip}  |  Failed: ${fail}`);
-  log(`${'─'.repeat(40)}\n`);
+  log(`${'-'.repeat(40)}\n`);
 }
 
 main().catch((err) => {

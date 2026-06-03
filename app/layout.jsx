@@ -16,11 +16,18 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const locations = await getAllLocations();
+  const groups = locations.reduce((acc, loc) => {
+    const key = loc.state;
+    if (!acc[key]) acc[key] = { state: loc.state, state_code: loc.state_code, cities: [] };
+    acc[key].cities.push(loc);
+    return acc;
+  }, {});
+  const stateGroups = Object.values(groups).sort((a, b) => a.state.localeCompare(b.state));
 
   return (
     <html lang="en">
       <head>
-        {/* Microsoft Clarity — replace CLARITY_ID with your project ID from clarity.microsoft.com */}
+        {/* Microsoft Clarity - replace CLARITY_ID with your project ID from clarity.microsoft.com */}
         {process.env.NEXT_PUBLIC_CLARITY_ID && (
           <script
             dangerouslySetInnerHTML={{
@@ -37,23 +44,29 @@ export default async function RootLayout({ children }) {
         <footer className="site-footer">
           <div className="container">
             <p>
-              <strong>Palace Porta Potties</strong> — Portable restroom rental with higher standards.
+              <strong>Palace Porta Potties</strong> - Portable restroom rental with higher standards.
               Clean units, fast dispatch, and dependable service for events, weddings, and job sites.
             </p>
             <nav className="footer-nav">
               <Link href="/">Home</Link>
-              {locations.map((loc) => (
-                <Link key={loc.slug} href={`/${loc.slug}/`}>
-                  {loc.city}, {loc.state_code}
-                </Link>
+              <Link href="/locations/">Locations</Link>
+              {stateGroups.map((group) => (
+                <span key={group.state_code} className="footer-location-group">
+                  <strong>{group.state_code}</strong>
+                  {group.cities.map((loc) => (
+                    <Link key={loc.slug} href={`/${loc.slug}/`}>
+                      {loc.city}
+                    </Link>
+                  ))}
+                </span>
               ))}
               <Link href="/about/">About</Link>
             </nav>
             <p>
-              <a href="tel:+18887085771">(888) 708-5771</a> — Available 24/7
+              <a href="tel:+18887085771">(888) 708-5771</a> - Available 24/7
             </p>
             <p className="copyright">
-              © {new Date().getFullYear()} Palace Porta Potties. All rights reserved.
+              &copy; {new Date().getFullYear()} Palace Porta Potties. All rights reserved.
             </p>
           </div>
         </footer>
