@@ -121,6 +121,16 @@ a:hover { color: var(--midnight-navy); }
   padding: 1rem;
   z-index: 80;
 }
+/* Transparent bridge over the gap so the menu stays open while the cursor
+   travels from the trigger down to the panel. */
+.nav-menu-panel::before {
+  content: '';
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  right: 0;
+  height: 0.9rem;
+}
 .nav-menu:hover .nav-menu-panel,
 .nav-menu:focus-within .nav-menu-panel {
   display: grid;
